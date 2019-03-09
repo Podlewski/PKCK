@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<?xml-stylesheet type="text/css" href="kolekcja_gier_rpg.css"?>
+<?xml-stylesheet href="kolekcja_gier_rpg.css" type="text/css" ?>
 <!DOCTYPE kolekcja_gier_rpg SYSTEM "kolekcja_gier_rpg.dtd">
 <kolekcja_gier_rpg>
 </kolekcja_gier_rpg>
