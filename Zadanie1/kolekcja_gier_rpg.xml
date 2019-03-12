@@ -2,4 +2,37 @@
 <?xml-stylesheet href="kolekcja_gier_rpg.css" type="text/css" ?>
 <!DOCTYPE kolekcja_gier_rpg SYSTEM "kolekcja_gier_rpg.dtd">
 <kolekcja_gier_rpg>
+    <nagłówek>
+        <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
+        <autor>Justyna Hubert 210200</autor>
+        <autor>Karol Podlewski 210294</autor>
+    </nagłówek>
+    <systemy>
+        <system system_id="dark_heresy">Dark Heresy</system>
+        <system system_id="dungeons_and_dragons_3.5">Dungeons &amp; Dragons - Edycja 3.5</system>
+        <system system_id="warhammer_1">Warhammer FRP - Edycja 1</system>
+        <system system_id="warhammer_2">Warhammer FRP - Edycja 2</system>
+        <system system_id="wolsung">Wolsung</system>
+        <system system_id="zew_cthulhu">Zew Cthulhu - Edycja 7</system>
+    </systemy>
+    <gatunki>
+        <gatunek gatunek_id="akcja">Akcja</gatunek>
+        <gatunek gatunek_id="dark_fantasy">Dark Fantasy</gatunek>
+        <gatunek gatunek_id="detektywistyczna">Detektywistyczna</gatunek>
+        <gatunek gatunek_id="fantasy">Fantasy</gatunek>
+        <gatunek gatunek_id="horror">Horror</gatunek>
+        <gatunek gatunek_id="mitologia">Mitologia</gatunek>
+        <gatunek gatunek_id="sci_fi">Science Fiction</gatunek>
+        <gatunek gatunek_id="steampunk">Steampunk</gatunek>
+    </gatunki>
+    <kości>
+        <kość kość_id="k4">K4</kość>
+        <kość kość_id="k6">K6</kość>
+        <kość kość_id="k8">K8</kość>
+        <kość kość_id="k10">K10</kość>
+        <kość kość_id="k12">K12</kość>
+        <kość kość_id="k20">K20</kość>
+        <kość kość_id="k30">K30</kość>
+        <kość kość_id="k100">K100</kość>
+    </kości>
 </kolekcja_gier_rpg>
