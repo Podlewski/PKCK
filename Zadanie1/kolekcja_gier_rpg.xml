@@ -35,4 +35,62 @@
         <kość kość_id="k30">K30</kość>
         <kość kość_id="k100">K100</kość>
     </kości>
+	<nasza_kolekcja>
+		<podręcznik system_id="dark_heresy" gatunek_id="dark_fantasy" kość_id="k100">
+			<tytuł>
+				Dark Heresy Second Edition
+			</tytuł>
+			
+			<typ>
+				Rozszerzenie
+			</typ>
+			
+			<ocena>
+				4.74
+			</ocena>
+			
+			<daty_wydania>
+				<data_wydania kraj="PL">18.08.2007</data_wydania>
+				<data_wydania kraj="USA">25.01.2005</data_wydania>
+			</daty_wydania>
+		</podręcznik >
+		
+		<podręcznik system_id="wolsung" gatunek_id="steampunk" kość_id="k10">
+			<tytuł>
+				Wolsung: Magia Wieku Pary
+			</tytuł>
+			
+			<typ>
+				Przygoda
+			</typ>
+			
+			<ocena>
+				4.6
+			</ocena>
+			
+			<daty_wydania>
+				<data_wydania kraj="PL">10.11.2009</data_wydania>
+				<data_wydania kraj="USA">20.02.2012</data_wydania>
+			</daty_wydania>
+		</podręcznik >
+		
+		<podręcznik system_id="warhammer_2" gatunek_id="fantasy" kość_id="k100">
+			<tytuł>
+				Bestiariusz Starego Swiata
+			</tytuł>
+			
+			<typ>
+				Bestiariusz
+			</typ>
+			
+			<ocena>
+				4.5
+			</ocena>
+			
+			<daty_wydania>
+				<data_wydania kraj="PL">20.12.2005</data_wydania>
+				<data_wydania kraj="USA">29.05.2005</data_wydania>
+			</daty_wydania>
+		</podręcznik >
+	</nasza_kolekcja>
 </kolekcja_gier_rpg>
