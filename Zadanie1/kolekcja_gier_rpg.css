@@ -1,1 +1,140 @@
 @charset "UTF-8";
+
+kolekcja_gier_rpg{
+	background-image: url("darkBackground.jpg");
+	color: #FFFEFE;
+	margin: auto;
+}
+
+systemy, gatunki, kości, typ
+{
+    display: none;
+}
+
+nagłówek
+{
+	font-size: 36px;
+	font-family: Georgia;
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+nagłówek > projekt
+{
+	font-size: 32px;
+	display: block;
+}
+
+nagłówek > autor
+{	
+	margin-top: 10px;
+	display: block;
+	font-size: 20px;
+}
+
+kolekcja_gier_rpg
+{	width: 100%;
+	margin: auto;
+	display: block;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+system
+{
+	display: grid;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+system > nazwa
+{
+	text-align: center;
+	font-size: 50px;
+	padding: 10px;
+}
+
+system::after
+{
+	content: "Gatunek: " 
+	attr(gatunek_id)
+	"\a Kość do gry: "
+	attr(kość_id);
+	white-space: pre;
+	font-size: 25px;
+	margin: 30px;
+	padding: 10px;
+}
+
+
+system > ocena, liczba_stron
+{
+	text-align: center;
+	font-size: 30px;
+}
+
+daty_wydania
+{
+	margin-top: 5px;	
+	text-align: left;
+	display: grid;
+	font-size: 25px;
+}
+
+data_wydania:nth-child(1)::before
+{
+	font-size: 25px;
+	content: "Data wydania: ";
+	margin-right: 10px;
+}
+
+data_wydania:nth-child(2)::before
+{
+	font-size: 25px;
+	content: "Data wydania: ";
+	margin-right: 10px;
+}
+
+
+liczba_stron::before
+{
+	content: "Liczba utworów: "
+}
+
+ocena::before
+{
+	content: "Ocena: "
+}
+
+podręczniki
+{
+	font-size: 30px;
+}
+
+podręczniki > podręcznik { 
+    display: list-item;
+    list-style: decimal;
+	margin-left: 70px;
+}
+
+podręczniki > podręcznik > *:hover
+{
+	color: yellow;
+}
+
+podręcznik > liczba_stron
+{
+	margin-right: 40px;
+	float: right;   
+}
+
+ocena
+{
+	font-size: 25px;
+	padding-left: 13px;
+	display: grid;
+	margin-top: 15px;
+}
+
+
+

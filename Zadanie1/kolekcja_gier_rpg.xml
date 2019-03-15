@@ -4,6 +4,7 @@
 <kolekcja_gier_rpg>
     <nagłówek>
         <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
+		<projekt>Kolekcja gier RPG</projekt>
         <autor>Justyna Hubert 210200</autor>
         <autor>Karol Podlewski 210294</autor>
     </nagłówek>
@@ -35,62 +36,140 @@
         <kość kość_id="k30">K30</kość>
         <kość kość_id="k100">K100</kość>
     </kości>
+	<typy>
+	<typ typ_id="przygoda">Przygoda</typ>
+	<typ typ_id="rozszerzenie">Rozszerzenie</typ>
+	<typ typ_id="bestiariusz">Bestiariusz</typ>
+	<typ typ_id="podstawka">Podstawka</typ>
+	</typy>
 	<nasza_kolekcja>
-		<podręcznik system_id="dark_heresy" gatunek_id="dark_fantasy" kość_id="k100">
-			<tytuł>
-				Dark Heresy Second Edition
-			</tytuł>
+		<system  gatunek_id="dark_fantasy" kość_id="k100">
+			<nazwa>
+				Dark Heresy
+			</nazwa>
 			
-			<typ>
-				Rozszerzenie
-			</typ>
+			<podręczniki>
+				<podręcznik typ_id="podstawka" >
+					<tytuł>Dark Heresy 2 edycja</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">18.08.2007</data_wydania>
+						<data_wydania kraj="USA">25.01.2005</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.74</ocena>
+					
+					<liczba_stron>531</liczba_stron>					
+				</podręcznik>
+				
+				<podręcznik typ_id="przygoda">
+					<tytuł>Dark Heresy 2 edycja: Zapomnieni Bogowie</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="USA">28.01.2015</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.44</ocena>
+					
+					<liczba_stron>260</liczba_stron>
+				</podręcznik>
 			
-			<ocena>
-				4.74
-			</ocena>
+			</podręczniki>	
+		</system>
+
+		<system  gatunek_id="steampunk" kość_id="k10">
+			<nazwa>
+				Wolsung
+			</nazwa>
 			
-			<daty_wydania>
-				<data_wydania kraj="PL">18.08.2007</data_wydania>
-				<data_wydania kraj="USA">25.01.2005</data_wydania>
-			</daty_wydania>
-		</podręcznik >
+			<podręczniki>
+				<podręcznik typ_id="podstawka" >
+					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">18.08.2007</data_wydania>
+						<data_wydania kraj="USA">25.01.2005</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.74</ocena>
+					
+					<liczba_stron>531</liczba_stron>					
+				</podręcznik>
+				
+				<podręcznik typ_id="rozszerzenie">
+					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">11.12.2010</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.86</ocena>
+					
+					<liczba_stron>218</liczba_stron>
+				</podręcznik>
+				
+				<podręcznik typ_id="rozszerzenie">
+					<tytuł>Almanach Nadzwyczajny</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">09.02.2011</data_wydania>
+					</daty_wydania>
+					
+					<ocena>3.91</ocena>
+					
+					<liczba_stron>156</liczba_stron>
+				</podręcznik>
+				
+			</podręczniki>	
+		</system>			
 		
-		<podręcznik system_id="wolsung" gatunek_id="steampunk" kość_id="k10">
-			<tytuł>
-				Wolsung: Magia Wieku Pary
-			</tytuł>
+		<system gatunek_id="fantasy" kość_id="k100">
+			<nazwa>
+				Dungeons &amp; Dragons - Edycja 3.5
+			</nazwa>
 			
-			<typ>
-				Przygoda
-			</typ>
-			
-			<ocena>
-				4.6
-			</ocena>
-			
-			<daty_wydania>
-				<data_wydania kraj="PL">10.11.2009</data_wydania>
-				<data_wydania kraj="USA">20.02.2012</data_wydania>
-			</daty_wydania>
-		</podręcznik >
+			<podręczniki>
+				<podręcznik typ_id="podstawka" >
+					<tytuł>Księga Potworów</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">11.03.2006</data_wydania>
+						<data_wydania kraj="USA">02.10.2005</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.8</ocena>
+					
+					<liczba_stron>429</liczba_stron>					
+				</podręcznik>
+				
+				<podręcznik typ_id="bestiariusz">
+					<tytuł>Czarci Foliał</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">27.12.2007</data_wydania>
+						<data_wydania kraj="USA">21.09.2006</data_wydania>
+					</daty_wydania>
+					
+					<ocena>4.59</ocena>
+					
+					<liczba_stron>120</liczba_stron>
+				</podręcznik>
+				
+				<podręcznik typ_id="bestiariusz">
+					<tytuł>Księga Potworów II</tytuł>
+					
+					<daty_wydania>
+						<data_wydania kraj="PL">28.04.2009</data_wydania>
+						<data_wydania kraj="USA">11.07.2008</data_wydania>
+					</daty_wydania>
+					
+					<ocena>3.35</ocena>
+					
+					<liczba_stron>245</liczba_stron>
+				</podręcznik>
+				
+			</podręczniki>
+		</system>
 		
-		<podręcznik system_id="warhammer_2" gatunek_id="fantasy" kość_id="k100">
-			<tytuł>
-				Bestiariusz Starego Swiata
-			</tytuł>
-			
-			<typ>
-				Bestiariusz
-			</typ>
-			
-			<ocena>
-				4.5
-			</ocena>
-			
-			<daty_wydania>
-				<data_wydania kraj="PL">20.12.2005</data_wydania>
-				<data_wydania kraj="USA">29.05.2005</data_wydania>
-			</daty_wydania>
-		</podręcznik >
 	</nasza_kolekcja>
 </kolekcja_gier_rpg>
