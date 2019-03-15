@@ -98,7 +98,7 @@ data_wydania:nth-child(2)::before
 
 liczba_stron::before
 {
-	content: "Liczba utworów: "
+	content: "Liczba stron: "
 }
 
 ocena::before
