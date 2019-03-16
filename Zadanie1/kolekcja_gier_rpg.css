@@ -6,7 +6,7 @@ kolekcja_gier_rpg{
 	margin: auto;
 }
 
-systemy, gatunki, kości, typ
+gatunki, kości, typy
 {
     display: none;
 }
@@ -54,61 +54,33 @@ system > nazwa
 	padding: 10px;
 }
 
+system > ocena::before
+{
+	font-size: 35px;
+	content: "Ocena: "
+}
+
+system > ocena
+{
+	font-size: 35px;
+	padding-left: 13px;
+	margin-top: 15px;
+	margin-bottom: 7.5px;
+}
+
 system::after
 {
-	content: "Gatunek: " 
-	attr(gatunek_id)
-	"\a Kość do gry: "
-	attr(kość_id);
+	content: "Gatunek: " attr(gatunek_id)
+	"\a Kość do gry: " attr(kość_id);
 	white-space: pre;
 	font-size: 25px;
 	margin: 30px;
 	padding: 10px;
 }
 
-
-system > ocena, liczba_stron
-{
-	text-align: center;
-	font-size: 30px;
-}
-
-daty_wydania
-{
-	margin-top: 5px;	
-	text-align: left;
-	display: grid;
-	font-size: 25px;
-}
-
-data_wydania:nth-child(1)::before
-{
-	font-size: 25px;
-	content: "Data wydania: ";
-	margin-right: 10px;
-}
-
-data_wydania:nth-child(2)::before
-{
-	font-size: 25px;
-	content: "Data wydania: ";
-	margin-right: 10px;
-}
-
-
-liczba_stron::before
-{
-	content: "Liczba stron: "
-}
-
-ocena::before
-{
-	content: "Ocena: "
-}
-
 podręczniki
 {
-	font-size: 30px;
+	font-size: 40px;
 }
 
 podręczniki > podręcznik { 
@@ -122,19 +94,50 @@ podręczniki > podręcznik > *:hover
 	color: yellow;
 }
 
-podręcznik > liczba_stron
+data_wydania
 {
-	margin-right: 40px;
-	float: right;   
+	margin-top: 5px;	
+	text-align: left;
+	display: grid;
+	font-size: 25px;
 }
 
-ocena
+data_wydania:nth-child(1)::before
 {
 	font-size: 25px;
-	padding-left: 13px;
-	display: grid;
-	margin-top: 15px;
+	content: "Data wydania w Polsce: ";
 }
+
+data_wydania:nth-child(2)::before
+{
+	font-size: 25px;
+	content: "Data wydania za granicą: ";
+}
+
+podręcznik > liczba_stron::before
+{
+	font-size: 25px;
+	content: "Liczba stron: "
+}
+
+podręcznik > liczba_stron
+{
+	font-size: 25px;
+	margin-right: 40px;
+	display: block; 
+	text-align: right;
+}
+
+podręcznik::after
+{ 
+	content: "Typ: " attr(typ_id);
+	font-size: 25px;
+	margin: 30px;
+	text-align: right;
+	display: block;
+}
+
+
 
 
 

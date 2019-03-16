@@ -8,14 +8,6 @@
         <autor>Justyna Hubert 210200</autor>
         <autor>Karol Podlewski 210294</autor>
     </nagłówek>
-    <systemy>
-        <system system_id="dark_heresy">Dark Heresy</system>
-        <system system_id="dungeons_and_dragons_3.5">Dungeons &amp; Dragons - Edycja 3.5</system>
-        <system system_id="warhammer_1">Warhammer FRP - Edycja 1</system>
-        <system system_id="warhammer_2">Warhammer FRP - Edycja 2</system>
-        <system system_id="wolsung">Wolsung</system>
-        <system system_id="zew_cthulhu">Zew Cthulhu - Edycja 7</system>
-    </systemy>
     <gatunki>
         <gatunek gatunek_id="akcja">Akcja</gatunek>
         <gatunek gatunek_id="dark_fantasy">Dark Fantasy</gatunek>
@@ -37,10 +29,10 @@
         <kość kość_id="k100">K100</kość>
     </kości>
 	<typy>
-	<typ typ_id="przygoda">Przygoda</typ>
-	<typ typ_id="rozszerzenie">Rozszerzenie</typ>
-	<typ typ_id="bestiariusz">Bestiariusz</typ>
-	<typ typ_id="podstawka">Podstawka</typ>
+		<typ typ_id="przygoda">Przygoda</typ>
+		<typ typ_id="rozszerzenie">Rozszerzenie</typ>
+		<typ typ_id="bestiariusz">Bestiariusz</typ>
+		<typ typ_id="podstawka">Podstawka</typ>
 	</typy>
 	<nasza_kolekcja>
 		<system  gatunek_id="dark_fantasy" kość_id="k100">
@@ -48,17 +40,17 @@
 				Dark Heresy
 			</nazwa>
 			
+			<ocena>4.74</ocena>
+			
 			<podręczniki>
 				<podręcznik typ_id="podstawka" >
 					<tytuł>Dark Heresy 2 edycja</tytuł>
 					
 					<daty_wydania>
 						<data_wydania kraj="PL">18.08.2007</data_wydania>
-						<data_wydania kraj="USA">25.01.2005</data_wydania>
+						<data_wydania kraj="Świat">25.01.2005</data_wydania>
 					</daty_wydania>
-					
-					<ocena>4.74</ocena>
-					
+
 					<liczba_stron>531</liczba_stron>					
 				</podręcznik>
 				
@@ -66,10 +58,9 @@
 					<tytuł>Dark Heresy 2 edycja: Zapomnieni Bogowie</tytuł>
 					
 					<daty_wydania>
-						<data_wydania kraj="USA">28.01.2015</data_wydania>
+					<data_wydania kraj="PL">19.08.2017</data_wydania>
+						<data_wydania kraj="Świat">28.01.2015</data_wydania>
 					</daty_wydania>
-					
-					<ocena>4.44</ocena>
 					
 					<liczba_stron>260</liczba_stron>
 				</podręcznik>
@@ -82,16 +73,16 @@
 				Wolsung
 			</nazwa>
 			
+			<ocena>4.74</ocena>
+			
 			<podręczniki>
 				<podręcznik typ_id="podstawka" >
-					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
+					<tytuł>Wolsung: Magia Wieku Pary</tytuł>				
 					
 					<daty_wydania>
 						<data_wydania kraj="PL">18.08.2007</data_wydania>
-						<data_wydania kraj="USA">25.01.2005</data_wydania>
+						<data_wydania kraj="Świat">25.01.2005</data_wydania>
 					</daty_wydania>
-					
-					<ocena>4.74</ocena>
 					
 					<liczba_stron>531</liczba_stron>					
 				</podręcznik>
@@ -102,9 +93,7 @@
 					<daty_wydania>
 						<data_wydania kraj="PL">11.12.2010</data_wydania>
 					</daty_wydania>
-					
-					<ocena>4.86</ocena>
-					
+
 					<liczba_stron>218</liczba_stron>
 				</podręcznik>
 				
@@ -114,8 +103,6 @@
 					<daty_wydania>
 						<data_wydania kraj="PL">09.02.2011</data_wydania>
 					</daty_wydania>
-					
-					<ocena>3.91</ocena>
 					
 					<liczba_stron>156</liczba_stron>
 				</podręcznik>
@@ -128,6 +115,8 @@
 				Dungeons &amp; Dragons - Edycja 3.5
 			</nazwa>
 			
+			<ocena>4.8</ocena>
+			
 			<podręczniki>
 				<podręcznik typ_id="podstawka" >
 					<tytuł>Księga Potworów</tytuł>
@@ -137,8 +126,6 @@
 						<data_wydania kraj="USA">02.10.2005</data_wydania>
 					</daty_wydania>
 					
-					<ocena>4.8</ocena>
-					
 					<liczba_stron>429</liczba_stron>					
 				</podręcznik>
 				
@@ -147,10 +134,8 @@
 					
 					<daty_wydania>
 						<data_wydania kraj="PL">27.12.2007</data_wydania>
-						<data_wydania kraj="USA">21.09.2006</data_wydania>
+						<data_wydania kraj="Świat">21.09.2006</data_wydania>
 					</daty_wydania>
-					
-					<ocena>4.59</ocena>
 					
 					<liczba_stron>120</liczba_stron>
 				</podręcznik>
@@ -160,10 +145,8 @@
 					
 					<daty_wydania>
 						<data_wydania kraj="PL">28.04.2009</data_wydania>
-						<data_wydania kraj="USA">11.07.2008</data_wydania>
+						<data_wydania kraj="Świat">11.07.2008</data_wydania>
 					</daty_wydania>
-					
-					<ocena>3.35</ocena>
 					
 					<liczba_stron>245</liczba_stron>
 				</podręcznik>
