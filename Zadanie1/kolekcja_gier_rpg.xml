@@ -47,7 +47,7 @@
 			<kości>
 				<kość ilość_kości="wiele">K10</kość>
 				<kość ilość_kości="jedna">K100</kość>
-			<kości>
+			</kości>
 			<ocena>7.33</ocena>
 			
 			<podręczniki>
@@ -95,7 +95,7 @@
 			<kości>
 				<kość ilość_kości="wiele">K10</kość>
 				<kość ilość_kości="jedna">K100</kość>
-			<kości>
+			</kości>
 			<ocena>8.20</ocena>
 			
 			<podręczniki>
@@ -177,7 +177,7 @@
 			<nazwa>Wolsung: Magia Wieku Pary</nazwa>
 			<kości>
 				<kość ilość_kości="wiele">K10</kość>
-			<kości>
+			</kości>
 			<ocena>8.21</ocena>
 			
 			<podręczniki>
@@ -231,7 +231,7 @@
 			<nazwa>Zew Cthulhu RPG - 7 edycja</nazwa>
 			<kości>
 				<kość ilość_kości="wiele">K100</kość>
-			<kości>
+			</kości>
 			<ocena>8.25</ocena>
 			
 			<podręczniki>
