@@ -32,13 +32,15 @@
 	<!--Typy podręcznika -->
 	<typy>
 		<typ typ_id="podstawka">Podstawka</typ>
-		<typ typ_id="kampania">Kampania</typ>
-		<typ typ_id="przygoda">przygoda</typ>
-		<typ typ_id="rozszerzenie">Rozszerzenie</typ>
 		<typ typ_id="bestiariusz">Bestiariusz</typ>
+		<typ typ_id="kampania">Kampania</typ>
+		<typ typ_id="paragrafówka">Paragrafówka</typ>
+		<typ typ_id="przygoda">Przygoda</typ>
+		<typ typ_id="rozszerzenie">Rozszerzenie</typ>
 	</typy>
 <!--Druga sekcja -->
 	<nasza_kolekcja>
+	
 		<system gatunek_id="sci_fi" wydawca_id="copernicus_corporation">
 			
 			<nazwa>Dark Heresy - 2 Edycja</nazwa>
@@ -86,60 +88,7 @@
 			</podręczniki>	
 		</system>
 
-		<system  gatunek_id="steampunk" wydawca_id="kuźnia_gier">
-			
-			<nazwa>Wolsung: Magia Wieku Pary</nazwa>
-			<kości>
-				<kość ilość_kości="wiele">K10</kość>
-			<kości>
-			<ocena>8.21</ocena>
-			
-			<podręczniki>
-				<podręcznik typ_id="podstawka">
-					<tytuł>Wolsung: Magia Wieku Pary </tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary</tytuł_oryginalny>
-					<data_wydania>30.09.2009</data_wydania>
-					<liczba_stron>480</liczba_stron>					
-				</podręcznik>
-
-				<podręcznik typ_id="kampania">
-					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
-					<tytuł_oryginalny>Lyonesse: Miasto, Mgła, Maszyna</tytuł_oryginalny>
-					<data_wydania>25.07.2010</data_wydania>
-					<liczba_stron>128</liczba_stron>					
-				</podręcznik>
-
-				<podręcznik typ_id="rozszerzenie">
-					<tytuł>Almanach Nadzwyczajny</tytuł>
-					<tytuł_oryginalny>Almanach Nadzwyczajny</tytuł_oryginalny>
-					<data_wydania>25.03.2011</data_wydania>
-					<liczba_stron>96</liczba_stron>					
-				</podręcznik>
-
-				<podręcznik typ_id="rozszerzenie">
-					<tytuł>Slawia: Rzeczpospolita Przeklęta</tytuł>
-					<tytuł_oryginalny>Slawia: Rzeczpospolita Przeklęta</tytuł_oryginalny>
-					<data_wydania>22.03.2013</data_wydania>
-					<liczba_stron>129</liczba_stron>					
-				</podręcznik>
-
-				<podręcznik typ_id="podstawka">
-					<tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł_oryginalny>
-					<data_wydania>31.08.2013</data_wydania>
-					<liczba_stron>473</liczba_stron>					
-				</podręcznik>
-
-				<podręcznik typ_id="przygoda">
-					<tytuł>Dzień, w którym zatonęła Urda</tytuł>
-					<tytuł_oryginalny>Dzień, w którym zatonęła Urda</tytuł_oryginalny>
-					<data_wydania>19.04.2016</data_wydania>
-					<liczba_stron>30</liczba_stron>					
-				</podręcznik>
-			</podręczniki>	
-
-		</system>			
-
+		
 		<system gatunek_id="fantasy" wydawca_id="copernicus_corporation">
 
 			<nazwa>Warhammer Fantasy Roleplay - 2 Edycja</nazwa>
@@ -222,8 +171,62 @@
 			</podręczniki>
 
 		</system>
+		
+		<system gatunek_id="steampunk" wydawca_id="kuźnia_gier">
+			
+			<nazwa>Wolsung: Magia Wieku Pary</nazwa>
+			<kości>
+				<kość ilość_kości="wiele">K10</kość>
+			<kości>
+			<ocena>8.21</ocena>
+			
+			<podręczniki>
+				<podręcznik typ_id="podstawka">
+					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
+					<tytuł_oryginalny>Wolsung: Magia Wieku Pary</tytuł_oryginalny>
+					<data_wydania>30.09.2009</data_wydania>
+					<liczba_stron>480</liczba_stron>					
+				</podręcznik>
 
-		<system  gatunek_id="dark_fantasy" wydawca_id="black_monk">
+				<podręcznik typ_id="kampania">
+					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
+					<tytuł_oryginalny>Lyonesse: Miasto, Mgła, Maszyna</tytuł_oryginalny>
+					<data_wydania>25.07.2010</data_wydania>
+					<liczba_stron>128</liczba_stron>					
+				</podręcznik>
+
+				<podręcznik typ_id="rozszerzenie">
+					<tytuł>Almanach Nadzwyczajny</tytuł>
+					<tytuł_oryginalny>Almanach Nadzwyczajny</tytuł_oryginalny>
+					<data_wydania>25.03.2011</data_wydania>
+					<liczba_stron>96</liczba_stron>					
+				</podręcznik>
+
+				<podręcznik typ_id="rozszerzenie">
+					<tytuł>Slawia: Rzeczpospolita Przeklęta</tytuł>
+					<tytuł_oryginalny>Slawia: Rzeczpospolita Przeklęta</tytuł_oryginalny>
+					<data_wydania>22.03.2013</data_wydania>
+					<liczba_stron>129</liczba_stron>					
+				</podręcznik>
+
+				<podręcznik typ_id="podstawka">
+					<tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł>
+					<tytuł_oryginalny>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł_oryginalny>
+					<data_wydania>31.08.2013</data_wydania>
+					<liczba_stron>473</liczba_stron>					
+				</podręcznik>
+
+				<podręcznik typ_id="przygoda">
+					<tytuł>Dzień, w którym zatonęła Urda</tytuł>
+					<tytuł_oryginalny>Dzień, w którym zatonęła Urda</tytuł_oryginalny>
+					<data_wydania>19.04.2016</data_wydania>
+					<liczba_stron>30</liczba_stron>					
+				</podręcznik>
+			</podręczniki>	
+
+		</system>			
+
+		<system gatunek_id="dark_fantasy" wydawca_id="black_monk">
 			
 			<nazwa>Zew Cthulhu RPG - 7 edycja</nazwa>
 			<kości>
@@ -239,7 +242,7 @@
 					<liczba_stron>488</liczba_stron>					
 				</podręcznik>
 
-				<podręcznik typ_id="przygoda">
+				<podręcznik typ_id="paragrafówka">
 					<tytuł>Samotnie przeciwko ciemności - Zniweczenie triumfu lodu</tytuł>
 					<tytuł_oryginalny>Alone Against the Dark - Defying the Triumph of the Ice</tytuł_oryginalny>
 					<data_wydania>12.09.2018</data_wydania>
