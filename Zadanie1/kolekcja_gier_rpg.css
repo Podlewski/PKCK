@@ -5,7 +5,7 @@ kolekcja_gier_rpg
 	background-image: url("darkBackground.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	color: #FFFEFE;
+	color: white;
 	margin: auto;
 }
 
@@ -18,8 +18,8 @@ nagłówek
 {
 	font-size: 36px;
 	font-family: Georgia;
-	display: block;
 	text-align: center;
+	display: block;
 	margin: auto;
 }
 
@@ -69,6 +69,7 @@ system > nazwa
 	text-align: center;
 	font-size: 50px;
 	padding: 10px;
+	background: black;
 }
 
 kości::before
@@ -81,6 +82,28 @@ kości
 	text-align: center;
 	font-size: 20px;
 	padding: 10px;
+	color: black;
+	background: LightSeaGreen;
+}
+
+system[gatunek_id="Dark Fantasy"] > kości
+{
+	background: SpringGreen;
+}
+
+system[gatunek_id="Fantasy"] > kości
+{
+	background: FireBrick;
+}
+
+system[gatunek_id="Science Fiction"] > kości
+{
+	background: MediumSlateBlue;
+}
+
+system[gatunek_id="Steampunk"] > kości
+{
+	background: DarkKhaki;
 }
 
 kość
@@ -107,18 +130,20 @@ system > ocena::before
 system > ocena
 {
 	font-size: 25px;
-	margin-top: 20px;
-	margin-left: 40px;
+	margin-top: 10px;
+	margin-left: 30px;
+	padding: 10px;
 }
 
 system::after
 {
 	content: "Gatunek: " attr(gatunek_id)
-	"\a Wydawca: " attr(wydawca_id);
-	white-space: pre;
+	"\aWydawca: " attr(wydawca_id);
+	white-space: pre-line;
 	font-size: 25px;
 	display: block; 
-	margin-left: 40px;
+	margin-left: 30px;
+	padding: 10px;
 }
 
 podręczniki
@@ -138,22 +163,27 @@ podręczniki > podręcznik
 
 system > podręczniki > podręcznik *:hover
 {
-	color: yellow;
+	color: LightSeaGreen;
 }
 
 system[gatunek_id="Dark Fantasy"] > podręczniki > podręcznik *:hover
 {
-	color: green;
+	color: SpringGreen;
+}
+
+system[gatunek_id="Fantasy"] > podręczniki > podręcznik *:hover
+{
+	color: FireBrick;
 }
 
 system[gatunek_id="Science Fiction"] > podręczniki > podręcznik *:hover
 {
-	color: purple;
+	color: MediumSlateBlue;
 }
 
 system[gatunek_id="Steampunk"] > podręczniki > podręcznik *:hover
 {
-	color: burlywood;
+	color: DarkKhaki;
 }
 
 podręcznik > tytuł_oryginalny::before
