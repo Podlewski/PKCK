@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-kolekcja_gier_rpg{
+kolekcja_gier_rpg
+{
 	background-image: url("darkBackground.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color: #FFFEFE;
 	margin: auto;
 }
@@ -38,8 +41,14 @@ nagłówek > autor
 	font-size: 20px;
 }
 
+nagłówek > autor::after
+{	
+	content: " " attr(numer_indeksu);
+}
+
 kolekcja_gier_rpg
-{	width: 100%;
+{	
+	width: 100%;
 	margin: auto;
 	display: block;
 }
@@ -47,8 +56,12 @@ kolekcja_gier_rpg
 system
 {
 	display: grid;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+system:last-child
+{
+	margin-bottom: 60px;
 }
 
 system > nazwa
@@ -58,29 +71,54 @@ system > nazwa
 	padding: 10px;
 }
 
+kości::before
+{
+	content:  "Potrzebne kości: ";
+}
+
+kości
+{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px;
+}
+
+kość
+{
+	font-size: 20px;
+	padding: 10px;
+}
+
+kość::after
+{
+	content: " (" attr(ilość_kości) "),";
+}
+
+kość:last-child::after
+{
+	content: " (" attr(ilość_kości) ")";
+}
+
 system > ocena::before
 {
-	font-size: 35px;
-	content: "Ocena: "
+	content: "Ocena na serwisie Polter: "
 }
 
 system > ocena
 {
-	font-size: 35px;
-	padding-left: 13px;
-	margin-top: 15px;
-	margin-bottom: 7.5px;
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 40px;
 }
 
 system::after
 {
-	content: "Wydawca: " attr(wydawca_id)
-	"\a Gatunek: " attr(gatunek_id)
-	/*"\a Kość do gry: " attr(kość_id)*/;
+	content: "Gatunek: " attr(gatunek_id)
+	"\a Wydawca: " attr(wydawca_id);
 	white-space: pre;
 	font-size: 25px;
-	margin: 30px;
-	padding: 10px;
+	display: block; 
+	margin-left: 40px;
 }
 
 podręczniki
@@ -94,45 +132,68 @@ podręczniki > podręcznik
     display: list-item;
     list-style: decimal;
 	margin-left: 70px;
+	font-size: 30px;
 	padding: 10px;
 }
 
-podręczniki > podręcznik > *:hover
+system > podręczniki > podręcznik *:hover
 {
 	color: yellow;
 }
 
-data_wydania
+system[gatunek_id="Dark Fantasy"] > podręczniki > podręcznik *:hover
 {
-	margin-top: 5px;	
-	text-align: left;
-	display: block;
-	font-size: 25px;
+	color: green;
 }
 
-/*
-data_wydania:nth-child(1)::before
+system[gatunek_id="Science Fiction"] > podręczniki > podręcznik *:hover
 {
-	font-size: 25px;
-	content: "Data wydania w Polsce: ";
+	color: purple;
 }
 
-data_wydania:nth-child(2)::before
+system[gatunek_id="Steampunk"] > podręczniki > podręcznik *:hover
 {
-	font-size: 25px;
-	content: "Data wydania za granicą: ";
+	color: burlywood;
 }
-*/
+
+podręcznik > tytuł_oryginalny::before
+{
+	font-size: 20px;
+	content: "Tytuł orygianlny: ";
+}
+
+podręcznik > tytuł_oryginalny
+{
+	font-size: 20px;
+	margin-right: 40px;
+	display: block; 
+	margin-top: 10px;
+}
+
+podręcznik > data_wydania::before
+{
+	font-size: 20px;
+	content: "Data wydania: ";
+}
+
+podręcznik > data_wydania
+{
+	font-size: 20px;
+	margin-right: 40px;
+	display: block; 
+	float: right;
+	margin-top: 10px;
+}
 
 podręcznik > liczba_stron::before
 {
-	font-size: 25px;
-	content: "Liczba stron: "
+	font-size: 20px;
+	content: "Liczba stron: ";
 }
 
 podręcznik > liczba_stron
 {
-	font-size: 25px;
+	font-size: 20px;
 	margin-right: 40px;
 	display: block; 
 	float: right;
@@ -142,7 +203,7 @@ podręcznik > liczba_stron
 podręcznik::after
 { 
 	content: "Typ: " attr(typ_id);
-	font-size: 25px;;
+	font-size: 20px;
 	text-align: left;
 	display: block;
 	margin-top: 10px;
