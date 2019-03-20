@@ -51,35 +51,30 @@
 			<podręczniki>
 				<podręcznik typ_id="typ01">
 					<tytuł>Dark Heresy 2 RPG - Podręcznik Podstawowy</tytuł>
-					<tytuł_oryginalny>Dark Heresy RPG Second Edition Core Rulebook</tytuł_oryginalny>
 					<data_wydania>04.09.2014</data_wydania>
 					<liczba_stron>448</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Zapomniani bogowie</tytuł>
-					<tytuł_oryginalny>Forgotten Gods</tytuł_oryginalny>
 					<data_wydania>28.01.2015</data_wydania>
 					<liczba_stron>141</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Wewnętrzny</tytuł>
-					<tytuł_oryginalny>Enemies Within</tytuł_oryginalny>
 					<data_wydania>29.04.2015</data_wydania>
 					<liczba_stron>144</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Zewnętrzny</tytuł>
-					<tytuł_oryginalny>Enemies Without</tytuł_oryginalny>
 					<data_wydania>30.10.2015</data_wydania>
 					<liczba_stron>144</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Spoza Rzeczywistości</tytuł>
-					<tytuł_oryginalny>Enemies Beyond</tytuł_oryginalny>
 					<data_wydania>01.02.2016</data_wydania>
 					<liczba_stron>144</liczba_stron>					
 				</podręcznik>
@@ -101,70 +96,60 @@
 			<podręczniki>
 				<podręcznik typ_id="typ01">
 					<tytuł>Warhammer 2 ed. RPG - Podręcznik Główny</tytuł>
-					<tytuł_oryginalny>Warhammer Fantasy Roleplay Rulebook</tytuł_oryginalny>
 					<data_wydania>29.03.2005</data_wydania>
 					<liczba_stron>265</liczba_stron>					
 				</podręcznik>	
 
 				<podręcznik typ_id="typ02">
 					<tytuł>Bestiariusz Starego Świata</tytuł>
-					<tytuł_oryginalny>Old World Bestiary</tytuł_oryginalny>
 					<data_wydania>17.05.2005</data_wydania>
 					<liczba_stron>120</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki Przeklętych: Popioły Middenheim</tytuł>
-					<tytuł_oryginalny>Paths of the Damned: Ashes of Middenheim</tytuł_oryginalny>
 					<data_wydania>31.05.2005</data_wydania>
 					<liczba_stron>94</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Dziedzictwo Sigmara</tytuł>
-					<tytuł_oryginalny>Sigmar's Heirs</tytuł_oryginalny>
 					<data_wydania>09.08.2005</data_wydania>
 					<liczba_stron>127</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki Przeklętych: Wieże Altdorfu</tytuł>
-					<tytuł_oryginalny>Paths of the Damned: Spires of Altdorf </tytuł_oryginalny>
 					<data_wydania>13.09.2005</data_wydania>
 					<liczba_stron>94</liczba_stron>					
 				</podręcznik>
 				
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki przeklętych: Kuźnie Nuln</tytuł>
-					<tytuł_oryginalny>Paths of the Damned: Forges of Nuln</tytuł_oryginalny>
 					<data_wydania>31.01.2006</data_wydania>
 					<liczba_stron>96</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Dzieci Rogatego Szczura</tytuł>
-					<tytuł_oryginalny>Children of the Horned Rat </tytuł_oryginalny>
 					<data_wydania>23.05.2005</data_wydania>
 					<liczba_stron>128</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Księga Spaczenia</tytuł>
-					<tytuł_oryginalny>Tome of Corruption</tytuł_oryginalny>
 					<data_wydania>10.10.2006</data_wydania>
 					<liczba_stron>256</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Mroczni Władcy Nocy</tytuł>
-					<tytuł_oryginalny>Night's Dark Masters</tytuł_oryginalny>
 					<data_wydania>01.06.2007</data_wydania>
 					<liczba_stron>144</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Księga Zbawienia</tytuł>
-					<tytuł_oryginalny>Tome of Salvation</tytuł_oryginalny>
 					<data_wydania>15.07.2008</data_wydania>
 					<liczba_stron>264</liczba_stron>					
 				</podręcznik>			
@@ -184,42 +169,36 @@
 			<podręczniki>
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary</tytuł_oryginalny>
 					<data_wydania>30.09.2009</data_wydania>
 					<liczba_stron>480</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
-					<tytuł_oryginalny>Lyonesse: Miasto, Mgła, Maszyna</tytuł_oryginalny>
 					<data_wydania>25.07.2010</data_wydania>
 					<liczba_stron>128</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Almanach Nadzwyczajny</tytuł>
-					<tytuł_oryginalny>Almanach Nadzwyczajny</tytuł_oryginalny>
 					<data_wydania>25.03.2011</data_wydania>
 					<liczba_stron>96</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Slawia: Rzeczpospolita Przeklęta</tytuł>
-					<tytuł_oryginalny>Slawia: Rzeczpospolita Przeklęta</tytuł_oryginalny>
 					<data_wydania>22.03.2013</data_wydania>
 					<liczba_stron>129</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł_oryginalny>
 					<data_wydania>31.08.2013</data_wydania>
 					<liczba_stron>473</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ04">
 					<tytuł>Dzień, w którym zatonęła Urda</tytuł>
-					<tytuł_oryginalny>Dzień, w którym zatonęła Urda</tytuł_oryginalny>
 					<data_wydania>19.04.2016</data_wydania>
 					<liczba_stron>30</liczba_stron>					
 				</podręcznik>
@@ -239,14 +218,12 @@
 			<podręczniki>
 				<podręcznik typ_id="typ01">
 					<tytuł>Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic</tytuł>
-					<tytuł_oryginalny>Call of Cthulhu 7th Edition - Keeper's Rulebook</tytuł_oryginalny>
 					<data_wydania>16.05.2016</data_wydania>
 					<liczba_stron>488</liczba_stron>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ04">
 					<tytuł>Samotnie przeciwko ciemności - Zniweczenie triumfu lodu</tytuł>
-					<tytuł_oryginalny>Alone Against the Dark - Defying the Triumph of the Ice</tytuł_oryginalny>
 					<data_wydania>12.09.2018</data_wydania>
 					<liczba_stron>108</liczba_stron>					
 				</podręcznik>

@@ -186,20 +186,6 @@ system[gatunek_id="gat08"] > podręczniki > podręcznik *:hover
 	color: DarkKhaki;
 }
 
-podręcznik > tytuł_oryginalny::before
-{
-	font-size: 20px;
-	content: "Tytuł orygianlny: ";
-}
-
-podręcznik > tytuł_oryginalny
-{
-	font-size: 20px;
-	margin-right: 40px;
-	display: block; 
-	margin-top: 10px;
-}
-
 podręcznik > data_wydania::before
 {
 	font-size: 20px;
