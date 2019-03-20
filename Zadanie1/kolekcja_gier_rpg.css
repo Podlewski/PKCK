@@ -86,22 +86,22 @@ kości
 	background: LightSeaGreen;
 }
 
-system[gatunek_id="Dark Fantasy"] > kości
+system[gatunek_id="gat02"] > kości
 {
 	background: SpringGreen;
 }
 
-system[gatunek_id="Fantasy"] > kości
+system[gatunek_id="gat04"] > kości
 {
 	background: FireBrick;
 }
 
-system[gatunek_id="Science Fiction"] > kości
+system[gatunek_id="gat07"] > kości
 {
 	background: MediumSlateBlue;
 }
 
-system[gatunek_id="Steampunk"] > kości
+system[gatunek_id="gat08"] > kości
 {
 	background: DarkKhaki;
 }
@@ -114,12 +114,12 @@ kość
 
 kość::after
 {
-	content: " (" attr(ilość_kości) "),";
+	content: " (" attr(liczba_kości) "),";
 }
 
 kość:last-child::after
 {
-	content: " (" attr(ilość_kości) ")";
+	content: " (" attr(liczba_kości) ")";
 }
 
 system > ocena::before
@@ -166,22 +166,22 @@ system > podręczniki > podręcznik *:hover
 	color: LightSeaGreen;
 }
 
-system[gatunek_id="Dark Fantasy"] > podręczniki > podręcznik *:hover
+system[gatunek_id="gat02"] > podręczniki > podręcznik *:hover
 {
 	color: SpringGreen;
 }
 
-system[gatunek_id="Fantasy"] > podręczniki > podręcznik *:hover
+system[gatunek_id="gat04"] > podręczniki > podręcznik *:hover
 {
 	color: FireBrick;
 }
 
-system[gatunek_id="Science Fiction"] > podręczniki > podręcznik *:hover
+system[gatunek_id="gat07"] > podręczniki > podręcznik *:hover
 {
 	color: MediumSlateBlue;
 }
 
-system[gatunek_id="Steampunk"] > podręczniki > podręcznik *:hover
+system[gatunek_id="gat08"] > podręczniki > podręcznik *:hover
 {
 	color: DarkKhaki;
 }
