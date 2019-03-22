@@ -52,31 +52,36 @@
 				<podręcznik typ_id="typ01">
 					<tytuł>Dark Heresy 2 RPG - Podręcznik Podstawowy</tytuł>
 					<data_wydania>04.09.2014</data_wydania>
-					<liczba_stron>448</liczba_stron>					
+					<liczba_stron>448</liczba_stron>
+					<ocena_podręcznika>7.44</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Zapomniani bogowie</tytuł>
 					<data_wydania>28.01.2015</data_wydania>
-					<liczba_stron>141</liczba_stron>					
+					<liczba_stron>141</liczba_stron>	
+					<ocena_podręcznika>6.94</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Wewnętrzny</tytuł>
 					<data_wydania>29.04.2015</data_wydania>
-					<liczba_stron>144</liczba_stron>					
+					<liczba_stron>144</liczba_stron>
+					<ocena_podręcznika>8.12</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Zewnętrzny</tytuł>
 					<data_wydania>30.10.2015</data_wydania>
-					<liczba_stron>144</liczba_stron>					
+					<liczba_stron>144</liczba_stron>	
+					<ocena_podręcznika>7.57</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Wróg Spoza Rzeczywistości</tytuł>
 					<data_wydania>01.02.2016</data_wydania>
-					<liczba_stron>144</liczba_stron>					
+					<liczba_stron>144</liczba_stron>	
+					<ocena_podręcznika>8.01</ocena_podręcznika>					
 				</podręcznik>
 			</podręczniki>
 
@@ -97,61 +102,71 @@
 				<podręcznik typ_id="typ01">
 					<tytuł>Warhammer 2 ed. RPG - Podręcznik Główny</tytuł>
 					<data_wydania>29.03.2005</data_wydania>
-					<liczba_stron>265</liczba_stron>					
+					<liczba_stron>265</liczba_stron>	
+					<ocena_podręcznika>9.15</ocena_podręcznika>					
 				</podręcznik>	
 
 				<podręcznik typ_id="typ02">
 					<tytuł>Bestiariusz Starego Świata</tytuł>
 					<data_wydania>17.05.2005</data_wydania>
-					<liczba_stron>120</liczba_stron>					
+					<liczba_stron>120</liczba_stron>	
+					<ocena_podręcznika>7.94</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki Przeklętych: Popioły Middenheim</tytuł>
 					<data_wydania>31.05.2005</data_wydania>
-					<liczba_stron>94</liczba_stron>					
+					<liczba_stron>94</liczba_stron>
+					<ocena_podręcznika>8.23</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Dziedzictwo Sigmara</tytuł>
 					<data_wydania>09.08.2005</data_wydania>
-					<liczba_stron>127</liczba_stron>					
+					<liczba_stron>127</liczba_stron>
+					<ocena_podręcznika>7.91</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki Przeklętych: Wieże Altdorfu</tytuł>
 					<data_wydania>13.09.2005</data_wydania>
-					<liczba_stron>94</liczba_stron>					
+					<liczba_stron>94</liczba_stron>			
+					<ocena_podręcznika>6.82</ocena_podręcznika>					
 				</podręcznik>
 				
 				<podręcznik typ_id="typ03">
 					<tytuł>Ścieżki przeklętych: Kuźnie Nuln</tytuł>
 					<data_wydania>31.01.2006</data_wydania>
-					<liczba_stron>96</liczba_stron>					
+					<liczba_stron>96</liczba_stron>	
+					<ocena_podręcznika>9.28</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Dzieci Rogatego Szczura</tytuł>
 					<data_wydania>23.05.2005</data_wydania>
-					<liczba_stron>128</liczba_stron>					
+					<liczba_stron>128</liczba_stron>	
+					<ocena_podręcznika>6.51</ocena_podręcznika>					
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Księga Spaczenia</tytuł>
 					<data_wydania>10.10.2006</data_wydania>
-					<liczba_stron>256</liczba_stron>					
+					<liczba_stron>256</liczba_stron>	
+					<ocena_podręcznika>9.54</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Mroczni Władcy Nocy</tytuł>
 					<data_wydania>01.06.2007</data_wydania>
-					<liczba_stron>144</liczba_stron>					
+					<liczba_stron>144</liczba_stron>	
+					<ocena_podręcznika>7.21</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Księga Zbawienia</tytuł>
 					<data_wydania>15.07.2008</data_wydania>
-					<liczba_stron>264</liczba_stron>					
+					<liczba_stron>264</liczba_stron>	
+					<ocena_podręcznika>8.33</ocena_podręcznika>
 				</podręcznik>			
 			</podręczniki>
 
@@ -170,37 +185,43 @@
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
 					<data_wydania>30.09.2009</data_wydania>
-					<liczba_stron>480</liczba_stron>					
+					<liczba_stron>480</liczba_stron>	
+					<ocena_podręcznika>9.12</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
 					<data_wydania>25.07.2010</data_wydania>
-					<liczba_stron>128</liczba_stron>					
+					<liczba_stron>128</liczba_stron>	
+					<ocena_podręcznika>7.28</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Almanach Nadzwyczajny</tytuł>
 					<data_wydania>25.03.2011</data_wydania>
-					<liczba_stron>96</liczba_stron>					
+					<liczba_stron>96</liczba_stron>		
+					<ocena_podręcznika>6.29</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Slawia: Rzeczpospolita Przeklęta</tytuł>
 					<data_wydania>22.03.2013</data_wydania>
-					<liczba_stron>129</liczba_stron>					
+					<liczba_stron>129</liczba_stron>	
+					<ocena_podręcznika>8.47</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł>
 					<data_wydania>31.08.2013</data_wydania>
-					<liczba_stron>473</liczba_stron>					
+					<liczba_stron>473</liczba_stron>
+					<ocena_podręcznika>9.67</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ04">
 					<tytuł>Dzień, w którym zatonęła Urda</tytuł>
 					<data_wydania>19.04.2016</data_wydania>
-					<liczba_stron>30</liczba_stron>					
+					<liczba_stron>30</liczba_stron>		
+					<ocena_podręcznika>7.76</ocena_podręcznika>
 				</podręcznik>
 			</podręczniki>	
 
@@ -219,13 +240,15 @@
 				<podręcznik typ_id="typ01">
 					<tytuł>Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic</tytuł>
 					<data_wydania>16.05.2016</data_wydania>
-					<liczba_stron>488</liczba_stron>					
+					<liczba_stron>488</liczba_stron>
+					<ocena_podręcznika>8.99</ocena_podręcznika>
 				</podręcznik>
 
 				<podręcznik typ_id="typ04">
 					<tytuł>Samotnie przeciwko ciemności - Zniweczenie triumfu lodu</tytuł>
 					<data_wydania>12.09.2018</data_wydania>
-					<liczba_stron>108</liczba_stron>					
+					<liczba_stron>108</liczba_stron>
+					<ocena_podręcznika>8.07</ocena_podręcznika>
 				</podręcznik>
 			</podręczniki>	
 
