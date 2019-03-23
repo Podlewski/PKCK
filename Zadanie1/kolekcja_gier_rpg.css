@@ -163,6 +163,7 @@ podręczniki
 {
 	font-size: 40px;
 	padding: 10px;
+	display: grid;
 }
 
 podręczniki > podręcznik
@@ -209,7 +210,7 @@ podręcznik > data_wydania
 {
 	font-size: 20px;
 	margin-right: 40px;
-	display: block; 
+	display: block;
 	float: right;
 	margin-top: 10px;
 }
@@ -224,7 +225,6 @@ podręcznik > liczba_stron
 {
 	font-size: 20px;
 	margin-right: 40px;
-	display: block; 
 	float: right;
 	margin-top: 10px;
 }
@@ -239,7 +239,6 @@ podręcznik > ocena_podręcznika
 {
 	font-size: 20px;
 	margin-right: 40px;
-	display: block;
 	float: right;
 	margin-top: 10px;
 }
