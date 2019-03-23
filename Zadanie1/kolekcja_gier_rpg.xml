@@ -47,7 +47,6 @@
 				<kość liczba_kości="wiele">K10</kość>
 				<kość liczba_kości="jedna">K100</kość>
 			</kości>
-			<format>A4</format>
 			
 			<podręczniki>
 				<podręcznik typ_id="typ01">
@@ -94,6 +93,7 @@
 			</podręczniki>
 
 			<ocena>73</ocena>
+			<format>A4</format>
 
 		</system>
 
@@ -104,8 +104,7 @@
 			<kości>
 				<kość liczba_kości="wiele">K10</kość>
 				<kość liczba_kości="jedna">K100</kość>
-			</kości>
-			<format>A4</format>
+			</kości>			
 		
 			<podręczniki>
 				<podręcznik typ_id="typ01">
@@ -190,6 +189,7 @@
 			</podręczniki>
 
 			<ocena>82</ocena>
+			<format>A4</format>
 
 		</system>
 		
@@ -199,7 +199,6 @@
 			<kości>
 				<kość liczba_kości="wiele">K10</kość>
 			</kości>
-			<format>B5</format>
 			
 			<podręczniki>
 				<podręcznik typ_id="typ01">
@@ -252,6 +251,7 @@
 			</podręczniki>	
 
 			<ocena>82</ocena>
+			<format>B5</format>
 
 		</system>			
 
@@ -260,8 +260,7 @@
 			<nazwa>Zew Cthulhu RPG - 7 edycja</nazwa>
 			<kości>
 				<kość liczba_kości="wiele">K100</kość>
-			</kości>
-			<format>A4</format>
+			</kości>			
 			
 			<podręczniki>
 				<podręcznik typ_id="typ01">
@@ -282,6 +281,7 @@
 			</podręczniki>	
 
 			<ocena>82</ocena>
+			<format>A4</format>
 
 		</system>		
 		

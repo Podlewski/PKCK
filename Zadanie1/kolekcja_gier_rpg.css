@@ -127,6 +127,19 @@ system > ocena::before
 	content: "Ocena na serwisie Polter: "
 }
 
+system > format
+{
+	font-size: 25px;
+	margin-top: 2px;
+	margin-left: 30px;
+	padding: 8px;
+}
+
+system > format::before
+{
+	content: "Format: "
+}
+
 system > ocena
 {
 	font-size: 25px;
@@ -214,6 +227,41 @@ podręcznik > liczba_stron
 	display: block; 
 	float: right;
 	margin-top: 10px;
+}
+
+podręcznik > ocena_podręcznika::before
+{
+	font-size: 20px;
+	content: "Ocena na serwisie Polter: ";
+}
+
+podręcznik > ocena_podręcznika
+{
+	font-size: 20px;
+	margin-right: 40px;
+	display: block;
+	float: right;
+	margin-top: 10px;
+}
+
+podręcznik > cena_podręcznika::before
+{
+	font-size: 20px;
+	content: "Cena podręcznika: ";
+}
+
+podręcznik > cena_podręcznika
+{
+	font-size: 20px;
+	margin-right: 40px;
+	display: block;	
+	margin-top: 10px;
+}
+
+podręcznik > cena_podręcznika::after
+{
+	font-size: 20px;
+	content: " PLN";
 }
 
 podręcznik::after
