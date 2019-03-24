@@ -1,1 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT kolekcja_gier_rpg (nagłówek|wydawcy|gatunki|typy|nasza_kolekcja)*>
+		<!ELEMENT nagłówek (przedmiot|projekt|autor)*>
+		<!ELEMENT przedmiot (#PCDATA)>
+		<!ELEMENT projekt (#PCDATA)>
+		<!ELEMENT autor (#PCDATA)>
+		<!ATTLIST autor
+				numer_indeksu CDATA #REQUIRED>
+		<!ELEMENT wydawcy (wydawca)*>
+		<!ELEMENT wydawca (#PCDATA)>
+		<!ATTLIST wydawca
+				wydawca_id CDATA #REQUIRED>
+		<!ELEMENT gatunki (gatunek)*>
+		<!ELEMENT gatunek (#PCDATA)>
+		<!ATTLIST gatunek
+				gatunek_id CDATA #REQUIRED>
+		<!ELEMENT typy (typ)*>
+		<!ELEMENT typ (#PCDATA)>
+		<!ATTLIST typ
+				typ_id CDATA #REQUIRED>
+		<!ELEMENT nasza_kolekcja (system)*>
+		<!ELEMENT system (nazwa|kości|podręczniki|popularność|format)*>
+		<!ATTLIST system
+				gatunek_id CDATA #REQUIRED
+				wydawca_id CDATA #REQUIRED>
+		<!ELEMENT nazwa (#PCDATA)>
+		<!ELEMENT kości (kość)*>
+		<!ELEMENT kość (#PCDATA)>
+		<!ATTLIST kość
+				liczba_kości CDATA #REQUIRED>
+		<!ELEMENT podręczniki (podręcznik)*>
+		<!ELEMENT podręcznik (tytuł|tytuł_oryginalny|data_wydania|liczba_stron|ocena_podręcznika|cena_podręcznika)*>
+		<!ATTLIST podręcznik
+				typ_id CDATA #REQUIRED>
+		<!ELEMENT tytuł (#PCDATA)>
+		<!ELEMENT tytuł_oryginalny (#PCDATA)>
+		<!ELEMENT data_wydania (#PCDATA)>
+		<!ELEMENT liczba_stron (#PCDATA)>
+		<!ELEMENT ocena_podręcznika (#PCDATA)>
+		<!ELEMENT cena_podręcznika (#PCDATA)>
+		<!ELEMENT popularność (#PCDATA)>
+		<!ELEMENT format (#PCDATA)>
