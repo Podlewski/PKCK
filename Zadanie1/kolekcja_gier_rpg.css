@@ -67,12 +67,12 @@ system > nazwa
 	background: black;
 }
 
-kości::before
+system > kości::before
 {
 	content:  "Potrzebne kości: ";
 }
 
-kości
+system > kości
 {
 	text-align: center;
 	font-family: "Courier New", Courier, monospace;
@@ -102,18 +102,18 @@ system[gatunek_id="gat08"] > kości
 	background: DarkKhaki;
 }
 
-kość
+system > kości > kość
 {
 	font-size: 20px;
 	padding: 10px;
 }
 
-kość::after
+system > kości > kość::after
 {
 	content: " (" attr(liczba_kości) "),";
 }
 
-kość:last-child::after
+system > kości > kość:last-child::after
 {
 	content: " (" attr(liczba_kości) ")";
 }
@@ -122,7 +122,6 @@ system > popularność::before
 {
 	content: "Popularność systemu: "
 }
-
 
 system > popularność
 {
@@ -161,19 +160,12 @@ system::after
 	padding: 10px;
 }
 
-podręczniki
-{
-	font-size: 40px;
-	padding: 10px;
-	display: grid;
-}
-
 podręczniki > podręcznik
 { 
     display: list-item;
     list-style: decimal;
 	margin-left: 70px;
-	font-size: 30px;
+	font-size: 35px;
 	padding: 10px;
 }
 
@@ -202,17 +194,21 @@ system[gatunek_id="gat08"] > podręczniki > podręcznik *:hover
 	color: DarkKhaki;
 }
 
+podręcznik > tytuł
+{
+	display: block;
+}
+
 podręcznik > tytuł_oryginalny::before
 {
 	font-size: 20px;
 	content: "Tytuł orygianlny: ";
 }
 
-podręcznik > tytuł_oryginalny
+podręcznik > tytuł_oryginalny 
 {
-	font-size: 20px;
-	margin-right: 40px;
-	display: block; 
+	font-size: 25px;
+	display: block;
 	margin-top: 10px;
 }
 
@@ -222,27 +218,10 @@ podręcznik > data_wydania::before
 	content: "Data wydania: ";
 }
 
-podręcznik > data_wydania
-{
-	font-size: 20px;
-	margin-right: 40px;
-	display: block;
-	float: right;
-	margin-top: 10px;
-}
-
 podręcznik > liczba_stron::before
 {
 	font-size: 20px;
 	content: "Liczba stron: ";
-}
-
-podręcznik > liczba_stron
-{
-	font-size: 20px;
-	margin-right: 40px;
-	float: right;
-	margin-top: 10px;
 }
 
 podręcznik > ocena_podręcznika::before
@@ -251,25 +230,18 @@ podręcznik > ocena_podręcznika::before
 	content: "Ocena: ";
 }
 
-podręcznik > ocena_podręcznika
-{
-	font-size: 20px;
-	margin-right: 40px;
-	float: right;
-	margin-top: 10px;
-}
-
 podręcznik > cena_podręcznika::before
 {
 	font-size: 20px;
 	content: "Cena podręcznika: ";
 }
 
-podręcznik > cena_podręcznika
+podręcznik > data_wydania, liczba_stron, ocena_podręcznika, cena_podręcznika
 {
 	font-size: 20px;
 	margin-right: 40px;
-	display: block;	
+	display: block;
+	float: right;
 	margin-top: 10px;
 }
 
