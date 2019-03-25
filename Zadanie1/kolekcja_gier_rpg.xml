@@ -6,8 +6,8 @@
     <nagłówek>
         <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
 		<projekt>Kolekcja gier RPG</projekt>
-        <autor numer_indeksu="210200">Justyna Hubert</autor>
-        <autor numer_indeksu="210294">Karol Podlewski</autor>
+        <autor>Justyna Hubert 210200</autor>
+        <autor>Karol Podlewski 210294</autor>
     </nagłówek>
 	<!--Wydawca systemu -->
 	<wydawcy>
@@ -218,7 +218,6 @@
 			<podręczniki>
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary</tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary</tytuł_oryginalny>
 					<data_wydania>30.09.2009</data_wydania>
 					<liczba_stron>480</liczba_stron>	
 					<ocena_podręcznika>6.11</ocena_podręcznika>
@@ -227,7 +226,6 @@
 
 				<podręcznik typ_id="typ03">
 					<tytuł>Lyonesse: Miasto, Mgła, Maszyna</tytuł>
-					<tytuł_oryginalny>Lyonesse: Miasto, Mgła, Maszyna</tytuł_oryginalny>
 					<data_wydania>25.07.2010</data_wydania>
 					<liczba_stron>128</liczba_stron>	
 					<ocena_podręcznika>6.72</ocena_podręcznika>
@@ -236,7 +234,6 @@
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Almanach Nadzwyczajny</tytuł>
-					<tytuł_oryginalny>Almanach Nadzwyczajny</tytuł_oryginalny>
 					<data_wydania>25.03.2011</data_wydania>
 					<liczba_stron>96</liczba_stron>		
 					<ocena_podręcznika>6.62</ocena_podręcznika>
@@ -245,7 +242,6 @@
 
 				<podręcznik typ_id="typ05">
 					<tytuł>Slawia: Rzeczpospolita Przeklęta</tytuł>
-					<tytuł_oryginalny>Slawia: Rzeczpospolita Przeklęta</tytuł_oryginalny>
 					<data_wydania>22.03.2013</data_wydania>
 					<liczba_stron>129</liczba_stron>	
 					<ocena_podręcznika>4.84</ocena_podręcznika>
@@ -254,7 +250,6 @@
 
 				<podręcznik typ_id="typ01">
 					<tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł>
-					<tytuł_oryginalny>Wolsung: Magia Wieku Pary - edycja 1.5</tytuł_oryginalny>
 					<data_wydania>31.08.2013</data_wydania>
 					<liczba_stron>473</liczba_stron>
 					<ocena_podręcznika>8.97</ocena_podręcznika>
@@ -263,7 +258,6 @@
 
 				<podręcznik typ_id="typ04">
 					<tytuł>Dzień, w którym zatonęła Urda</tytuł>
-					<tytuł_oryginalny>Dzień, w którym zatonęła Urda</tytuł_oryginalny>
 					<data_wydania>19.04.2016</data_wydania>
 					<liczba_stron>30</liczba_stron>		
 					<ocena_podręcznika>7.76</ocena_podręcznika>
