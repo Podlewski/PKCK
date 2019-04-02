@@ -192,16 +192,48 @@
 
  <!-- Głowny element  -->
 
-  <element name="kolekcja_gier_rpg">
-    <complexType>
-      <sequence>
-        <element name="nagłówek" type="kgr:typNagłówek"/>
-        <element name="wydawcy" type="kgr:typWydawcy"/>
-        <element name="gatunki" type="kgr:typGatunki"/>
-        <element name="typy" type="kgr:typTypy"/>
-        <element name="nasza_kolekcja" type="kgr:typNaszaKolekcja"/>
-      </sequence>
-    </complexType>
+  <complexType name="typKolekcjaGierRpg">
+    <sequence>
+      <element name="nagłówek" type="kgr:typNagłówek"/>
+      <element name="wydawcy" type="kgr:typWydawcy"/>
+      <element name="gatunki" type="kgr:typGatunki"/>
+      <element name="typy" type="kgr:typTypy"/>
+      <element name="nasza_kolekcja" type="kgr:typNaszaKolekcja"/>
+    </sequence>
+  </complexType>
+
+  <element name="kolekcja_gier_rpg" type="kgr:typKolekcjaGierRpg">
+
+    <key name="kluczWydawcy">
+      <selector xpath="./kgr:wydawcy/kgr:wydawca"/>
+      <field xpath="@wydawca_id"/>
+    </key>
+
+    <key name="kluczGatunku">
+      <selector xpath="./kgr:gatunki/kgr:gatunek"/>
+      <field xpath="@gatunek_id"/>
+    </key>
+    
+    <key name="kluczTypu">
+      <selector xpath="./kgr:typy/kgr:typ"/>
+      <field xpath="@typ_id"/>
+    </key>
+
+    <keyref name="referencjaWydawcy" refer="kgr:kluczWydawcy">
+      <selector xpath="./kgr:nasza_kolekcja/kgr:system"/>
+      <field xpath="@wydawca_id"/>
+    </keyref>
+
+    <keyref name="referencjaGatunku" refer="kgr:kluczGatunku">
+      <selector xpath="./kgr:nasza_kolekcja/kgr:system"/>
+      <field xpath="@gatunek_id"/>
+    </keyref>
+    
+    <keyref name="referencjaTypu" refer="kgr:kluczTypu">
+      <selector xpath="./kgr:nasza_kolekcja/kgr:system/kgr:podręczniki/kgr:podręcznik"/>
+      <field xpath="@typ_id"/>
+    </keyref>
+    
   </element>
 
 </schema>
