@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
 <kolekcja_gier_rpg
 	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
 	xs:schemaLocation="http://tempuri.org/kolekcja_gier_rpg kolekcja_gier_rpg.xsd"
 	xmlns="http://tempuri.org/kolekcja_gier_rpg">
-<!--Pierwsza sekcja -->
+
+<!-- Pierwsza sekcja -->
+
+	<!-- Nagłówek -->
     <nagłówek>
         <przedmiot>Programowanie komunikacji człowiek-komputer</przedmiot>
 		<projekt>Kolekcja gier RPG</projekt>
         <autor>Justyna Hubert 210200</autor>
         <autor>Karol Podlewski 210294</autor>
     </nagłówek>
-	<!--Wydawca systemu -->
+
+	<!-- Wydawca systemu -->
 	<wydawcy>
 		<wydawca wydawca_id="wyd01">Black Monk</wydawca>
 		<wydawca wydawca_id="wyd02">Copernicus Corporation</wydawca>
@@ -19,7 +24,8 @@
 		<wydawca wydawca_id="wyd05">Kuźnia Gier</wydawca>
 		<wydawca wydawca_id="wyd06">Rebel</wydawca>
 	</wydawcy>
-	<!--Baza gatunków -->
+
+	<!-- Baza gatunków -->
     <gatunki>
         <gatunek gatunek_id="gat01">Akcja</gatunek>
         <gatunek gatunek_id="gat02">Dark Fantasy</gatunek>
@@ -30,7 +36,8 @@
         <gatunek gatunek_id="gat07">Science Fiction</gatunek>
         <gatunek gatunek_id="gat08">Steampunk</gatunek>
     </gatunki>
-	<!--Typy podręcznika -->
+	
+	<!-- Typy podręcznika -->
 	<typy>
 		<typ typ_id="typ01">Podstawka</typ>
 		<typ typ_id="typ02">Bestiariusz</typ>
@@ -38,7 +45,9 @@
 		<typ typ_id="typ04">Przygoda</typ>
 		<typ typ_id="typ05">Rozszerzenie</typ>
 	</typy>
-<!--Druga sekcja -->
+
+<!-- Druga sekcja -->
+	
 	<nasza_kolekcja>
 	
 		<system gatunek_id="gat07" wydawca_id="wyd02">
