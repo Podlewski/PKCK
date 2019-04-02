@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        elementFormDefault="qualified"
+        targetNamespace="http://tempuri.org/kolekcja_gier_rpg"
+        xmlns:kgr="http://tempuri.org/kolekcja_gier_rpg">
+
+  <!-- Nagłówki itp -->
+
+  <complexType name="typNagłówek">
+    <sequence>
+      <element name="przedmiot"  type="string"/>
+      <element name="projekt"    type="string"/>
+      <element name="autor"      type="string" maxOccurs="2"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="typWydawca">
+      <simpleContent>
+          <extension base="string">
+              <attribute name="wydawca_id">
+                  <simpleType>
+                      <restriction base="token">
+                        <pattern value="wyd\d{2}"/>
+                      </restriction>
+                  </simpleType>
+              </attribute>
+          </extension>
+      </simpleContent>
+  </complexType>
+
+  <complexType name="typWydawcy">
+    <sequence>
+      <element name="wydawca" type="kgr:typWydawca" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="typGatunek">
+      <simpleContent>
+          <extension base="string">
+              <attribute name="gatunek_id">
+                  <simpleType>
+                      <restriction base="token">
+                        <pattern value="gat\d{2}"/>
+                      </restriction>
+                  </simpleType>
+              </attribute>
+          </extension>
+      </simpleContent>
+  </complexType>
+
+  <complexType name="typGatunki">
+    <sequence>
+      <element name="gatunek" type="kgr:typGatunek" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="typTyp">
+    <simpleContent>
+        <extension base="string">
+            <attribute name="typ_id">
+                <simpleType>
+                    <restriction base="token">
+                      <pattern value="typ\d{2}"/>
+                    </restriction>
+                </simpleType>
+            </attribute>
+        </extension>
+    </simpleContent>
+  </complexType>
+
+  <complexType name="typTypy">
+    <sequence>
+      <element name="typ" type="kgr:typTyp" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+
+  <!-- Podręcznik -->
+
+  <simpleType name="typDataWydania">
+    <restriction base="string">
+        <pattern value="((3[0-1])|([1-2]\d{1})|([1-9]))\.((1[0-2])|([1-9]))\.((19\d{2})|(20[0-1]\d{1}))"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="typLiczbaStron">
+    <restriction base="string">
+      <pattern value="\d{2,3}"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="typOcenaPodręcznika">
+    <restriction base="string">
+      <pattern value="(\d{1}\.\d{1})|(10.0)"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="typCenaPodręcznika">
+    <restriction base="string">
+        <pattern value="[1-9]\d{0,2}\.\d{2}"/>
+    </restriction>
+  </simpleType>
+
+  <complexType name="typPodręcznik">
+    <sequence>
+      <element name="tytuł"              type="string"/>
+      <element name="tytuł_oryginalny"   type="string" minOccurs="0"/>
+      <element name="data_wydania"       type="kgr:typDataWydania"/>
+      <element name="liczba_stron"       type="kgr:typLiczbaStron"/>
+      <element name="ocena_podręcznika"  type="kgr:typOcenaPodręcznika"/>
+      <element name="cena_podręcznika"   type="kgr:typCenaPodręcznika"/>
+    </sequence>
+    <attribute name="typ_id" type="string" use="required"/>
+  </complexType>
+
+  <!-- System -->
+
+  <simpleType name="atrybutLiczbaKości">
+    <restriction base="token">
+      <enumeration value="jedna"/>
+      <enumeration value="wiele"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="tokenKość">
+    <restriction base="token">
+      <enumeration value="K4"/>
+      <enumeration value="K6"/>
+      <enumeration value="K8"/>
+      <enumeration value="K10"/>
+      <enumeration value="K12"/>
+      <enumeration value="K20"/>
+      <enumeration value="K30"/>
+      <enumeration value="K100"/>
+    </restriction>
+  </simpleType>
+
+  <complexType name="typKość">
+    <simpleContent>    
+      <extension base="kgr:tokenKość">
+        <attribute name="liczba_kości" type="kgr:atrybutLiczbaKości" use="required"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+
+  <complexType name="typKości">
+    <sequence>
+      <element name="kość" type="kgr:typKość" maxOccurs="8"/>
+    </sequence>
+  </complexType>
+
+  <complexType name="typPodręczniki">
+    <sequence>
+      <element name="podręcznik" type="kgr:typPodręcznik"/>
+    </sequence>
+  </complexType>
+
+  <simpleType name="typPopularność">
+    <restriction base="string">
+      <pattern value="(\d{1,2})|(100)"/>
+    </restriction>
+  </simpleType>
+
+  <simpleType name="typFormat">
+    <restriction base="token">
+      <enumeration value="A5"/>
+      <enumeration value="A4"/>
+      <enumeration value="B5"/>
+    </restriction>
+  </simpleType>
+
+  <attributeGroup name="atrybutySystem">
+    <attribute name="gatunek_id" type="string"/>
+    <attribute name="wydawca_id" type="string"/>
+  </attributeGroup>
+
+  <complexType name="typSystem">
+    <sequence>
+        <element name="nazwa" type="string"/>
+        <element name="kości" type="kgr:typKości"/>
+        <element name="podręczniki" type="kgr:typPodręczniki"/>
+        <element name="popularność" type="kgr:typPopularność"/>
+        <element name="format" type="kgr:typFormat"/>      
+    </sequence>
+    <attributeGroup ref="kgr:atrybutySystem"/>
+  </complexType>
+
+  <complexType name="typNaszaKolekcja">
+    <sequence>
+        <element name="system" type="kgr:typSystem" maxOccurs="unbounded"/>
+    </sequence>
+  </complexType>
+
+ <!-- Głowny element  -->
+
+  <element name="kolekcja_gier_rpg">
+    <complexType>
+      <sequence>
+        <element name="nagłówek" type="kgr:typNagłówek"/>
+        <element name="wydawcy" type="kgr:typWydawcy"/>
+        <element name="gatunki" type="kgr:typGatunki"/>
+        <element name="typy" type="kgr:typTypy"/>
+        <element name="nasza_kolekcja" type="kgr:typNaszaKolekcja"/>
+      </sequence>
+    </complexType>
+  </element>
+
+</schema>
