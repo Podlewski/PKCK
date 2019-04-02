@@ -150,7 +150,7 @@
 
   <complexType name="typPodręczniki">
     <sequence>
-      <element name="podręcznik" type="kgr:typPodręcznik"/>
+      <element name="podręcznik" type="kgr:typPodręcznik" maxOccurs="unbounded"/>
     </sequence>
   </complexType>
 
