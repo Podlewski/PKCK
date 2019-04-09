@@ -77,25 +77,23 @@
   <!-- Podręcznik -->
 
   <simpleType name="typDataWydania">
-    <restriction base="string">
-        <pattern value="((3[0-1])|([1-2]\d{1})|([1-9]))\.((1[0-2])|([1-9]))\.((19\d{2})|(20[0-1]\d{1}))"/>
-    </restriction>
+    <restriction base="date"/>
   </simpleType>
 
   <simpleType name="typLiczbaStron">
-    <restriction base="string">
+    <restriction base="integer">
       <pattern value="\d{2,3}"/>
     </restriction>
   </simpleType>
 
   <simpleType name="typOcenaPodręcznika">
-    <restriction base="string">
+    <restriction base="decimal">
       <pattern value="(\d{1}\.\d{1})|(10.0)"/>
     </restriction>
   </simpleType>
 
   <simpleType name="typCenaPodręcznika">
-    <restriction base="string">
+    <restriction base="decimal">
         <pattern value="[1-9]\d{0,2}\.\d{2}"/>
     </restriction>
   </simpleType>
@@ -155,7 +153,7 @@
   </complexType>
 
   <simpleType name="typPopularność">
-    <restriction base="string">
+    <restriction base="integer">
       <pattern value="(\d{1,2})|(100)"/>
     </restriction>
   </simpleType>
