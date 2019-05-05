@@ -120,11 +120,52 @@
 						<xsl:when test="string(@gatunek_id) = 'gat04'">
 							<xsl:attribute name="Gatunek">Fantasy</xsl:attribute>
 						</xsl:when>
+						<xsl:when test="string(@gatunek_id) = 'gat05'">
+							<xsl:attribute name="Gatunek">Horror</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@gatunek_id) = 'gat06'">
+							<xsl:attribute name="Gatunek">Mitologia</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@gatunek_id) = 'gat07'">
+							<xsl:attribute name="Gatunek">Science_Fiction</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@gatunek_id) = 'gat08'">
+							<xsl:attribute name="Gatunek">Steampunk</xsl:attribute>
+						</xsl:when>
+						
+						<xsl:when test="string(@wydawca_id) = 'wyd01'">
+							<xsl:attribute name="Wydawca">Black_Monk</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@wydawca_id) = 'wyd02'">
+							<xsl:attribute name="Wydawca">Copernicus Corporation</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@wydawca_id) = 'wyd03'">
+							<xsl:attribute name="Wydawca">Fajne_RPG</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@wydawca_id) = 'wyd04'">
+							<xsl:attribute name="Wydawca">ISA</xsl:attribute>
+						</xsl:when>
 						<xsl:when test="string(@wydawca_id) = 'wyd05'">
 							<xsl:attribute name="Wydawca">Kuźnia_Gier</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@wydawca_id) = 'wyd06'">
 							<xsl:attribute name="Wydawca">Rebel</xsl:attribute>
+						</xsl:when>
+						
+						<xsl:when test="string(@typ_id) = 'typ01'">
+							<xsl:attribute name="Typ">Podstawka</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@typ_id) = 'typ02'">
+							<xsl:attribute name="Typ">Bestiariusz</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@typ_id) = 'typ03'">
+							<xsl:attribute name="Typ">Kampania</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@typ_id) = 'typ04'">
+							<xsl:attribute name="Typ">Przygoda</xsl:attribute>
+						</xsl:when>
+						<xsl:when test="string(@typ_id) = 'typ05'">
+							<xsl:attribute name="Typ">Rozszerzenie</xsl:attribute>
 						</xsl:when>
 					</xsl:choose>
 					
@@ -132,9 +173,30 @@
 						<xsl:value-of select="concat(popularność,'%')" />
 					</xsl:attribute>
 					
+					<xsl:attribute name="Format">
+						<xsl:value-of select="format" />
+					</xsl:attribute>
+					
 					<xsl:element name="Podręczniki">
 						<xsl:for-each select="podręczniki/podręcznik">
-							<xsl:element name="Tytuł"><xsl:value-of select="tytuł"/></xsl:element>
+							<xsl:element name="Tytuł">
+								<xsl:value-of select="tytuł"/>
+							</xsl:element>
+							<xsl:element name="Tytuł_oryginalny">
+								<xsl:value-of select="tytuł_oryginalny"/>
+							</xsl:element>
+							<xsl:element name="Data_wydania">
+								<xsl:value-of select="data_wydania"/>
+							</xsl:element>
+							<xsl:element name="Liczba_stron">
+								<xsl:value-of select="liczba_stron"/>
+							</xsl:element>
+							<xsl:element name="Ocena_podręcznika">
+								<xsl:value-of select="ocena_podręcznika"/>
+							</xsl:element>
+							<xsl:element name="Cena_podręcznika">
+								<xsl:value-of select="cena_podręcznika"/>
+							</xsl:element>
 						</xsl:for-each>
 					</xsl:element>
 					
