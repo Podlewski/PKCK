@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
-    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
-        <xsl:template match="/">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
+    <xsl:template match="/">
 			<xsl:element name="Zestawienie_gier_rpg">
                 <xsl:apply-templates select="kolekcja_gier_rpg/nasza_kolekcja"/>
 				
 				<xsl:element name="Podsumowanie_kolekcji">
-					<xsl:element name="Liczba_systemów">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system)"/>
+					<xsl:element name="Liczba_system_gryów">
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry)"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_akcji">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@gatunek_id='gat01'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat01'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_dark_fantasy">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@gatunek_id='gat02'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat02'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_detektywistycznych">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@gatunek_id='gat03'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat03'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_fantasy">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@gatunek_id='gat04'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat04'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_z_Kuźni_Gier">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@wydawca_id='wyd05'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@wydawca_id='wyd05'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_z_Rebel">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system[@wydawca_id='wyd01'])"/>
+						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@wydawca_id='wyd01'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Najwyżej_oceniony_podręcznik">
-						<xsl:for-each select="kolekcja_gier_rpg/nasza_kolekcja/system/podręczniki/podręcznik">
+						<xsl:for-each select="kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik">
                                 <xsl:choose>
                                     <xsl:when test="ocena_podręcznika = $maxVar">
                                         <xsl:value-of select="tytuł"/>
@@ -45,14 +45,14 @@
 					</xsl:element>
 					
 					<xsl:element name="Najdroższa_cena_podręcznika">
-						<xsl:value-of select="concat(max(kolekcja_gier_rpg/nasza_kolekcja/system/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
+						<xsl:value-of select="concat(max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Najtańsza_cena_podręcznika">
-						<xsl:value-of select="concat(min(kolekcja_gier_rpg/nasza_kolekcja/system/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
+						<xsl:value-of select="concat(min(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
 					</xsl:element>
 					
-					<xsl:variable name="Vat" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system/podręczniki/podręcznik/cena_podręcznika)"/>
+					<xsl:variable name="Vat" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika)"/>
 					
 					<xsl:element name="VAT_od_zamówienia">
                         <xsl:value-of select="concat(round(($Vat * 23)div 100),' zł')"/>
@@ -67,7 +67,7 @@
         </xsl:template>
 		
 		<xsl:template match="kolekcja_gier_rpg/nasza_kolekcja">
-        <xsl:for-each select="system">
+        <xsl:for-each select="system_gry">
             <xsl:sort select="popularność" order="descending"/>
             <xsl:element name="Podręcznik">
                 <xsl:attribute name="Tytuł">
