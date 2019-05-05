@@ -66,27 +66,27 @@
 					<xsl:variable name="Cena_za_rozszerzenie" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik[@typ_id='typ05']/cena_podręcznika)"/>
 					
 					<xsl:element name="Średnia_cena_za_podręcznik">
-						<xsl:value-of select="round($Cena_za_podręczniki div $Liczba_wszystkich_podręczników * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_podręczniki div $Liczba_wszystkich_podręczników * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_cena_za_podstawkę">
-						<xsl:value-of select="round($Cena_za_podstawkę div $Liczba_wszystkich_podstawek * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_podstawkę div $Liczba_wszystkich_podstawek * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_cena_za_bestiariusz">
-						<xsl:value-of select="round($Cena_za_bestiariusz div $Liczba_wszystkich_bestiariuszy * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_bestiariusz div $Liczba_wszystkich_bestiariuszy * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_cena_za_kampanię">
-						<xsl:value-of select="round($Cena_za_kampanię div $Liczba_wszystkich_kampanii * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_kampanię div $Liczba_wszystkich_kampanii * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_cena_za_przygodę">
-						<xsl:value-of select="round($Cena_za_przygodę div $Liczba_wszystkich_przygód * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_przygodę div $Liczba_wszystkich_przygód * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_cena_za_rozszerzenie">
-						<xsl:value-of select="round($Cena_za_rozszerzenie div $Liczba_wszystkich_rozszerzeń * 100) div 100"/>
+						<xsl:value-of select="concat(round($Cena_za_rozszerzenie div $Liczba_wszystkich_rozszerzeń * 100) div 100,'zł')"/>
 					</xsl:element>
 					
 					<!-- <xsl:element name="Data_Raportu"> -->
