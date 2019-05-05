@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-
-<kolekcja_gier_rpg
-	xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-	xs:schemaLocation="http://tempuri.org/kolekcja_gier_rpg kolekcja_gier_rpg.xsd"
-	xmlns="http://tempuri.org/kolekcja_gier_rpg">
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="kolekcja_gier_rpg.xsl"?>
+<kolekcja_gier_rpg>
 
 <!-- Pierwsza sekcja -->
 
