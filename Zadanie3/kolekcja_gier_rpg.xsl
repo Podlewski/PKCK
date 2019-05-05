@@ -34,33 +34,15 @@
 						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@wydawca_id='wyd01'])"/>
 					</xsl:element>
 					
-					<xsl:element name="Najwyżej_oceniony_podręcznik">
-						<xsl:for-each select="kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik">
-                                <xsl:choose>
-                                    <xsl:when test="ocena_podręcznika = $maxVar">
-                                        <xsl:value-of select="tytuł"/>
-                                    </xsl:when>
-                                </xsl:choose>
-                        </xsl:for-each>
-					</xsl:element>
-					
-					<xsl:element name="Najdroższa_cena_podręcznika">
-						<xsl:value-of select="concat(max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
-					</xsl:element>
-					
-					<xsl:element name="Najtańsza_cena_podręcznika">
-						<xsl:value-of select="concat(min(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), ' zł')"/>
-					</xsl:element>
-					
 					<xsl:variable name="Vat" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika)"/>
 					
 					<xsl:element name="VAT_od_zamówienia">
                         <xsl:value-of select="concat(round(($Vat * 23)div 100),' zł')"/>
                     </xsl:element>
 					
-					<xsl:element name="Data_Raportu">
-                        <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
-                    </xsl:element>
+					<!-- <xsl:element name="Data_Raportu"> -->
+                        <!-- <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" /> -->
+                    <!-- </xsl:element> -->
 					
 				</xsl:element>
 			</xsl:element>
