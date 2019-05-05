@@ -1,4 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
+  <!-- Uwagi do schemy:
+       ~ za mało typów prostych (tylko 2)
+       ~ nieograniczone stringi (wszystkie) -->
+
 <schema xmlns="http://www.w3.org/2001/XMLSchema"
         elementFormDefault="qualified"
         targetNamespace="http://tempuri.org/kolekcja_gier_rpg"
