@@ -7,55 +7,47 @@
         <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
 			<head>
                 <title>Kolekcja gier rpg</title>
-				<!-- <style> -->
-                    <!-- th, td { -->
-                        <!-- border:             1px solid #777; -->
-                        <!-- background-color:   #3C2F2F; -->
-                        <!-- box-shadow:         0 0 0.5em 0 #6C5F5F inset; -->
-                    <!-- } -->
-                    <!-- table { -->
-                        <!-- padding:            0 7em 0 7em; -->
-                        <!-- text-align:         center; -->
-                        <!-- width:              100%; -->
-                    <!-- } -->
-                    <!-- table + table { -->
-                        <!-- margin-top:         2em; -->
-                    <!-- } -->
-                    <!-- body { -->
-                        <!-- margin:             2em; -->
-                        <!-- background-color:   #150A03; -->
-                        <!-- color:              #D9DED0; -->
-                    <!-- } -->
-                    <!-- caption { -->
-                        <!-- letter-spacing:     0.5vw; -->
-                        <!-- font-weight:        bold; -->
-                        <!-- font-size:          large; -->
-                    <!-- } -->
-                <!-- </style> -->
             </head>
 		
 		<body style="background-color:#d1e2ff">
 			<table border="2" bgcolor="#6fa3f7" align="center" style="text-align:center">
-			<caption>Systemy gry</caption>
-			<tr>
-				<th>Nazwa</th>
-				<th>Gatunek</th>
-				<th>Popularność</th>
-				<th>Format</th>
-				<th>Podręczniki</th>
-			</tr>
-			<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_System_gryy_według_popularności/System_gry">
-                        <tr>
-                            <td><xsl:value-of select="@nazwa"/></td>
-                            <td><xsl:value-of select="@Gatunek"/></td>
-                            <td><xsl:value-of select="@Popularność"/></td>
-                            <td><xsl:value-of select="@Format"/></td>
-                            <td><xsl:value-of select="Podręczniki"/></td>
-                        </tr>
-                    </xsl:for-each>
+				<caption><b>Systemy gry</b></caption>
+				<tr>
+					<th>Nazwa</th>
+					<th>Gatunek</th>
+					<th>Popularność</th>
+					<th>Format</th>
+					<th>Podręczniki</th>
+				</tr>				
+				
+				<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_System_gryy_według_popularności/System_gry">
+					<tr>
+						<td><xsl:value-of select="@nazwa"/></td>
+						<td><xsl:value-of select="@Gatunek"/></td>
+						<td><xsl:value-of select="@Popularność"/></td>
+						<td><xsl:value-of select="@Format"/></td>
+						<td><xsl:value-of select="Podręczniki"/>
+							<table>
+							
+								<tr>
+									<th>Tytuł</th>
+									<th>Tytuł oryginalny</th>
+								</tr>
+								<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_System_gryy_według_popularności/System_gry">
+								<tr>
+									<td><xsl:value-of select="@Tytuł"/></td>
+									<td><xsl:value-of select="@Tytuł_oryginalny"/></td>
+								</tr>
+								</xsl:for-each>
+							</table>
+						</td>
+					</tr>
+				</xsl:for-each>
+				
+				
 			</table>
 			
-			<table border="4" style="text-align:center" width="100%">
+			<table border="6" style="text-align:center" width="100%">
                     <caption><b>Podsumowanie kolekcji</b></caption>
                     <tr>
                         <th>Liczba systemów gry</th>
@@ -96,10 +88,7 @@
                         <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Średnia_cena_za_rozszerzenie"/></td>
 					</tr>
 					
-                </table>
-			
-			
-			
+                </table>			
 			
 		</body>
 		
