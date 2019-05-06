@@ -1,6 +1,6 @@
-<Zestawienie_Gier_RPG>
-   <Posortowane_Systemy_Według_Popularności>
-      <System_Gry Nazwa="Warhammer Fantasy Roleplay - 2 Edycja"
+<Zestawienie_gier_rpg>
+   <Posortowane_systemy_według_popularności>
+      <System_gry Nazwa="Warhammer Fantasy Roleplay - 2 Edycja"
                   Gatunek="Fantasy"
                   Wydawca="Copernicus Corporation"
                   Popularność="29%"
@@ -87,8 +87,8 @@
                <Cena_Podręcznika>113.15</Cena_Podręcznika>
             </Podręcznik>
          </Podręczniki>
-      </System_Gry>
-      <System_Gry Nazwa="Zew Cthulhu RPG - 7 edycja"
+      </System_gry>
+      <System_gry Nazwa="Zew Cthulhu RPG - 7 edycja"
                   Gatunek="Dark Fantasy"
                   Wydawca="Black Monk"
                   Popularność="21%"
@@ -111,8 +111,8 @@
                <Cena_Podręcznika>168.25</Cena_Podręcznika>
             </Podręcznik>
          </Podręczniki>
-      </System_Gry>
-      <System_Gry Nazwa="Dark Heresy - 2 Edycja"
+      </System_gry>
+      <System_gry Nazwa="Dark Heresy - 2 Edycja"
                   Gatunek="Science Fiction"
                   Wydawca="Copernicus Corporation"
                   Popularność="14%"
@@ -159,8 +159,8 @@
                <Cena_Podręcznika>50.00</Cena_Podręcznika>
             </Podręcznik>
          </Podręczniki>
-      </System_Gry>
-      <System_Gry Nazwa="Wolsung: Magia Wieku Pary"
+      </System_gry>
+      <System_gry Nazwa="Wolsung: Magia Wieku Pary"
                   Gatunek="Steampunk"
                   Wydawca="Kuźnia Gier"
                   Popularność="1%"
@@ -209,8 +209,8 @@
                <Cena_Podręcznika>89.99</Cena_Podręcznika>
             </Podręcznik>
          </Podręczniki>
-      </System_Gry>
-   </Posortowane_Systemy_Według_Popularności>
+      </System_gry>
+   </Posortowane_systemy_według_popularności>
    <Podsumowanie_kolekcji>
       <Liczba_systemów_gry>4</Liczba_systemów_gry>
       <Liczba_gier_dark_fantasy>1</Liczba_gier_dark_fantasy>
@@ -228,4 +228,4 @@
       <Średnia_ocena_podręcznika>7.47</Średnia_ocena_podręcznika>
       <Data_podsumowania>06-05-2019</Data_podsumowania>
    </Podsumowanie_kolekcji>
-</Zestawienie_Gier_RPG>
+</Zestawienie_gier_rpg>

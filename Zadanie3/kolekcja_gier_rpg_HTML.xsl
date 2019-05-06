@@ -22,7 +22,7 @@
 				
 				<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_systemy_według_popularności/System_gry">
 					<tr>
-						<td><xsl:value-of select="@nazwa"/></td>
+						<td><xsl:value-of select="@Nazwa"/></td>
 						<td><xsl:value-of select="@Gatunek"/></td>
 						<td><xsl:value-of select="@Popularność"/></td>
 						<td><xsl:value-of select="@Format"/></td>

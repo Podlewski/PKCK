@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
-			<xsl:element name="Zestawienie_Gier_RPG">
+			<xsl:element name="Zestawienie_gier_rpg">
                 <xsl:apply-templates select="kolekcja_gier_rpg/nasza_kolekcja"/>
 				
 				<xsl:element name="Podsumowanie_kolekcji">
@@ -100,10 +100,10 @@
 	</xsl:template>
 		
 	<xsl:template match="kolekcja_gier_rpg/nasza_kolekcja">
-		<xsl:element name="Posortowane_Systemy_Według_Popularności">
+		<xsl:element name="Posortowane_systemy_według_popularności">
 			<xsl:for-each select="system_gry">
 				<xsl:sort select="popularność" order="descending"/>
-				<xsl:element name="System_Gry">
+				<xsl:element name="System_gry">
 				
 					<xsl:attribute name="Nazwa">
 						<xsl:value-of select="nazwa"/>
