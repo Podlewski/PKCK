@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Zestawienie_gier_rpg>
-  <Posortowane_systemy_według_popularności>
-    <System nazwa="Warhammer Fantasy Roleplay - 2 Edycja" Gatunek="Fantasy" Popularność="29%" Format="A4">
+  <Posortowane_System_gryy_według_popularności>
+    <System_gry nazwa="Warhammer Fantasy Roleplay - 2 Edycja" Gatunek="Fantasy" Popularność="29%" Format="A4">
       <Podręczniki>
         <Tytuł>Warhammer 2 ed. RPG - Podręcznik Główny</Tytuł>
         <Tytuł_oryginalny>Warhammer Fantasy Roleplay Rulebook</Tytuł_oryginalny>
@@ -64,8 +64,8 @@
         <Ocena_podręcznika>8.6</Ocena_podręcznika>
         <Cena_podręcznika>113.15</Cena_podręcznika>
       </Podręczniki>
-    </System>
-    <System nazwa="Zew Cthulhu RPG - 7 edycja" Gatunek="Dark_Fantasy" Popularność="21%" Format="A4">
+    </System_gry>
+    <System_gry nazwa="Zew Cthulhu RPG - 7 edycja" Gatunek="Dark_Fantasy" Popularność="21%" Format="A4">
       <Podręczniki>
         <Tytuł>Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic</Tytuł>
         <Tytuł_oryginalny>Call of Cthulhu 7th Edition - Keeper's Rulebook</Tytuł_oryginalny>
@@ -80,8 +80,8 @@
         <Ocena_podręcznika>7.8</Ocena_podręcznika>
         <Cena_podręcznika>168.25</Cena_podręcznika>
       </Podręczniki>
-    </System>
-    <System nazwa="Dark Heresy - 2 Edycja" Gatunek="Science_Fiction" Popularność="14%" Format="A4">
+    </System_gry>
+    <System_gry nazwa="Dark Heresy - 2 Edycja" Gatunek="Science_Fiction" Popularność="14%" Format="A4">
       <Podręczniki>
         <Tytuł>Dark Heresy 2 RPG - Podręcznik Podstawowy</Tytuł>
         <Tytuł_oryginalny>Dark Heresy RPG Second Edition Core Rulebook</Tytuł_oryginalny>
@@ -114,8 +114,8 @@
         <Ocena_podręcznika>8.1</Ocena_podręcznika>
         <Cena_podręcznika>50.00</Cena_podręcznika>
       </Podręczniki>
-    </System>
-    <System nazwa="Wolsung: Magia Wieku Pary" Gatunek="Steampunk" Popularność="1%" Format="B5">
+    </System_gry>
+    <System_gry nazwa="Wolsung: Magia Wieku Pary" Gatunek="Steampunk" Popularność="1%" Format="B5">
       <Podręczniki>
         <Tytuł>Wolsung: Magia Wieku Pary</Tytuł>
         <Tytuł_oryginalny/>
@@ -154,10 +154,10 @@
         <Ocena_podręcznika>7.7</Ocena_podręcznika>
         <Cena_podręcznika>89.99</Cena_podręcznika>
       </Podręczniki>
-    </System>
-  </Posortowane_systemy_według_popularności>
+    </System_gry>
+  </Posortowane_System_gryy_według_popularności>
   <Podsumowanie_kolekcji>
-    <Liczba_systemów_gry>4</Liczba_systemów_gry>
+    <Liczba_System_gryów_gry>4</Liczba_System_gryów_gry>
     <Liczba_gier_akcji>0</Liczba_gier_akcji>
     <Liczba_gier_dark_fantasy>1</Liczba_gier_dark_fantasy>
     <Liczba_gier_detektywistycznych>0</Liczba_gier_detektywistycznych>
