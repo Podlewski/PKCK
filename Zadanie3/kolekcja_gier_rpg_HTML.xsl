@@ -15,6 +15,7 @@
 				<tr>
 					<th><i>Nazwa</i></th>
 					<th><i>Gatunek</i></th>
+                    <th><i>Wydawca</i></th>
 					<th><i>Popularność</i></th>
 					<th><i>Format</i></th>
 					<th><i>Podręczniki</i></th>
@@ -24,9 +25,30 @@
 					<tr>
 						<td><xsl:value-of select="@Nazwa"/></td>
 						<td><xsl:value-of select="@Gatunek"/></td>
+                        <td><xsl:value-of select="@Wydawca"/></td>
 						<td><xsl:value-of select="@Popularność"/></td>
 						<td><xsl:value-of select="@Format"/></td>
-						<td><xsl:value-of select="Podręczniki"/></td>
+						<td>                     
+                            <table border="1" align="center" style="text-align:center">
+                                <tr>
+                                    <th><i>Tytuł</i></th>
+                                    <th><i>Data_Wydania</i></th>
+                                    <th><i>Liczba_Stron</i></th>
+                                    <th><i>Ocena_Podręcznika</i></th>
+                                    <th><i>Cena_Podręcznika</i></th>
+                                </tr>				
+                                
+                                <xsl:for-each select="Podręczniki/Podręcznik">
+                                    <tr>
+                                        <td><xsl:value-of select="@Tytuł"/></td>
+                                        <td><xsl:value-of select="@Data_Wydania"/></td>
+                                        <td><xsl:value-of select="@Liczba_Stron"/></td>
+                                        <td><xsl:value-of select="@Ocena_Podręcznika"/></td>
+                                        <td><xsl:value-of select="@Cena_Podręcznika"/></td>
+                                    </tr>
+                                </xsl:for-each>				
+                            </table>                        
+                        </td>
 					</tr>
 				</xsl:for-each>				
 			</table>
@@ -69,8 +91,8 @@
 					<tr>                    
                         <th><i>Średnia cena za przygodę</i></th>
                         <th><i>Średnia cena za rozszerzenie</i></th>
-                        <th><i>Najwyższa ocena za podręcznik</i></th>
-                        <th><i>Średnia ocena za podręcznik</i></th>					
+                        <th><i>Najwyższa ocena podręcznika</i></th>
+                        <th><i>Średnia ocena podręcznika</i></th>					
                         <th><i>Data wygenerowania podsumowania</i></th>
                     </tr>
 					

@@ -6,86 +6,66 @@
                   Popularność="29%"
                   Format="A4">
          <Podręczniki>
-            <Podręcznik>
-               <Tytuł>Warhammer 2 ed. RPG - Podręcznik Główny</Tytuł>
-               <Tytuł_Oryginalny>Warhammer Fantasy Roleplay Rulebook</Tytuł_Oryginalny>
-               <Data_Wydania>2005-03-29</Data_Wydania>
-               <Liczba_Stron>265</Liczba_Stron>
-               <Ocena_Podręcznika>9.0</Ocena_Podręcznika>
-               <Cena_Podręcznika>234.79</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Bestiariusz Starego Świata</Tytuł>
-               <Tytuł_Oryginalny>Old World Bestiary</Tytuł_Oryginalny>
-               <Data_Wydania>2005-05-17</Data_Wydania>
-               <Liczba_Stron>120</Liczba_Stron>
-               <Ocena_Podręcznika>7.2</Ocena_Podręcznika>
-               <Cena_Podręcznika>178.29</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Ścieżki Przeklętych: Popioły Middenheim</Tytuł>
-               <Tytuł_Oryginalny>Paths of the Damned: Ashes of Middenheim</Tytuł_Oryginalny>
-               <Data_Wydania>2005-05-31</Data_Wydania>
-               <Liczba_Stron>94</Liczba_Stron>
-               <Ocena_Podręcznika>8.3</Ocena_Podręcznika>
-               <Cena_Podręcznika>120.40</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Dziedzictwo Sigmara</Tytuł>
-               <Tytuł_Oryginalny>Sigmar's Heirs</Tytuł_Oryginalny>
-               <Data_Wydania>2005-08-09</Data_Wydania>
-               <Liczba_Stron>127</Liczba_Stron>
-               <Ocena_Podręcznika>7.9</Ocena_Podręcznika>
-               <Cena_Podręcznika>115.55</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Ścieżki Przeklętych: Wieże Altdorfu</Tytuł>
-               <Tytuł_Oryginalny>Paths of the Damned: Spires of Altdorf</Tytuł_Oryginalny>
-               <Data_Wydania>2005-09-13</Data_Wydania>
-               <Liczba_Stron>94</Liczba_Stron>
-               <Ocena_Podręcznika>5.8</Ocena_Podręcznika>
-               <Cena_Podręcznika>99.99</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Ścieżki przeklętych: Kuźnie Nuln</Tytuł>
-               <Tytuł_Oryginalny>Paths of the Damned: Forges of Nuln</Tytuł_Oryginalny>
-               <Data_Wydania>2006-01-31</Data_Wydania>
-               <Liczba_Stron>96</Liczba_Stron>
-               <Ocena_Podręcznika>6.2</Ocena_Podręcznika>
-               <Cena_Podręcznika>169.69</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Dzieci Rogatego Szczura</Tytuł>
-               <Tytuł_Oryginalny>Children of the Horned Rat </Tytuł_Oryginalny>
-               <Data_Wydania>2005-05-23</Data_Wydania>
-               <Liczba_Stron>128</Liczba_Stron>
-               <Ocena_Podręcznika>6.5</Ocena_Podręcznika>
-               <Cena_Podręcznika>150.35</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Księga Spaczenia</Tytuł>
-               <Tytuł_Oryginalny>Tome of Corruption</Tytuł_Oryginalny>
-               <Data_Wydania>2006-10-10</Data_Wydania>
-               <Liczba_Stron>256</Liczba_Stron>
-               <Ocena_Podręcznika>8.7</Ocena_Podręcznika>
-               <Cena_Podręcznika>110.00</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Mroczni Władcy Nocy</Tytuł>
-               <Tytuł_Oryginalny>Night's Dark Masters</Tytuł_Oryginalny>
-               <Data_Wydania>2007-06-01</Data_Wydania>
-               <Liczba_Stron>144</Liczba_Stron>
-               <Ocena_Podręcznika>9.0</Ocena_Podręcznika>
-               <Cena_Podręcznika>112.00</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Księga Zbawienia</Tytuł>
-               <Tytuł_Oryginalny>Tome of Salvation</Tytuł_Oryginalny>
-               <Data_Wydania>2008-07-15</Data_Wydania>
-               <Liczba_Stron>264</Liczba_Stron>
-               <Ocena_Podręcznika>8.6</Ocena_Podręcznika>
-               <Cena_Podręcznika>113.15</Cena_Podręcznika>
-            </Podręcznik>
+            <Podręcznik Tytuł="Warhammer 2 ed. RPG - Podręcznik Główny"
+                        Tytuł_Oryginalny="Warhammer Fantasy Roleplay Rulebook"
+                        Data_Wydania="2005-03-29"
+                        Liczba_Stron="265"
+                        Ocena_Podręcznika="9.0"
+                        Cena_Podręcznika="234.79"/>
+            <Podręcznik Tytuł="Bestiariusz Starego Świata"
+                        Tytuł_Oryginalny="Old World Bestiary"
+                        Data_Wydania="2005-05-17"
+                        Liczba_Stron="120"
+                        Ocena_Podręcznika="7.2"
+                        Cena_Podręcznika="178.29"/>
+            <Podręcznik Tytuł="Ścieżki Przeklętych: Popioły Middenheim"
+                        Tytuł_Oryginalny="Paths of the Damned: Ashes of Middenheim"
+                        Data_Wydania="2005-05-31"
+                        Liczba_Stron="94"
+                        Ocena_Podręcznika="8.3"
+                        Cena_Podręcznika="120.40"/>
+            <Podręcznik Tytuł="Dziedzictwo Sigmara"
+                        Tytuł_Oryginalny="Sigmar's Heirs"
+                        Data_Wydania="2005-08-09"
+                        Liczba_Stron="127"
+                        Ocena_Podręcznika="7.9"
+                        Cena_Podręcznika="115.55"/>
+            <Podręcznik Tytuł="Ścieżki Przeklętych: Wieże Altdorfu"
+                        Tytuł_Oryginalny="Paths of the Damned: Spires of Altdorf"
+                        Data_Wydania="2005-09-13"
+                        Liczba_Stron="94"
+                        Ocena_Podręcznika="5.8"
+                        Cena_Podręcznika="99.99"/>
+            <Podręcznik Tytuł="Ścieżki przeklętych: Kuźnie Nuln"
+                        Tytuł_Oryginalny="Paths of the Damned: Forges of Nuln"
+                        Data_Wydania="2006-01-31"
+                        Liczba_Stron="96"
+                        Ocena_Podręcznika="6.2"
+                        Cena_Podręcznika="169.69"/>
+            <Podręcznik Tytuł="Dzieci Rogatego Szczura"
+                        Tytuł_Oryginalny="Children of the Horned Rat "
+                        Data_Wydania="2005-05-23"
+                        Liczba_Stron="128"
+                        Ocena_Podręcznika="6.5"
+                        Cena_Podręcznika="150.35"/>
+            <Podręcznik Tytuł="Księga Spaczenia"
+                        Tytuł_Oryginalny="Tome of Corruption"
+                        Data_Wydania="2006-10-10"
+                        Liczba_Stron="256"
+                        Ocena_Podręcznika="8.7"
+                        Cena_Podręcznika="110.00"/>
+            <Podręcznik Tytuł="Mroczni Władcy Nocy"
+                        Tytuł_Oryginalny="Night's Dark Masters"
+                        Data_Wydania="2007-06-01"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="9.0"
+                        Cena_Podręcznika="112.00"/>
+            <Podręcznik Tytuł="Księga Zbawienia"
+                        Tytuł_Oryginalny="Tome of Salvation"
+                        Data_Wydania="2008-07-15"
+                        Liczba_Stron="264"
+                        Ocena_Podręcznika="8.6"
+                        Cena_Podręcznika="113.15"/>
          </Podręczniki>
       </System_gry>
       <System_gry Nazwa="Zew Cthulhu RPG - 7 edycja"
@@ -94,22 +74,18 @@
                   Popularność="21%"
                   Format="A4">
          <Podręczniki>
-            <Podręcznik>
-               <Tytuł>Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic</Tytuł>
-               <Tytuł_Oryginalny>Call of Cthulhu 7th Edition - Keeper's Rulebook</Tytuł_Oryginalny>
-               <Data_Wydania>2016-05-16</Data_Wydania>
-               <Liczba_Stron>488</Liczba_Stron>
-               <Ocena_Podręcznika>9.1</Ocena_Podręcznika>
-               <Cena_Podręcznika>222.00</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Samotnie przeciwko ciemności - Zniweczenie triumfu lodu</Tytuł>
-               <Tytuł_Oryginalny>Alone Against the Dark - Defying the Triumph of the Ice</Tytuł_Oryginalny>
-               <Data_Wydania>2018-09-12</Data_Wydania>
-               <Liczba_Stron>108</Liczba_Stron>
-               <Ocena_Podręcznika>7.8</Ocena_Podręcznika>
-               <Cena_Podręcznika>168.25</Cena_Podręcznika>
-            </Podręcznik>
+            <Podręcznik Tytuł="Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic"
+                        Tytuł_Oryginalny="Call of Cthulhu 7th Edition - Keeper's Rulebook"
+                        Data_Wydania="2016-05-16"
+                        Liczba_Stron="488"
+                        Ocena_Podręcznika="9.1"
+                        Cena_Podręcznika="222.00"/>
+            <Podręcznik Tytuł="Samotnie przeciwko ciemności - Zniweczenie triumfu lodu"
+                        Tytuł_Oryginalny="Alone Against the Dark - Defying the Triumph of the Ice"
+                        Data_Wydania="2018-09-12"
+                        Liczba_Stron="108"
+                        Ocena_Podręcznika="7.8"
+                        Cena_Podręcznika="168.25"/>
          </Podręczniki>
       </System_gry>
       <System_gry Nazwa="Dark Heresy - 2 Edycja"
@@ -118,46 +94,36 @@
                   Popularność="14%"
                   Format="A4">
          <Podręczniki>
-            <Podręcznik>
-               <Tytuł>Dark Heresy 2 RPG - Podręcznik Podstawowy</Tytuł>
-               <Tytuł_Oryginalny>Dark Heresy RPG Second Edition Core Rulebook</Tytuł_Oryginalny>
-               <Data_Wydania>2014-04-09</Data_Wydania>
-               <Liczba_Stron>448</Liczba_Stron>
-               <Ocena_Podręcznika>7.4</Ocena_Podręcznika>
-               <Cena_Podręcznika>145.99</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Zapomniani bogowie</Tytuł>
-               <Tytuł_Oryginalny>Forgotten Gods</Tytuł_Oryginalny>
-               <Data_Wydania>2015-01-28</Data_Wydania>
-               <Liczba_Stron>141</Liczba_Stron>
-               <Ocena_Podręcznika>5.9</Ocena_Podręcznika>
-               <Cena_Podręcznika>78.50</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Wróg Wewnętrzny</Tytuł>
-               <Tytuł_Oryginalny>Enemies Within</Tytuł_Oryginalny>
-               <Data_Wydania>2015-04-29</Data_Wydania>
-               <Liczba_Stron>144</Liczba_Stron>
-               <Ocena_Podręcznika>8.1</Ocena_Podręcznika>
-               <Cena_Podręcznika>45.89</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Wróg Zewnętrzny</Tytuł>
-               <Tytuł_Oryginalny>Enemies Without</Tytuł_Oryginalny>
-               <Data_Wydania>2015-10-30</Data_Wydania>
-               <Liczba_Stron>144</Liczba_Stron>
-               <Ocena_Podręcznika>7.5</Ocena_Podręcznika>
-               <Cena_Podręcznika>46.99</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Wróg Spoza Rzeczywistości</Tytuł>
-               <Tytuł_Oryginalny>Enemies Beyond</Tytuł_Oryginalny>
-               <Data_Wydania>2016-02-01</Data_Wydania>
-               <Liczba_Stron>144</Liczba_Stron>
-               <Ocena_Podręcznika>8.1</Ocena_Podręcznika>
-               <Cena_Podręcznika>50.00</Cena_Podręcznika>
-            </Podręcznik>
+            <Podręcznik Tytuł="Dark Heresy 2 RPG - Podręcznik Podstawowy"
+                        Tytuł_Oryginalny="Dark Heresy RPG Second Edition Core Rulebook"
+                        Data_Wydania="2014-04-09"
+                        Liczba_Stron="448"
+                        Ocena_Podręcznika="7.4"
+                        Cena_Podręcznika="145.99"/>
+            <Podręcznik Tytuł="Zapomniani bogowie"
+                        Tytuł_Oryginalny="Forgotten Gods"
+                        Data_Wydania="2015-01-28"
+                        Liczba_Stron="141"
+                        Ocena_Podręcznika="5.9"
+                        Cena_Podręcznika="78.50"/>
+            <Podręcznik Tytuł="Wróg Wewnętrzny"
+                        Tytuł_Oryginalny="Enemies Within"
+                        Data_Wydania="2015-04-29"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="8.1"
+                        Cena_Podręcznika="45.89"/>
+            <Podręcznik Tytuł="Wróg Zewnętrzny"
+                        Tytuł_Oryginalny="Enemies Without"
+                        Data_Wydania="2015-10-30"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="7.5"
+                        Cena_Podręcznika="46.99"/>
+            <Podręcznik Tytuł="Wróg Spoza Rzeczywistości"
+                        Tytuł_Oryginalny="Enemies Beyond"
+                        Data_Wydania="2016-02-01"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="8.1"
+                        Cena_Podręcznika="50.00"/>
          </Podręczniki>
       </System_gry>
       <System_gry Nazwa="Wolsung: Magia Wieku Pary"
@@ -166,48 +132,36 @@
                   Popularność="1%"
                   Format="B5">
          <Podręczniki>
-            <Podręcznik>
-               <Tytuł>Wolsung: Magia Wieku Pary</Tytuł>
-               <Data_Wydania>2009-09-30</Data_Wydania>
-               <Liczba_Stron>480</Liczba_Stron>
-               <Ocena_Podręcznika>6.1</Ocena_Podręcznika>
-               <Cena_Podręcznika>156.99</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Lyonesse: Miasto, Mgła, Maszyna</Tytuł>
-               <Data_Wydania>2010-07-25</Data_Wydania>
-               <Liczba_Stron>128</Liczba_Stron>
-               <Ocena_Podręcznika>6.7</Ocena_Podręcznika>
-               <Cena_Podręcznika>85.95</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Almanach Nadzwyczajny</Tytuł>
-               <Data_Wydania>2011-03-25</Data_Wydania>
-               <Liczba_Stron>96</Liczba_Stron>
-               <Ocena_Podręcznika>6.6</Ocena_Podręcznika>
-               <Cena_Podręcznika>44.00</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Slawia: Rzeczpospolita Przeklęta</Tytuł>
-               <Data_Wydania>2013-03-22</Data_Wydania>
-               <Liczba_Stron>129</Liczba_Stron>
-               <Ocena_Podręcznika>4.8</Ocena_Podręcznika>
-               <Cena_Podręcznika>66.75</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Wolsung: Magia Wieku Pary - edycja 1.5</Tytuł>
-               <Data_Wydania>2013-08-31</Data_Wydania>
-               <Liczba_Stron>473</Liczba_Stron>
-               <Ocena_Podręcznika>8.9</Ocena_Podręcznika>
-               <Cena_Podręcznika>188.19</Cena_Podręcznika>
-            </Podręcznik>
-            <Podręcznik>
-               <Tytuł>Dzień, w którym zatonęła Urda</Tytuł>
-               <Data_Wydania>2016-04-19</Data_Wydania>
-               <Liczba_Stron>30</Liczba_Stron>
-               <Ocena_Podręcznika>7.7</Ocena_Podręcznika>
-               <Cena_Podręcznika>89.99</Cena_Podręcznika>
-            </Podręcznik>
+            <Podręcznik Tytuł="Wolsung: Magia Wieku Pary"
+                        Data_Wydania="2009-09-30"
+                        Liczba_Stron="480"
+                        Ocena_Podręcznika="6.1"
+                        Cena_Podręcznika="156.99"/>
+            <Podręcznik Tytuł="Lyonesse: Miasto, Mgła, Maszyna"
+                        Data_Wydania="2010-07-25"
+                        Liczba_Stron="128"
+                        Ocena_Podręcznika="6.7"
+                        Cena_Podręcznika="85.95"/>
+            <Podręcznik Tytuł="Almanach Nadzwyczajny"
+                        Data_Wydania="2011-03-25"
+                        Liczba_Stron="96"
+                        Ocena_Podręcznika="6.6"
+                        Cena_Podręcznika="44.00"/>
+            <Podręcznik Tytuł="Slawia: Rzeczpospolita Przeklęta"
+                        Data_Wydania="2013-03-22"
+                        Liczba_Stron="129"
+                        Ocena_Podręcznika="4.8"
+                        Cena_Podręcznika="66.75"/>
+            <Podręcznik Tytuł="Wolsung: Magia Wieku Pary - edycja 1.5"
+                        Data_Wydania="2013-08-31"
+                        Liczba_Stron="473"
+                        Ocena_Podręcznika="8.9"
+                        Cena_Podręcznika="188.19"/>
+            <Podręcznik Tytuł="Dzień, w którym zatonęła Urda"
+                        Data_Wydania="2016-04-19"
+                        Liczba_Stron="30"
+                        Ocena_Podręcznika="7.7"
+                        Cena_Podręcznika="89.99"/>
          </Podręczniki>
       </System_gry>
    </Posortowane_systemy_według_popularności>

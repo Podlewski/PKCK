@@ -128,26 +128,26 @@
 					<xsl:element name="Podręczniki">
 						<xsl:for-each select="podręczniki/podręcznik">
 							<xsl:element name="Podręcznik">
-								<xsl:element name="Tytuł">
+								<xsl:attribute name="Tytuł">
 									<xsl:value-of select="tytuł"/>
-								</xsl:element>
+								</xsl:attribute>
 								<xsl:if test='tytuł_oryginalny'>
-									<xsl:element name="Tytuł_Oryginalny">
+									<xsl:attribute name="Tytuł_Oryginalny">
 										<xsl:value-of select="tytuł_oryginalny"/>
-									</xsl:element>
+									</xsl:attribute>
 								</xsl:if> 
-								<xsl:element name="Data_Wydania">
+								<xsl:attribute name="Data_Wydania">
 									<xsl:value-of select="data_wydania"/>
-								</xsl:element>
-								<xsl:element name="Liczba_Stron">
+								</xsl:attribute>
+								<xsl:attribute name="Liczba_Stron">
 									<xsl:value-of select="liczba_stron"/>
-								</xsl:element>
-								<xsl:element name="Ocena_Podręcznika">
+								</xsl:attribute>
+								<xsl:attribute name="Ocena_Podręcznika">
 									<xsl:value-of select="ocena_podręcznika"/>
-								</xsl:element>
-								<xsl:element name="Cena_Podręcznika">
+								</xsl:attribute>
+								<xsl:attribute name="Cena_Podręcznika">
 									<xsl:value-of select="cena_podręcznika"/>
-								</xsl:element>
+								</xsl:attribute>
 							</xsl:element>
 						</xsl:for-each>
 					</xsl:element>
