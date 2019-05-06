@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" />
     <xsl:template match="/">
-			<xsl:element name="Zestawienie_gier_rpg">
+			<xsl:element name="Zestawienie_Gier_RPG">
                 <xsl:apply-templates select="kolekcja_gier_rpg/nasza_kolekcja"/>
 				
 				<xsl:element name="Podsumowanie_kolekcji">
@@ -99,47 +99,24 @@
 		</xsl:element>
 	</xsl:template>
 		
-		<xsl:template match="kolekcja_gier_rpg/nasza_kolekcja">
-		<xsl:element name="Posortowane_systemy_według_popularności">
+	<xsl:template match="kolekcja_gier_rpg/nasza_kolekcja">
+		<xsl:element name="Posortowane_Systemy_Według_Popularności">
 			<xsl:for-each select="system_gry">
 				<xsl:sort select="popularność" order="descending"/>
-				<xsl:element name="System_gry">
+				<xsl:element name="System_Gry">
 				
-					<xsl:attribute name="nazwa">
+					<xsl:attribute name="Nazwa">
 						<xsl:value-of select="nazwa"/>
 					</xsl:attribute>
-					
-					<xsl:choose>
-						<xsl:when test="string(@gatunek_id) = 'gat02'">
-							<xsl:attribute name="Gatunek">Dark Fantasy</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat04'">
-							<xsl:attribute name="Gatunek">Fantasy</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat07'">
-							<xsl:attribute name="Gatunek">Science Fiction</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat08'">
-							<xsl:attribute name="Gatunek">Steampunk</xsl:attribute>
-						</xsl:when>
-						
-						<xsl:when test="string(@typ_id) = 'typ01'">
-							<xsl:attribute name="Typ">Podstawka</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@typ_id) = 'typ02'">
-							<xsl:attribute name="Typ">Bestiariusz</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@typ_id) = 'typ03'">
-							<xsl:attribute name="Typ">Kampania</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@typ_id) = 'typ04'">
-							<xsl:attribute name="Typ">Przygoda</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@typ_id) = 'typ05'">
-							<xsl:attribute name="Typ">Rozszerzenie</xsl:attribute>
-						</xsl:when>
-					</xsl:choose>
-					
+
+					<xsl:attribute name="Gatunek">
+						<xsl:value-of select="//gatunki/gatunek[@gatunek_id = current()/@gatunek_id]"/>
+					</xsl:attribute>
+
+					<xsl:attribute name="Wydawca">
+						<xsl:value-of select="//wydawcy/wydawca[@wydawca_id = current()/@wydawca_id]"/>
+					</xsl:attribute>
+
 					<xsl:attribute name="Popularność">
 						<xsl:value-of select="concat(popularność,'%')" />
 					</xsl:attribute>
@@ -150,23 +127,27 @@
 					
 					<xsl:element name="Podręczniki">
 						<xsl:for-each select="podręczniki/podręcznik">
-							<xsl:element name="Tytuł">
-								<xsl:value-of select="tytuł"/>
-							</xsl:element>
-							<xsl:element name="Tytuł_oryginalny">
-								<xsl:value-of select="tytuł_oryginalny"/>
-							</xsl:element>
-							<xsl:element name="Data_wydania">
-								<xsl:value-of select="data_wydania"/>
-							</xsl:element>
-							<xsl:element name="Liczba_stron">
-								<xsl:value-of select="liczba_stron"/>
-							</xsl:element>
-							<xsl:element name="Ocena_podręcznika">
-								<xsl:value-of select="ocena_podręcznika"/>
-							</xsl:element>
-							<xsl:element name="Cena_podręcznika">
-								<xsl:value-of select="cena_podręcznika"/>
+							<xsl:element name="Podręcznik">
+								<xsl:element name="Tytuł">
+									<xsl:value-of select="tytuł"/>
+								</xsl:element>
+								<xsl:if test='tytuł_oryginalny'>
+									<xsl:element name="Tytuł_Oryginalny">
+										<xsl:value-of select="tytuł_oryginalny"/>
+									</xsl:element>
+								</xsl:if> 
+								<xsl:element name="Data_Wydania">
+									<xsl:value-of select="data_wydania"/>
+								</xsl:element>
+								<xsl:element name="Liczba_Stron">
+									<xsl:value-of select="liczba_stron"/>
+								</xsl:element>
+								<xsl:element name="Ocena_Podręcznika">
+									<xsl:value-of select="ocena_podręcznika"/>
+								</xsl:element>
+								<xsl:element name="Cena_Podręcznika">
+									<xsl:value-of select="cena_podręcznika"/>
+								</xsl:element>
 							</xsl:element>
 						</xsl:for-each>
 					</xsl:element>
