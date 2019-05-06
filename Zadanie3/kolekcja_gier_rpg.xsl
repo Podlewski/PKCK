@@ -111,13 +111,13 @@
 					
 					<xsl:choose>
 						<xsl:when test="string(@gatunek_id) = 'gat02'">
-							<xsl:attribute name="Gatunek">Dark_Fantasy</xsl:attribute>
+							<xsl:attribute name="Gatunek">Dark Fantasy</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat04'">
 							<xsl:attribute name="Gatunek">Fantasy</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat07'">
-							<xsl:attribute name="Gatunek">Science_Fiction</xsl:attribute>
+							<xsl:attribute name="Gatunek">Science Fiction</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat08'">
 							<xsl:attribute name="Gatunek">Steampunk</xsl:attribute>
