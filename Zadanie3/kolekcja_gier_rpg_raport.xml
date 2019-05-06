@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Zestawienie_gier_rpg>
-  <Posortowane_System_gryy_według_popularności>
+  <Posortowane_systemy_według_popularności>
     <System_gry nazwa="Warhammer Fantasy Roleplay - 2 Edycja" Gatunek="Fantasy" Popularność="29%" Format="A4">
       <Podręczniki>
         <Tytuł>Warhammer 2 ed. RPG - Podręcznik Główny</Tytuł>
@@ -155,15 +155,20 @@
         <Cena_podręcznika>89.99</Cena_podręcznika>
       </Podręczniki>
     </System_gry>
-  </Posortowane_System_gryy_według_popularności>
+  </Posortowane_systemy_według_popularności>
   <Podsumowanie_kolekcji>
-    <Liczba_System_gryów_gry>4</Liczba_System_gryów_gry>
+    <Liczba_systemów_gry>4</Liczba_systemów_gry>
     <Liczba_gier_akcji>0</Liczba_gier_akcji>
     <Liczba_gier_dark_fantasy>1</Liczba_gier_dark_fantasy>
     <Liczba_gier_detektywistycznych>0</Liczba_gier_detektywistycznych>
     <Liczba_gier_fantasy>1</Liczba_gier_fantasy>
+    <Liczba_gier_horror>0</Liczba_gier_horror>
+    <Liczba_gier_mitologicznych>0</Liczba_gier_mitologicznych>
+    <Liczba_gier_science_fiction>1</Liczba_gier_science_fiction>
+    <Liczba_gier_steampunk>1</Liczba_gier_steampunk>
     <Liczba_gier_z_wydawnictwa_Kuźnia_Gier>1</Liczba_gier_z_wydawnictwa_Kuźnia_Gier>
     <Liczba_gier_z_wydawnictwa_Rebel>1</Liczba_gier_z_wydawnictwa_Rebel>
+    <Cena_za_całą_kolekcję>2793.7zł</Cena_za_całą_kolekcję>
     <VAT_od_wszystkich_podręczników>643zł</VAT_od_wszystkich_podręczników>
     <Średnia_cena_za_podręcznik>121.47zł</Średnia_cena_za_podręcznik>
     <Średnia_cena_za_podstawkę>189.59zł</Średnia_cena_za_podstawkę>

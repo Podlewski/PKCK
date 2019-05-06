@@ -20,31 +20,15 @@
 					<th>Podręczniki</th>
 				</tr>				
 				
-				<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_System_gryy_według_popularności/System_gry">
+				<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_systemy_według_popularności/System_gry">
 					<tr>
 						<td><xsl:value-of select="@nazwa"/></td>
 						<td><xsl:value-of select="@Gatunek"/></td>
 						<td><xsl:value-of select="@Popularność"/></td>
 						<td><xsl:value-of select="@Format"/></td>
-						<td><xsl:value-of select="Podręczniki"/>
-							<table>
-							
-								<tr>
-									<th>Tytuł</th>
-									<th>Tytuł oryginalny</th>
-								</tr>
-								<xsl:for-each select="Zestawienie_gier_rpg/Posortowane_System_gryy_według_popularności/System_gry">
-								<tr>
-									<td><xsl:value-of select="@Tytuł"/></td>
-									<td><xsl:value-of select="@Tytuł_oryginalny"/></td>
-								</tr>
-								</xsl:for-each>
-							</table>
-						</td>
+						<td><xsl:value-of select="Podręczniki"/></td>
 					</tr>
-				</xsl:for-each>
-				
-				
+				</xsl:for-each>				
 			</table>
 			
 			<table border="6" style="text-align:center" width="100%">
@@ -59,7 +43,7 @@
                         <th>Liczba gier z wydawnictwa Rebel</th>
                     </tr>
                     <tr>
-                        <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Liczba_System_gryów_gry"/></td>
+                        <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Liczba_systemów_gry"/></td>
                         <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Liczba_gier_akcji"/></td>
                         <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Liczba_gier_dark_fantasy"/></td>
                         <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Liczba_gier_detektywistycznych"/></td>
