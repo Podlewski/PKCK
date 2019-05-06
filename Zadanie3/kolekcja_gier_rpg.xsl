@@ -11,28 +11,12 @@
 						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry)"/>
 					</xsl:element>
 					
-					<xsl:element name="Liczba_gier_akcji">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat01'])"/>
-					</xsl:element>
-					
 					<xsl:element name="Liczba_gier_dark_fantasy">
 						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat02'])"/>
 					</xsl:element>
 					
-					<xsl:element name="Liczba_gier_detektywistycznych">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat03'])"/>
-					</xsl:element>
-					
 					<xsl:element name="Liczba_gier_fantasy">
 						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat04'])"/>
-					</xsl:element>
-					
-					<xsl:element name="Liczba_gier_horror">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat05'])"/>
-					</xsl:element>
-					
-					<xsl:element name="Liczba_gier_mitologicznych">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat06'])"/>
 					</xsl:element>
 					
 					<xsl:element name="Liczba_gier_science_fiction">
@@ -43,23 +27,9 @@
 						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@gatunek_id='gat08'])"/>
 					</xsl:element>
 					
-					<xsl:element name="Liczba_gier_z_wydawnictwa_Kuźnia_Gier">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@wydawca_id='wyd05'])"/>
-					</xsl:element>
+					<xsl:variable name="Cena_za_wszystkie_podręczniki" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika)"/>					
 					
-					<xsl:element name="Liczba_gier_z_wydawnictwa_Rebel">
-						<xsl:value-of select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry[@wydawca_id='wyd01'])"/>
-					</xsl:element>
-					
-					<xsl:variable name="Cena_za_wszystkie_podręczniki" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika)"/>
-					
-					<xsl:element name="Cena_za_całą_kolekcję">
-						<xsl:value-of select="concat(round($Cena_za_wszystkie_podręczniki * 100) div 100,'zł')"/>
-					</xsl:element>
-					
-					<xsl:element name="VAT_od_wszystkich_podręczników">
-                        <xsl:value-of select="concat(round(($Cena_za_wszystkie_podręczniki * 23)div 100),'zł')"/>
-                    </xsl:element>
+					<xsl:variable name="Suma_wszystkich_ocen_podręczników" select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/ocena_podręcznika)"/>
 					
 					<xsl:variable name="Liczba_wszystkich_podręczników" select="count(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik)"/>
 					
@@ -85,6 +55,14 @@
 					
 					<xsl:variable name="Cena_za_rozszerzenie" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik[@typ_id='typ05']/cena_podręcznika)"/>
 					
+					<xsl:element name="Cena_za_całą_kolekcję">
+						<xsl:value-of select="concat(round($Cena_za_wszystkie_podręczniki * 100) div 100,'zł')"/>
+					</xsl:element>
+					
+					<xsl:element name="VAT_od_wszystkich_podręczników">
+                        <xsl:value-of select="concat(round(($Cena_za_wszystkie_podręczniki * 23)div 100),'zł')"/>
+                    </xsl:element>
+					
 					<xsl:element name="Średnia_cena_za_podręcznik">
 						<xsl:value-of select="concat(round($Cena_za_podręczniki div $Liczba_wszystkich_podręczników * 100) div 100,'zł')"/>
 					</xsl:element>
@@ -108,10 +86,14 @@
 					<xsl:element name="Średnia_cena_za_rozszerzenie">
 						<xsl:value-of select="concat(round($Cena_za_rozszerzenie div $Liczba_wszystkich_rozszerzeń * 100) div 100,'zł')"/>
 					</xsl:element>
+					
+					<xsl:element name="Średnia_ocena_podręcznika">
+						<xsl:value-of select="round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/ocena_podręcznika) div $Suma_wszystkich_ocen_podręczników * 100) div 100"/>
+					</xsl:element>
 										
-					<!-- <xsl:element name="Data_Raportu"> -->
-                        <!-- <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" /> -->
-                    <!-- </xsl:element> -->
+					<xsl:element name="Data_podsumowania">
+                        <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
+                    </xsl:element>
 					
 			</xsl:element>
 		</xsl:element>
@@ -128,48 +110,17 @@
 					</xsl:attribute>
 					
 					<xsl:choose>
-						<xsl:when test="string(@gatunek_id) = 'gat01'">
-							<xsl:attribute name="Gatunek">Akcja</xsl:attribute>
-						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat02'">
 							<xsl:attribute name="Gatunek">Dark_Fantasy</xsl:attribute>
 						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat03'">
-							<xsl:attribute name="Gatunek">Detektywistyczna</xsl:attribute>
-						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat04'">
 							<xsl:attribute name="Gatunek">Fantasy</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat05'">
-							<xsl:attribute name="Gatunek">Horror</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@gatunek_id) = 'gat06'">
-							<xsl:attribute name="Gatunek">Mitologia</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat07'">
 							<xsl:attribute name="Gatunek">Science_Fiction</xsl:attribute>
 						</xsl:when>
 						<xsl:when test="string(@gatunek_id) = 'gat08'">
 							<xsl:attribute name="Gatunek">Steampunk</xsl:attribute>
-						</xsl:when>
-						
-						<xsl:when test="string(@wydawca_id) = 'wyd01'">
-							<xsl:attribute name="Wydawca">Black_Monk</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@wydawca_id) = 'wyd02'">
-							<xsl:attribute name="Wydawca">Copernicus Corporation</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@wydawca_id) = 'wyd03'">
-							<xsl:attribute name="Wydawca">Fajne_RPG</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@wydawca_id) = 'wyd04'">
-							<xsl:attribute name="Wydawca">ISA</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@wydawca_id) = 'wyd05'">
-							<xsl:attribute name="Wydawca">Kuźnia_Gier</xsl:attribute>
-						</xsl:when>
-						<xsl:when test="string(@wydawca_id) = 'wyd06'">
-							<xsl:attribute name="Wydawca">Rebel</xsl:attribute>
 						</xsl:when>
 						
 						<xsl:when test="string(@typ_id) = 'typ01'">
