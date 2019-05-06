@@ -63,10 +63,6 @@
                         <xsl:value-of select="concat(round(($Cena_za_wszystkie_podręczniki * 23)div 100),'zł')"/>
                     </xsl:element>
 					
-					<xsl:element name="Średnia_cena_za_podręcznik">
-						<xsl:value-of select="concat(round($Cena_za_podręczniki div $Liczba_wszystkich_podręczników * 100) div 100,'zł')"/>
-					</xsl:element>
-					
 					<xsl:element name="Średnia_cena_za_podstawkę">
 						<xsl:value-of select="concat(round($Cena_za_podstawkę div $Liczba_wszystkich_podstawek * 100) div 100,'zł')"/>
 					</xsl:element>
@@ -85,6 +81,10 @@
 					
 					<xsl:element name="Średnia_cena_za_rozszerzenie">
 						<xsl:value-of select="concat(round($Cena_za_rozszerzenie div $Liczba_wszystkich_rozszerzeń * 100) div 100,'zł')"/>
+					</xsl:element>
+					
+					<xsl:element name="Najwyższa_ocena_za_podręcznik">
+						<xsl:value-of select="max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/ocena_podręcznika)"/>
 					</xsl:element>
 					
 					<xsl:element name="Średnia_ocena_podręcznika">
