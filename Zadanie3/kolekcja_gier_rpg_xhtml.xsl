@@ -93,7 +93,7 @@
                     <th><i>Średnia cena za rozszerzenie</i></th>
                     <th><i>Najwyższa ocena podręcznika</i></th>
                     <th><i>Średnia ocena podręcznika</i></th>					
-                    <th><i></i></th>
+                    <th><i>Najmniejsza liczba stron podręcznika</i></th>
                 </tr>
                 
                 <tr>       
@@ -101,23 +101,23 @@
                     <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Średnia_cena_za_rozszerzenie"/></td>
                     <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Najwyższa_ocena_za_podręcznik"/></td>
                     <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Średnia_ocena_podręcznika"/></td>
-                    <td></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Najmniej_stron"/></td>
                 </tr>	
 
                 <tr>                    
-                    <th><i></i></th>
-                    <th><i></i></th>
-                    <th><i></i></th>
-                    <th><i></i></th>				
-                    <th><i></i></th>
+                    <th><i>Średnia liczba stron podręcznika</i></th>
+                    <th><i>Największa liczba stron podręcznika</i></th>
+                    <th><i>Najwyższa cena podręcznika</i></th>				
+                    <th><i>Najniższa cena podręcznika</i></th>
+                    <th><i>Średnia cena podręcznika</i></th>
                 </tr>
                 
                 <tr>       
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Średnia_liczba_stron"/></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Najwięcej_stron"/></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Najwyższa_cena_podręcznika"/></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Najniższa_cena_podręcznika"/></td>
+                    <td><xsl:value-of select="Zestawienie_gier_rpg/Podsumowanie_kolekcji/Średnia_cena_podręcznika"/></td>
                 </tr>					
             </table>			
 			
