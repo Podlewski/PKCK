@@ -90,11 +90,19 @@
 					<xsl:element name="Średnia_ocena_podręcznika">
 						<xsl:value-of select="round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/ocena_podręcznika) div $Suma_wszystkich_ocen_podręczników * 100) div 100"/>
 					</xsl:element>
-										
-					<xsl:element name="Data_podsumowania">
-                        <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
-                    </xsl:element>
 					
+					<xsl:element name="Najmniej_stron">
+						<xsl:value-of select="min(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron)"/>
+					</xsl:element>
+
+					<xsl:element name="Średnia_liczba_stron">
+						<xsl:value-of select="round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron) div $Liczba_wszystkich_podręczników * 100) div 100"/>
+					</xsl:element>
+
+					<xsl:element name="Najwięcej_stron">
+						<xsl:value-of select="max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron)"/>
+					</xsl:element>
+
 					<xsl:element name="Najwyższa_cena_podręcznika">
                         <xsl:value-of select="concat(max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), 'zł')" />
                     </xsl:element>
@@ -104,11 +112,13 @@
                     </xsl:element>
 					
 					<xsl:element name="Średnia_cena_podręcznika">
-                        <xsl:value-of select="concat(round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika) div $Liczba_wszystkich_podręczników * 100) div 100, 'zł') "/>
-						
+                        <xsl:value-of select="concat(round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika) div $Liczba_wszystkich_podręczników * 100) div 100, 'zł') "/>						
                     </xsl:element>
-											
-					
+																					
+					<xsl:element name="Data_podsumowania">
+                        <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
+                    </xsl:element>
+
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
