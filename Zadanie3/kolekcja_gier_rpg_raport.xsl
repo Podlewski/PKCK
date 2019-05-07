@@ -95,6 +95,20 @@
                         <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
                     </xsl:element>
 					
+					<xsl:element name="Najwyższa_cena_podręcznika">
+                        <xsl:value-of select="concat(max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), 'zł')" />
+                    </xsl:element>
+					
+					<xsl:element name="Najniższa_cena_podręcznika">
+                        <xsl:value-of select="concat(min(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika), 'zł')" />
+                    </xsl:element>
+					
+					<xsl:element name="Średnia_cena_podręcznika">
+                        <xsl:value-of select="concat(round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/cena_podręcznika) div $Liczba_wszystkich_podręczników * 100) div 100, 'zł') "/>
+						
+                    </xsl:element>
+											
+					
 			</xsl:element>
 		</xsl:element>
 	</xsl:template>
