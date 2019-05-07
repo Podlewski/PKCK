@@ -134,11 +134,11 @@
 					</xsl:attribute>
 
 					<xsl:attribute name="Gatunek">
-						<xsl:value-of select="//gatunki/gatunek[@gatunek_id = current()/@gatunek_id]"/>
+						<xsl:value-of select="/kolekcja_gier_rpg/gatunki/gatunek[@gatunek_id = current()/@gatunek_id]"/>
 					</xsl:attribute>
 
 					<xsl:attribute name="Wydawca">
-						<xsl:value-of select="//wydawcy/wydawca[@wydawca_id = current()/@wydawca_id]"/>
+						<xsl:value-of select="/kolekcja_gier_rpg/wydawcy/wydawca[@wydawca_id = current()/@wydawca_id]"/>
 					</xsl:attribute>
 
 					<xsl:attribute name="Popularność">
