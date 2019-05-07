@@ -54,7 +54,7 @@
 					<xsl:variable name="Cena_za_przygodę" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik[@typ_id='typ04']/cena_podręcznika)"/>
 					
 					<xsl:variable name="Cena_za_rozszerzenie" select="sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik[@typ_id='typ05']/cena_podręcznika)"/>
-
+					
 					<xsl:element name="Cena_za_całą_kolekcję">
 						<xsl:value-of select="concat(round($Cena_za_wszystkie_podręczniki * 100) div 100,'zł')"/>
 					</xsl:element>
@@ -90,19 +90,7 @@
 					<xsl:element name="Średnia_ocena_podręcznika">
 						<xsl:value-of select="round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/ocena_podręcznika) div $Suma_wszystkich_ocen_podręczników * 100) div 100"/>
 					</xsl:element>
-
-					<xsl:element name="Najmniej_stron">
-						<xsl:value-of select="min(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron)"/>
-					</xsl:element>
-
-					<xsl:element name="Średnia_liczba_stron">
-						<xsl:value-of select="round(sum(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron) div $Liczba_wszystkich_podręczników * 100) div 100"/>
-					</xsl:element>
-
-					<xsl:element name="Najwięcej_stron">
-						<xsl:value-of select="max(kolekcja_gier_rpg/nasza_kolekcja/system_gry/podręczniki/podręcznik/liczba_stron)"/>
-					</xsl:element>
-
+										
 					<xsl:element name="Data_podsumowania">
                         <xsl:value-of select="format-dateTime(current-dateTime(),'[D01]-[M01]-[Y0001]')" />
                     </xsl:element>
