@@ -1,0 +1,191 @@
+<Zestawienie_gier_rpg>
+   <Posortowane_systemy_według_popularności>
+      <System_gry Nazwa="Warhammer Fantasy Roleplay - 2 Edycja"
+                  Gatunek="Fantasy"
+                  Wydawca="Copernicus Corporation"
+                  Popularność="29%"
+                  Format="A4">
+         <Podręczniki>
+            <Podręcznik Tytuł="Warhammer 2 ed. RPG - Podręcznik Główny"
+                        Tytuł_Oryginalny="Warhammer Fantasy Roleplay Rulebook"
+                        Data_Wydania="2005-03-29"
+                        Liczba_Stron="265"
+                        Ocena_Podręcznika="9.0"
+                        Cena_Podręcznika="234.79"/>
+            <Podręcznik Tytuł="Bestiariusz Starego Świata"
+                        Tytuł_Oryginalny="Old World Bestiary"
+                        Data_Wydania="2005-05-17"
+                        Liczba_Stron="120"
+                        Ocena_Podręcznika="7.2"
+                        Cena_Podręcznika="178.29"/>
+            <Podręcznik Tytuł="Ścieżki Przeklętych: Popioły Middenheim"
+                        Tytuł_Oryginalny="Paths of the Damned: Ashes of Middenheim"
+                        Data_Wydania="2005-05-31"
+                        Liczba_Stron="94"
+                        Ocena_Podręcznika="8.3"
+                        Cena_Podręcznika="120.40"/>
+            <Podręcznik Tytuł="Dziedzictwo Sigmara"
+                        Tytuł_Oryginalny="Sigmar's Heirs"
+                        Data_Wydania="2005-08-09"
+                        Liczba_Stron="127"
+                        Ocena_Podręcznika="7.9"
+                        Cena_Podręcznika="115.55"/>
+            <Podręcznik Tytuł="Ścieżki Przeklętych: Wieże Altdorfu"
+                        Tytuł_Oryginalny="Paths of the Damned: Spires of Altdorf"
+                        Data_Wydania="2005-09-13"
+                        Liczba_Stron="94"
+                        Ocena_Podręcznika="5.8"
+                        Cena_Podręcznika="99.99"/>
+            <Podręcznik Tytuł="Ścieżki przeklętych: Kuźnie Nuln"
+                        Tytuł_Oryginalny="Paths of the Damned: Forges of Nuln"
+                        Data_Wydania="2006-01-31"
+                        Liczba_Stron="96"
+                        Ocena_Podręcznika="6.2"
+                        Cena_Podręcznika="169.69"/>
+            <Podręcznik Tytuł="Dzieci Rogatego Szczura"
+                        Tytuł_Oryginalny="Children of the Horned Rat "
+                        Data_Wydania="2005-05-23"
+                        Liczba_Stron="128"
+                        Ocena_Podręcznika="6.5"
+                        Cena_Podręcznika="150.35"/>
+            <Podręcznik Tytuł="Księga Spaczenia"
+                        Tytuł_Oryginalny="Tome of Corruption"
+                        Data_Wydania="2006-10-10"
+                        Liczba_Stron="256"
+                        Ocena_Podręcznika="8.7"
+                        Cena_Podręcznika="110.00"/>
+            <Podręcznik Tytuł="Mroczni Władcy Nocy"
+                        Tytuł_Oryginalny="Night's Dark Masters"
+                        Data_Wydania="2007-06-01"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="9.0"
+                        Cena_Podręcznika="112.00"/>
+            <Podręcznik Tytuł="Księga Zbawienia"
+                        Tytuł_Oryginalny="Tome of Salvation"
+                        Data_Wydania="2008-07-15"
+                        Liczba_Stron="264"
+                        Ocena_Podręcznika="8.6"
+                        Cena_Podręcznika="113.15"/>
+         </Podręczniki>
+      </System_gry>
+      <System_gry Nazwa="Zew Cthulhu RPG - 7 edycja"
+                  Gatunek="Dark Fantasy"
+                  Wydawca="Black Monk"
+                  Popularność="21%"
+                  Format="A4">
+         <Podręczniki>
+            <Podręcznik Tytuł="Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic"
+                        Tytuł_Oryginalny="Call of Cthulhu 7th Edition - Keeper's Rulebook"
+                        Data_Wydania="2016-05-16"
+                        Liczba_Stron="488"
+                        Ocena_Podręcznika="9.1"
+                        Cena_Podręcznika="222.00"/>
+            <Podręcznik Tytuł="Samotnie przeciwko ciemności - Zniweczenie triumfu lodu"
+                        Tytuł_Oryginalny="Alone Against the Dark - Defying the Triumph of the Ice"
+                        Data_Wydania="2018-09-12"
+                        Liczba_Stron="108"
+                        Ocena_Podręcznika="7.8"
+                        Cena_Podręcznika="168.25"/>
+         </Podręczniki>
+      </System_gry>
+      <System_gry Nazwa="Dark Heresy - 2 Edycja"
+                  Gatunek="Science Fiction"
+                  Wydawca="Copernicus Corporation"
+                  Popularność="14%"
+                  Format="A4">
+         <Podręczniki>
+            <Podręcznik Tytuł="Dark Heresy 2 RPG - Podręcznik Podstawowy"
+                        Tytuł_Oryginalny="Dark Heresy RPG Second Edition Core Rulebook"
+                        Data_Wydania="2014-04-09"
+                        Liczba_Stron="448"
+                        Ocena_Podręcznika="7.4"
+                        Cena_Podręcznika="145.99"/>
+            <Podręcznik Tytuł="Zapomniani bogowie"
+                        Tytuł_Oryginalny="Forgotten Gods"
+                        Data_Wydania="2015-01-28"
+                        Liczba_Stron="141"
+                        Ocena_Podręcznika="5.9"
+                        Cena_Podręcznika="78.50"/>
+            <Podręcznik Tytuł="Wróg Wewnętrzny"
+                        Tytuł_Oryginalny="Enemies Within"
+                        Data_Wydania="2015-04-29"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="8.1"
+                        Cena_Podręcznika="45.89"/>
+            <Podręcznik Tytuł="Wróg Zewnętrzny"
+                        Tytuł_Oryginalny="Enemies Without"
+                        Data_Wydania="2015-10-30"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="7.5"
+                        Cena_Podręcznika="46.99"/>
+            <Podręcznik Tytuł="Wróg Spoza Rzeczywistości"
+                        Tytuł_Oryginalny="Enemies Beyond"
+                        Data_Wydania="2016-02-01"
+                        Liczba_Stron="144"
+                        Ocena_Podręcznika="8.1"
+                        Cena_Podręcznika="50.00"/>
+         </Podręczniki>
+      </System_gry>
+      <System_gry Nazwa="Wolsung: Magia Wieku Pary"
+                  Gatunek="Steampunk"
+                  Wydawca="Kuźnia Gier"
+                  Popularność="1%"
+                  Format="B5">
+         <Podręczniki>
+            <Podręcznik Tytuł="Wolsung: Magia Wieku Pary"
+                        Data_Wydania="2009-09-30"
+                        Liczba_Stron="480"
+                        Ocena_Podręcznika="6.1"
+                        Cena_Podręcznika="156.99"/>
+            <Podręcznik Tytuł="Lyonesse: Miasto, Mgła, Maszyna"
+                        Data_Wydania="2010-07-25"
+                        Liczba_Stron="128"
+                        Ocena_Podręcznika="6.7"
+                        Cena_Podręcznika="85.95"/>
+            <Podręcznik Tytuł="Almanach Nadzwyczajny"
+                        Data_Wydania="2011-03-25"
+                        Liczba_Stron="96"
+                        Ocena_Podręcznika="6.6"
+                        Cena_Podręcznika="44.00"/>
+            <Podręcznik Tytuł="Slawia: Rzeczpospolita Przeklęta"
+                        Data_Wydania="2013-03-22"
+                        Liczba_Stron="129"
+                        Ocena_Podręcznika="4.8"
+                        Cena_Podręcznika="66.75"/>
+            <Podręcznik Tytuł="Wolsung: Magia Wieku Pary - edycja 1.5"
+                        Data_Wydania="2013-08-31"
+                        Liczba_Stron="473"
+                        Ocena_Podręcznika="8.9"
+                        Cena_Podręcznika="188.19"/>
+            <Podręcznik Tytuł="Dzień, w którym zatonęła Urda"
+                        Data_Wydania="2016-04-19"
+                        Liczba_Stron="30"
+                        Ocena_Podręcznika="7.7"
+                        Cena_Podręcznika="89.99"/>
+         </Podręczniki>
+      </System_gry>
+   </Posortowane_systemy_według_popularności>
+   <Podsumowanie_kolekcji>
+      <Liczba_systemów_gry>4</Liczba_systemów_gry>
+      <Liczba_gier_dark_fantasy>1</Liczba_gier_dark_fantasy>
+      <Liczba_gier_fantasy>1</Liczba_gier_fantasy>
+      <Liczba_gier_science_fiction>1</Liczba_gier_science_fiction>
+      <Liczba_gier_steampunk>1</Liczba_gier_steampunk>
+      <Cena_za_całą_kolekcję>2793.7zł</Cena_za_całą_kolekcję>
+      <VAT_od_wszystkich_podręczników>643zł</VAT_od_wszystkich_podręczników>
+      <Średnia_cena_za_podstawkę>189.59zł</Średnia_cena_za_podstawkę>
+      <Średnia_cena_za_bestiariusz>178.29zł</Średnia_cena_za_bestiariusz>
+      <Średnia_cena_za_kampanię>110.91zł</Średnia_cena_za_kampanię>
+      <Średnia_cena_za_przygodę>129.12zł</Średnia_cena_za_przygodę>
+      <Średnia_cena_za_rozszerzenie>85.47zł</Średnia_cena_za_rozszerzenie>
+      <Najwyższa_ocena_za_podręcznik>9.1</Najwyższa_ocena_za_podręcznik>
+      <Średnia_ocena_podręcznika>7.47</Średnia_ocena_podręcznika>
+      <Najmniej_stron>30</Najmniej_stron>
+      <Średnia_liczba_stron>197.43</Średnia_liczba_stron>
+      <Najwięcej_stron>488</Najwięcej_stron>
+      <Najwyższa_cena_podręcznika>234.79zł</Najwyższa_cena_podręcznika>
+      <Najniższa_cena_podręcznika>44zł</Najniższa_cena_podręcznika>
+      <Średnia_cena_podręcznika>121.47zł</Średnia_cena_podręcznika>
+      <Data_podsumowania>07-05-2019</Data_podsumowania>
+   </Podsumowanie_kolekcji>
+</Zestawienie_gier_rpg>
