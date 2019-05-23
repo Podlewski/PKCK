@@ -1,0 +1,67 @@
+____________________________________________________________________________________________________________________________________
+|                  Nazwa systemu                   |      Gatunek      |         Wydawca         |   Popularność    |    Format    |
+|__________________________________________________|___________________|_________________________|__________________|______________|
+  Warhammer Fantasy Roleplay - 2 Edycja              Fantasy             Copernicus Corporation    29%                A4
+
+   Tytuł                                                      Data Wydania    Liczba Stron    Ocena Podręcznika    Cena Podręcznika
+    Warhammer 2 ed. RPG - Podręcznik Główny                    2005-03-29      265             9.0                  234.79 zł
+    Bestiariusz Starego Świata                                 2005-05-17      120             7.2                  178.29 zł
+    Ścieżki Przeklętych: Popioły Middenheim                    2005-05-31      94              8.3                  120.40 zł
+    Dziedzictwo Sigmara                                        2005-08-09      127             7.9                  115.55 zł
+    Ścieżki Przeklętych: Wieże Altdorfu                        2005-09-13      94              5.8                  99.99  zł
+    Ścieżki przeklętych: Kuźnie Nuln                           2006-01-31      96              6.2                  169.69 zł
+    Dzieci Rogatego Szczura                                    2005-05-23      128             6.5                  150.35 zł
+    Księga Spaczenia                                           2006-10-10      256             8.7                  110.00 zł
+    Mroczni Władcy Nocy                                        2007-06-01      144             9.0                  112.00 zł
+    Księga Zbawienia                                           2008-07-15      264             8.6                  113.15 zł
+____________________________________________________________________________________________________________________________________
+  Zew Cthulhu RPG - 7 edycja                         Dark Fantasy        Black Monk                21%                A4
+
+   Tytuł                                                      Data Wydania    Liczba Stron    Ocena Podręcznika    Cena Podręcznika
+    Zew Ctulhu 7 Edycja - Księga Strażnika Tajemnic            2016-05-16      488             9.1                  222.00 zł
+    Samotnie przeciwko ciemności - Zniweczenie triumfu lodu    2018-09-12      108             7.8                  168.25 zł
+____________________________________________________________________________________________________________________________________
+  Dark Heresy - 2 Edycja                             Science Fiction     Copernicus Corporation    14%                A4
+
+   Tytuł                                                      Data Wydania    Liczba Stron    Ocena Podręcznika    Cena Podręcznika
+    Dark Heresy 2 RPG - Podręcznik Podstawowy                  2014-04-09      448             7.4                  145.99 zł
+    Zapomniani bogowie                                         2015-01-28      141             5.9                  78.50  zł
+    Wróg Wewnętrzny                                            2015-04-29      144             8.1                  45.89  zł
+    Wróg Zewnętrzny                                            2015-10-30      144             7.5                  46.99  zł
+    Wróg Spoza Rzeczywistości                                  2016-02-01      144             8.1                  50.00  zł
+____________________________________________________________________________________________________________________________________
+  Wolsung: Magia Wieku Pary                          Steampunk           Kuźnia Gier               1%                 B5
+
+   Tytuł                                                      Data Wydania    Liczba Stron    Ocena Podręcznika    Cena Podręcznika
+    Wolsung: Magia Wieku Pary                                  2009-09-30      480             6.1                  156.99 zł
+    Lyonesse: Miasto, Mgła, Maszyna                            2010-07-25      128             6.7                  85.95  zł
+    Almanach Nadzwyczajny                                      2011-03-25      96              6.6                  44.00  zł
+    Slawia: Rzeczpospolita Przeklęta                           2013-03-22      129             4.8                  66.75  zł
+    Wolsung: Magia Wieku Pary - edycja 1.5                     2013-08-31      473             8.9                  188.19 zł
+    Dzień, w którym zatonęła Urda                              2016-04-19      30              7.7                  89.99  zł
+____________________________________________________________________________________________________________________________________
+
+____________________________________________________________________________________________________________________________________
+|                                                           Podsumowanie                                                           |
+|__________________________________________________________________________________________________________________________________|
+  Liczba systemów gry: 4
+  Liczba gier dark fantasy: 1
+  Liczba gier fantasy: 1
+  Liczba gier science fiction: 1
+  Liczba gier steampunk: 1
+  Cena za całą kolekcję: 2793.7zł
+  VAT od wszystkich podręczników: 643zł
+  Średnia cena za podstawkę: 189.59zł
+  Średnia cena za bestiariusz: 178.29zł
+  Średnia cena za kampanię: 110.91zł
+  Średnia cena za przygodę: 129.12zł
+  Średnia cena za rozszerzenie: 85.47zł
+  Najwyższa ocena podręcznika: 9.1
+  Średnia ocena podręcznika: 7.47
+  Najmniej stron: 30
+  Średnia liczba stron: 197.43
+  Najwięcej stron: 488
+  Najwyższa cena podręcznika: 234.79zł
+  Najniższa cena podręcznika: 44zł
+  Średnia cena podręcznika: 121.47zł
+  Data wygenerowania podsumowania: 07-05-2019
