@@ -8,37 +8,37 @@
         <fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
             <fo:layout-master-set>
                 <fo:simple-page-master master-name="Nasza_kolekcja_gier_rpg" page-height="14in" page-width="14in" font-family="sans-serif">
-                    <fo:region-body region-name="only_region" margin="1in" background-color="#303030"/>
+                    <fo:region-body region-name="only_region" margin="1in" background-color="#696969"/>
                 </fo:simple-page-master>
-                <fo:simple-page-master master-name="Systemy" page-height="14in" page-width="14in" font-family="sans-serif">
-                    <fo:region-body  region-name="only_region" margin="1in" background-color="#303030" />
+                <fo:simple-page-master master-name="Podręczniki" page-height="14in" page-width="14in" font-family="sans-serif">
+                    <fo:region-body  region-name="only_region" margin="1in" background-color="#696969" />
                 </fo:simple-page-master>
                 <fo:simple-page-master master-name="Podsumowanie" page-height="11in" page-width="11in" font-family="sans-serif">
-                    <fo:region-body  region-name="only_region" margin="1in" background-color="#303030" />
+                    <fo:region-body  region-name="only_region" margin="1in" background-color="#696969" />
                 </fo:simple-page-master>
             </fo:layout-master-set>
             <fo:page-sequence master-reference="Nasza_kolekcja_gier_rpg">
                 <fo:flow flow-name="only_region">
-                    <fo:block text-align="center" font-weight="bold" font-family="Arial" font-size="20" color="#ffffff">
+                    <fo:block text-align="center" font-weight="bold" font-family="Georgia" font-size="20" color="#ffffff">
                         <xsl:value-of select="substring('Nasza kolekcja gier rpg', 1)"/>
                     </fo:block>
-                    <fo:table border="dashed 3pt #751b1b" table-layout="fixed" width="100%" font-size="10">
+                    <fo:table border="3pt #ffffff" table-layout="fixed" width="100%" font-size="10">
                         <fo:table-header>
                             <fo:table-row>
                                 <fo:table-cell width="150px">
-                                    <fo:block font-weight="bold" color="#ff3d3d">Nazwa systemu</fo:block>
+                                    <fo:block font-weight="bold" color="#ffffff">Nazwa systemu</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell >
-                                    <fo:block font-weight="bold" color="#ff3d3d">Gatunek</fo:block>
+                                    <fo:block font-weight="bold" color="#ffffff">Gatunek</fo:block>
                                 </fo:table-cell >
                                 <fo:table-cell >
-                                    <fo:block font-weight="bold" color="#ff3d3d">Wydawca</fo:block>
+                                    <fo:block font-weight="bold" color="#ffffff">Wydawca</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell >
-                                    <fo:block font-weight="bold" color="#ff3d3d">Popularność</fo:block>
+                                    <fo:block font-weight="bold" color="#ffffff">Popularnosc</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell >
-                                    <fo:block font-weight="bold" color="#ff3d3d">Format</fo:block>
+                                    <fo:block font-weight="bold" color="#ffffff">Format</fo:block>
                                 </fo:table-cell>
                             </fo:table-row>
                         </fo:table-header>
@@ -46,27 +46,27 @@
                             <fo:table-body>
                                 <fo:table-row>
                                     <fo:table-cell >
-                                        <fo:block color="#ff3d3d">
+                                        <fo:block color="#ffffff">
                                             <xsl:value-of select="@Nazwa"/>
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell >
-                                        <fo:block color="#ff3d3d">
+                                        <fo:block color="#ffffff">
                                             <xsl:value-of select="@Gatunek"/>
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell>
-                                        <fo:block color="#ff3d3d"> 
+                                        <fo:block color="#ffffff"> 
                                             <xsl:value-of select="@Wydawca"/>
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell >
-                                        <fo:block color="#ff3d3d">
+                                        <fo:block color="#ffffff">
                                             <xsl:value-of select="@Popularność"/>
                                         </fo:block>
                                     </fo:table-cell>
                                     <fo:table-cell >
-                                        <fo:block color="#ff3d3d">
+                                        <fo:block color="#ffffff">
                                             <xsl:value-of select="@Format"/>
                                         </fo:block>
                                     </fo:table-cell>
@@ -78,17 +78,17 @@
             </fo:page-sequence>
             <fo:page-sequence master-reference="Podręczniki">
                 <fo:flow flow-name="only_region">
-                    <fo:block text-align="center" font-weight="bold" font-family="Arial" font-size="20" color="#ffffff">
+                    <fo:block text-align="center" font-weight="bold" font-family="Georgia" font-size="20" color="#ffffff">
                         <xsl:value-of select="substring('Podręczniki', 1)"/>
                     </fo:block>
-                    <fo:table border="dashed 3pt #751b1b" table-layout="fixed" width="100%" font-size="10">
+                    <fo:table border="3pt #ffffff" table-layout="fixed" width="100%" font-size="10">
                         <fo:table-header>
                             <fo:table-row>
                                 <fo:table-cell width="150px">
                                     <fo:block font-weight="bold" font-size="15" color="#ffffff">Nazwa systemu</fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell >
-                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Podręcznik</fo:block>
+                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Podrecznik</fo:block>
                                 </fo:table-cell >
                                 <fo:table-cell >
                                     <fo:block font-weight="bold" font-size="15" color="#ffffff">Data wydania</fo:block>
@@ -97,10 +97,10 @@
                                     <fo:block font-weight="bold" font-size="15" color="#ffffff">Liczba stron</fo:block>
                                 </fo:table-cell >
 								<fo:table-cell >
-                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Ocena podręcznika</fo:block>
+                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Ocena</fo:block>
                                 </fo:table-cell >
 								<fo:table-cell >
-                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Cena podręcznika</fo:block>
+                                    <fo:block font-weight="bold" font-size="15" color="#ffffff">Cena</fo:block>
                                 </fo:table-cell >
                             </fo:table-row>
                         </fo:table-header>
@@ -108,7 +108,7 @@
                             <fo:table-body>
                                 <fo:table-row>
                                     <fo:table-cell >
-                                        <fo:block color="#ff3d3d">
+                                        <fo:block color="#ffffff">
                                             <xsl:value-of select="@Nazwa"/>
                                         </fo:block>
                                     </fo:table-cell>
@@ -120,22 +120,27 @@
 												</fo:block>
 											</fo:table-cell>
 											<fo:table-cell>
-												<fo:block color="#ff3d3d">
+												<fo:block color="#ffffff">
 													<xsl:value-of select="@Tytuł"/>
 												</fo:block>
 											</fo:table-cell>
 											<fo:table-cell>
-												<fo:block color="#ff3d3d">
+												<fo:block color="#ffffff">
+													<xsl:value-of select="@Data_Wydania"/>
+												</fo:block>
+											</fo:table-cell>
+											<fo:table-cell>
+												<fo:block color="#ffffff">
 													<xsl:value-of select="@Liczba_Stron"/>
 												</fo:block>
 											</fo:table-cell>
 											<fo:table-cell>
-												<fo:block color="#ff3d3d">
+												<fo:block color="#ffffff">
 													<xsl:value-of select="@Ocena_Podręcznika"/>
 												</fo:block>
 											</fo:table-cell>
 											<fo:table-cell>
-												<fo:block color="#ff3d3d">
+												<fo:block color="#ffffff">
 													<xsl:value-of select="@Cena_Podręcznika"/>
 												</fo:block>
 											</fo:table-cell>
@@ -146,13 +151,14 @@
                     </fo:table>
                 </fo:flow>
             </fo:page-sequence>
+			
             <fo:page-sequence master-reference="Podsumowanie">
                 <fo:flow flow-name="only_region">
                     <fo:block text-align="center" font-weight="bold" font-size="12" color="#ffffff">Podsumowanie</fo:block>
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Liczba systemów: </fo:block>
+                                <fo:block color="#ffffff">Liczba systemow: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -210,7 +216,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Łączna cena za naszą kolekcję: </fo:block>
+                                <fo:block color="#ffffff">Laczna cena za nasza kolekcje: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -234,7 +240,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średnia cena za podstawkę: </fo:block>
+                                <fo:block color="#ffffff">Srednia cena za podstawkę: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -246,7 +252,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średni cena za bestiariusz: </fo:block>
+                                <fo:block color="#ffffff">Srednia cena za bestiariusz: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -258,7 +264,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średna cena za przygodę: </fo:block>
+                                <fo:block color="#ffffff">Srednia cena za przygode: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -270,7 +276,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średna cena za kampanię: </fo:block>
+                                <fo:block color="#ffffff">Srednia cena za kampanie: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -282,7 +288,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średnia cena za rozszerzenie: </fo:block>
+                                <fo:block color="#ffffff">Srednia cena za rozszerzenie: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -294,7 +300,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Najwyższa ocena za podręcznik: </fo:block>
+                                <fo:block color="#ffffff">Najwyzsza ocena za podrecznik: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -306,7 +312,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średnia ocena za podręcznik: </fo:block>
+                                <fo:block color="#ffffff">Srednia ocena za podrecznik: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -318,7 +324,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Najmniejsza liczba stron podręcznika: </fo:block>
+                                <fo:block color="#ffffff">Najmniejsza liczba stron podrecznika: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -330,7 +336,7 @@
                     <fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średnia liczba stron: </fo:block>
+                                <fo:block color="#ffffff">Srednia liczba stron: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -342,7 +348,7 @@
 					<fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Największa liczba stron: </fo:block>
+                                <fo:block color="#ffffff">Najwieksza liczba stron: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -354,7 +360,7 @@
 					<fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Najwyższa cena podręcznika: </fo:block>
+                                <fo:block color="#ffffff">Najwyzsza cena podrecznika: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -366,7 +372,7 @@
 					<fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Najniższa cena podręcznika: </fo:block>
+                                <fo:block color="#ffffff">Najnizsza cena podrecznika: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
@@ -378,7 +384,7 @@
 					<fo:list-block>
                         <fo:list-item>
                             <fo:list-item-label>
-                                <fo:block color="#ffffff">Średnia cena podręcznika: </fo:block>
+                                <fo:block color="#ffffff">Erednia cena podrecznika: </fo:block>
                             </fo:list-item-label>
                             <fo:list-item-body>
                                 <fo:block margin-left="20em" color="#ffffff">
