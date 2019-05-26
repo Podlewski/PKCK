@@ -26,10 +26,10 @@
 		   }
 		  ]]> </script>
 
-		<text x="055" y="055" font-family="sans-serif" fill="#ffffff" font-size="50" >
+		<text x="055" y="055" font-family="georgia" fill="#ffffff" font-size="50" allign ="center" >
 			Nasza kolekcja gier rpg:
 		</text>
-		<text x="055" y="855" font-family="sans-serif" fill="#ffffff" font-size="30" >
+		<text x="055" y="855" font-family="georgia" fill="#ffffff" font-size="50" >
 			Podsumowanie:
 		</text>
     	<xsl:for-each select="Posortowane_systemy_według_popularności/System_gry">
@@ -37,30 +37,27 @@
     		<xsl:variable name="pos" select="(position()-1) * 600"/>
     		<xsl:variable name="nazwa" select="@Nazwa"/>
     		<xsl:variable name="ocena" select="number(substring(@Popularność,0,3))"/>
-    		<xsl:variable name="dl_albumu" select="number(substring(@Dlugosc_albumu,4,2))*60+number(substring(@Dlugosc_albumu,7,2))"/>	
-			<rect x="{$pos + 100}" y="100" height="705" width="520" fill="#202020" stroke="black" stroke-width="5"/>
-							<text writing-mode="horizontal-tb"  x="{$pos + 119}" y="149" font-family="sans-serif" font-size="40" fill="#000000">
-							  <xsl:value-of select="$nazwa"/>
-							 </text>
-							  <text writing-mode="horizontal-tb"  x="{$pos + 115}" y="145" font-family="sans-serif" font-size="40" fill="#ff3d3d">
+    		<xsl:variable name="dl_albumu" select="number(substring(@Popularność,4,2))*60+number(substring(@Popularność,7,2))"/>	
+			<rect x="{$pos + 100}" y="100" height="590" width="580" fill="#202020" stroke="white" stroke-width="10" />
+							  <text writing-mode="horizontal-tb"  x="{$pos + 115}" y="145" font-family="sans-serif" font-size="30" fill="#ffffff">
 							  <xsl:value-of select="$nazwa"/>
 							</text>
-							<text writing-mode="horizontal-tb"  x="{$pos + 335}" y="145" font-family="sans-serif" font-size="40" fill="#0000000">
+							<text writing-mode="vertical-rl"  x="{$pos + 635}" y="375" font-family="sans-serif" font-size="20" fill="#ffffff">
 							  <xsl:value-of select="@Wydawca"/>
 							</text>
-							<text x="{$pos + 525}" y="200" font-family="sans-serif" font-size="40" fill="#000000">
+							<text x="{$pos + 525}" y="200" font-family="sans-serif" font-size="30" fill="#ffffff">
 							  <xsl:value-of select="@Popularność"/>
 							</text>
 
 							<rect x="{$pos + 115}" y="170" height="30" width="0" fill="#000000" 
-							stroke="black" stroke-width="2">
+							stroke="black" stroke-width="6">
 							<animate attributeType="XML" attributeName="width" from="0" to="{400}"
 							dur="1s" fill="freeze"/>
 							</rect>
-							<rect x="{$pos + 115}" y="170" height="30" width="0" fill="#ff3d3d" 
+							<rect x="{$pos + 115}" y="170" height="30" width="0" fill="#ffffff" 
 							stroke="black" stroke-width="2">
 							<animate attributeType="XML" attributeName="width" from="0" to="{$ocena*4}"
-							dur="1s" fill="freeze"/>
+							dur="3s" fill="freeze"/>
 							</rect>
 								<xsl:for-each select="Podręczniki/Podręcznik">
 								<xsl:variable name="pos2" select="(position()-1) * 45"/>
