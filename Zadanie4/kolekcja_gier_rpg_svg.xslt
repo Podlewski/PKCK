@@ -45,18 +45,19 @@
 							<text writing-mode="vertical-rl"  x="{$pos + 635}" y="375" font-family="sans-serif" font-size="20" fill="#ffffff">
 							  <xsl:value-of select="@Wydawca"/>
 							</text>
-							<text x="{$pos + 525}" y="200" font-family="sans-serif" font-size="30" fill="#ffffff">
+							<text x="{$pos + 350}" y="195" font-family="sans-serif" font-size="25" fill="#ffffff">
+							Popularność: 
 							  <xsl:value-of select="@Popularność"/>
 							</text>
 
 							<rect x="{$pos + 115}" y="170" height="30" width="0" fill="#000000" 
 							stroke="black" stroke-width="6">
-							<animate attributeType="XML" attributeName="width" from="0" to="{400}"
+							<animate attributeType="XML" attributeName="width" from="0" to="{200}"
 							dur="1s" fill="freeze"/>
 							</rect>
 							<rect x="{$pos + 115}" y="170" height="30" width="0" fill="#ffffff" 
 							stroke="black" stroke-width="2">
-							<animate attributeType="XML" attributeName="width" from="0" to="{$ocena*4}"
+							<animate attributeType="XML" attributeName="width" from="0" to="{$ocena*2}"
 							dur="3s" fill="freeze"/>
 							</rect>
 								<xsl:for-each select="Podręczniki/Podręcznik">
@@ -64,11 +65,9 @@
 								<text x="{115 + $pos}" y="{230 + $pos2 - 5}" font-family="sans-serif" font-size="20" fill="#abcdef">
 								<xsl:value-of select="@Tytuł"/>
 								</text>
-								<rect x="{115 + $pos}" y="{230 + $pos2}" height="17" width="0" fill="cccccc" stroke="black" stroke-width="2" >
-								<animate attributeType="XML" attributeName="width" from="0" to="{number(substring(@Liczba_Stron,4,2))*60+number(substring(@Liczba_Stron,7,2))}" dur="1s" fill="freeze"/>
-								</rect>
-								<text x="{115 + $pos}" y="{230 + $pos2 + 16}" font-family="sans-serif" font-size="20" fill="#fffff0">
-								<xsl:value-of select="substring(@Liczba_Stron,4,5)"/>
+								<text x="{115 + $pos}" y="{230 + $pos2 + 16}" font-family="sans-serif" font-size="20" fill="#C0C0C0">
+								Liczba stron: 
+								<xsl:value-of select="@Liczba_Stron"/>
 								</text>
 								</xsl:for-each>
 							<xsl:variable name="anchor" select="(360 + (position()-1) * 45)"/>
