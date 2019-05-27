@@ -8,32 +8,29 @@
 		
 		<rect width="100%" height="100%" fill="#303030"/>
 
-	<script type="text/ecmascript"> <![CDATA[
-		    function cColor(evt) {
-		      var rect = evt.target;
-		      var Fill = rect.getAttribute("fill");
-		      var Height = rect.getAttribute("height");
-		      var Height 2 = 2*Height;
-		      var audio = new Audio('ocnPdr.mp3');
-		      
-		      if (Fill=="#ff3d3d")
-		        {rect.setAttribute("fill", "#ff7a85");
-				rec.setAttribute("height","Height*2"}
-		      
-		      if (Fill=="#ff7a85")
-		        {rect.setAttribute("fill", "#ff3d3d");
-		        audio.play();}
-		   }
-		  ]]> </script>
+	<script type="text/javascript">
+                <xsl:text>
+                    function changeColour(evt) {
+                        var obj = evt.target;
+						var attr = obj.getAttribute("fill");
+						
+						if (attr=="#202020") 
+						{ obj.setAttribute("fill", "#404040"); }
+						
+						if (attr=="#404040") 
+						{ obj.setAttribute("fill", "#202020"); }
+                    }                 
+                </xsl:text>
+	</script>
 
-		<text x="055" y="055" font-family="georgia" fill="#ffffff" font-size="50" allign ="center" >
+		<text x="055" y="055" font-family="georgia" fill="#ffffff" font-size="50" allign ="center">
 			Nasza kolekcja gier rpg:
 		</text>
     	<xsl:for-each select="Posortowane_systemy_według_popularności/System_gry">
     		<xsl:variable name="pos" select="(position()-1) * 600"/>
     		<xsl:variable name="nazwa" select="@Nazwa"/>
     		<xsl:variable name="ocena" select="number(substring(@Popularność,0,3))"/>
-			<rect x="{$pos + 100}" y="100" height="1270" width="580" fill="#202020" stroke="white" stroke-width="10" />
+			<rect x="{$pos + 100}" y="100" height="1270" width="580" fill="#202020" stroke="white" stroke-width="10" onclick="changeColour(evt)"/>
 							 <text writing-mode="horizontal-tb"  x="{$pos + 115}" y="145" font-family="sans-serif" font-size="30" fill="#ffffff">
 							  <xsl:value-of select="$nazwa"/>
 							</text>
