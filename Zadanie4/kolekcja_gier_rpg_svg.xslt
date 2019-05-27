@@ -13,12 +13,16 @@
                     function changeColour(evt) {
                         var obj = evt.target;
 						var attr = obj.getAttribute("fill");
+						var audio = new Audio('Muzyka.mp3');
+						
+						audio.play();
 						
 						if (attr=="#202020") 
 						{ obj.setAttribute("fill", "#404040"); }
 						
 						if (attr=="#404040") 
 						{ obj.setAttribute("fill", "#202020"); }
+						
                     }                 
                 </xsl:text>
 	</script>
