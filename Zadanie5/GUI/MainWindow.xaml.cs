@@ -91,6 +91,7 @@ namespace GUI
         private void Save(object sender, RoutedEventArgs e)
         {
             Serialization.Serialize(LoadPath(false), kgr);
+            Serialization.SerializeToTxt(kgr);
         }
 
         public string LoadPath(bool loadMode)
