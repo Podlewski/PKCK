@@ -51,8 +51,8 @@ namespace GUI
             foreach (var sys in kgr.Nasza_kolekcja.Sys)
             {
                 text += "\tNazwa: " + sys.Nazwa + '\n';
-                text += "\tWydawca: " + sys.Wydawca_id + '\n';
-                text += "\tGatunek: " + sys.Gatunek_id + '\n';
+                text += "\tWydawca: " + Getters.GetWydawca(kgr, sys).Text + '\n';
+                text += "\tGatunek: " + Getters.GetGatunek(kgr, sys).Text + '\n';
                 text += "\tPopularnosc: " + sys.Popularnosc + '\n';
                 text += "\tFormat: " + sys.Format + '\n';
 
@@ -64,7 +64,7 @@ namespace GUI
                     if (hb.Tytul_oryginalny != null)
                         text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
 
-                    text += "\t\t\tTyp: " + hb.Typ_id + '\n';
+                    text += "\t\t\tTyp: " + Getters.GetTyp(kgr, hb).Text + '\n';
                     text += "\t\t\tData wydania: " + hb.Data_wydania + '\n';
                     text += "\t\t\tLiczba stron: " + hb.Liczba_stron + '\n';
                     text += "\t\t\tOcena podrecznika: " + hb.Ocena_podrecznika+ '\n';
