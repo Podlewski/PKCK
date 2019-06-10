@@ -11,7 +11,7 @@
         <Menu VerticalAlignment="Top" Height="25" Background="LightGray" >
             <MenuItem Header="Plik" Margin="5 0 0 0" Height="25">
                 <MenuItem Header="Wczytaj XML" Foreground="Black" Click="Load"/>
-                <MenuItem Header="Zapisz XML" Foreground="Black" />
+                <MenuItem Header="Zapisz XML" Foreground="Black" Click="Save"/>
                 <!--Click="Save"--> />
                 <MenuItem Header="Zamknij" Foreground="Black" />
                 <!--Click="Quit"--> />
