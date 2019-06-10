@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using Logic;
+
 namespace GUI
 {
     /// <summary>
@@ -25,13 +27,61 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void AddHandbook(object sender, RoutedEventArgs e)
+        private void Load(object sender, RoutedEventArgs e)
         {
             NewHandbook window = new NewHandbook();
             window.Show();
         }
 
-        private void Load(object sender, RoutedEventArgs e)
+        private void Write(Kolekcja_gier_rpg kgr)
+        {
+            string text = "";
+
+            text += "Przedmiot: " + kgr.Naglowek.Przedmiot + '\n';
+            text += "Tytul: " + kgr.Naglowek.Projekt + '\n';
+            text += "Autorzy: \n";
+
+            foreach (var author in kgr.Naglowek.Autor)
+                text += '\t' + author + '\n';
+
+            text += "Wydawcy: \n";
+            foreach (var ph in kgr.Wydawcy.Wydawca)
+                text += '\t' + ph.Text + "(" + ph.Wydawca_id + ")\n";
+
+            text += "Gatunki: \n";
+            foreach (var genree in kgr.Gatunki.Gatunek)
+                text += '\t' + genree.Text + "(" + genree.Gatunek_id + ")\n";
+
+            text += "Typy: \n";
+            foreach (var type in kgr.Typy.Typ)
+                text += '\t' + type.Text + "(" + type.Typ_id + ")\n";
+
+            text += "Systemy: \n";
+            foreach (var sys in kgr.Nasza_kolekcja.Sys)
+            {
+                text += "\tNazwa: " + sys.Nazwa + '\n';
+                text += "\tWydawca: " + sys.Wydawca_id + '\n';
+                text += "\tGatunek: " + sys.Gatunek_id + '\n';
+                text += "\tWydawca: " + sys.Popularnosc + '\n';
+                text += "\tGatunek: " + sys.Popularnosc + '\n';
+                text += "\tPopularnosc: " + sys.Popularnosc + '\n';
+                text += "\tFormat: " + sys.Popularnosc + '\n';
+
+                text += "\tPodreczniki:\n";
+                foreach (var hb in sys.Podreczniki.Podrecznik)
+                {
+                    text += "\t\tTytuł: " + hb.Tytul + '\n';
+                    text += "\t\tTytul org: " + hb.Tytul_oryginalny + '\n';
+                    text += "\t\tTyp: " + hb.Typ_id + '\n';
+                    text += "\t\tData wydania: " + hb.Data_wydania + '\n';
+                    text += "\t\tLiczba stron: " + hb.Liczba_stron + '\n';
+                    text += "\t\tOcena podrecznika: " + hb.Ocena_podrecznika+ '\n';
+                    text += "\t\tCena podrecznika: " + hb.Cena_podrecznika + '\n';
+                }
+            }
+        }
+
+        private void AddHandbook(object sender, RoutedEventArgs e)
         {
             NewHandbook window = new NewHandbook();
             window.Show();

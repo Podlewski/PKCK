@@ -12,12 +12,13 @@
             <MenuItem Header="Plik" Margin="5 0 0 0" Height="25">
                 <MenuItem Header="Wczytaj XML" Foreground="Black" Click="Load"/>
                 <MenuItem Header="Zapisz XML" Foreground="Black" />
-                <!--Click="Save"-->/>
+                <!--Click="Save"--> />
                 <MenuItem Header="Zamknij" Foreground="Black" />
-                <!--Click="Quit"-->/>
+                <!--Click="Quit"--> />
             </MenuItem>
             <MenuItem Header="Dodaj podręcznik" Foreground="Black" Click="AddHandbook"/>
         </Menu>
+        <TextBox TextWrapping="Wrap" Margin="10 35 10 10" Text="" />
 
     </Grid>
 </Window>
