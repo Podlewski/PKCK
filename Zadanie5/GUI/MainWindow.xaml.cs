@@ -12,9 +12,16 @@ namespace GUI
     {
         private Kolekcja_gier_rpg kgr;
 
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+        public MainWindow(Kolekcja_gier_rpg k)
+        {
+            kgr = k;
+            InitializeComponent();
+            Write();
         }
 
         private void Write()
@@ -70,7 +77,8 @@ namespace GUI
 
         private void AddHandbook(object sender, RoutedEventArgs e)
         {
-            NewHandbook window = new NewHandbook();
+            NewHandbook window = new NewHandbook(kgr);
+            this.Close();
             window.Show();
         }
 
