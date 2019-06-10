@@ -1,0 +1,23 @@
+﻿<Window x:Class="GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="PKCK - Zadanie 5" Height="450" Width="800">
+    <Grid>
+
+        <Menu VerticalAlignment="Top" Height="25" Background="LightGray" >
+            <MenuItem Header="Plik" Margin="5 0 0 0" Height="25">
+                <MenuItem Header="Wczytaj XML" Foreground="Black" Click="Load"/>
+                <MenuItem Header="Zapisz XML" Foreground="Black" />
+                <!--Click="Save"-->/>
+                <MenuItem Header="Zamknij" Foreground="Black" />
+                <!--Click="Quit"-->/>
+            </MenuItem>
+            <MenuItem Header="Dodaj podręcznik" Foreground="Black" Click="AddHandbook"/>
+        </Menu>
+
+    </Grid>
+</Window>

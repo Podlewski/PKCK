@@ -1,0 +1,53 @@
+﻿<Window x:Class="GUI.NewHandbook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Nowy Podręcznik" Height="325" Width="475">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*" />
+            <ColumnDefinition Width="1.4*" />
+            <ColumnDefinition Width="2.4*" />
+            <ColumnDefinition Width="0.1*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="System:"/>
+        <Label Grid.Row="2" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Typ:"/>
+        <Label Grid.Row="3" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Tytuł:"/>
+        <Label Grid.Row="4" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Tytuł oryginalny:"/>
+        <Label Grid.Row="5" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Data wydania:"/>
+        <Label Grid.Row="6" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Liczba stron:"/>
+        <Label Grid.Row="7" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Ocena podręcznika:"/>
+        <Label Grid.Row="8" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Cena podręcznika:"/>
+
+        <ComboBox Grid.Row="1" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" ItemsSource="{Binding CmbContent}" />
+        <ComboBox Grid.Row="2" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" ItemsSource="{Binding CmbContent}" />
+        <TextBox Grid.Row="3" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="8" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+
+        <Button Grid.Row="9" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25px" Width="100px" Content="Zapisz" FontSize="10px"/>
+        
+
+    </Grid>
+</Window>
