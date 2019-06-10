@@ -57,22 +57,35 @@ namespace GUI
                 text += "\tFormat: " + sys.Format + '\n';
 
                 text += "\tPodreczniki:\n";
-                foreach (var hb in sys.Podreczniki.Podrecznik)
+
+                if(sys.Podreczniki != null)
                 {
-                    text += "\t\tTytuł: " + hb.Tytul + '\n';
+                    foreach (var hb in sys.Podreczniki.Podrecznik)
+                    {
+                        text += "\t\tTytuł: " + hb.Tytul + '\n';
 
-                    if (hb.Tytul_oryginalny != null)
-                        text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
+                        if (hb.Tytul_oryginalny != null)
+                            text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
 
-                    text += "\t\t\tTyp: " + Getters.GetTyp(kgr, hb).Text + '\n';
-                    text += "\t\t\tData wydania: " + hb.Data_wydania + '\n';
-                    text += "\t\t\tLiczba stron: " + hb.Liczba_stron + '\n';
-                    text += "\t\t\tOcena podrecznika: " + hb.Ocena_podrecznika+ '\n';
-                    text += "\t\t\tCena podrecznika: " + hb.Cena_podrecznika + '\n';
+                        text += "\t\t\tTyp: " + Getters.GetTyp(kgr, hb).Text + '\n';
+                        text += "\t\t\tData wydania: " + hb.Data_wydania + '\n';
+                        text += "\t\t\tLiczba stron: " + hb.Liczba_stron + '\n';
+                        text += "\t\t\tOcena podrecznika: " + hb.Ocena_podrecznika + '\n';
+                        text += "\t\t\tCena podrecznika: " + hb.Cena_podrecznika + '\n';
+                    }
                 }
+                else
+                    text += "\t\tbrak podrecznikow";
             }
 
             Box.Text = text;
+        }
+
+        private void AddSystem(object sender, RoutedEventArgs e)
+        {
+            NewSystem window = new NewSystem(kgr);
+            this.Close();
+            window.Show();
         }
 
         private void AddHandbook(object sender, RoutedEventArgs e)

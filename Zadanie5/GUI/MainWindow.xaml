@@ -11,6 +11,7 @@
         <Menu VerticalAlignment="Top" Height="25" Background="LightGray" >
             <MenuItem Header="Wczytaj XML" Margin="5 0 0 0" Height="25" Click="Load"/>
             <MenuItem Header="Zapisz XML" Click="Save" />
+            <MenuItem Header="Dodaj system" Click="AddSystem"/>
             <MenuItem Header="Dodaj podręcznik" Click="AddHandbook"/>
         </Menu>
         

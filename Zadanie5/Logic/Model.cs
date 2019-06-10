@@ -63,22 +63,6 @@ namespace Logic
         public List<Typ> Typ { get; set; }
     }
 
-    [XmlRoot(ElementName = "kość")]
-    public class Kosc
-    {
-        [XmlAttribute(AttributeName = "liczba_kości")]
-        public string Liczba_kosci { get; set; }
-        [XmlText]
-        public string Text { get; set; }
-    }
-
-    [XmlRoot(ElementName = "kości")]
-    public class Kosci
-    {
-        [XmlElement(ElementName = "kość")]
-        public List<Kosc> Kosc { get; set; }
-    }
-
     [XmlRoot(ElementName = "podręcznik")]
     public class Podrecznik
     {
@@ -110,8 +94,6 @@ namespace Logic
     {
         [XmlElement(ElementName = "nazwa")]
         public string Nazwa { get; set; }
-        [XmlElement(ElementName = "kości")]
-        public Kosci Kosci { get; set; }
         [XmlElement(ElementName = "podręczniki")]
         public Podreczniki Podreczniki { get; set; }
         [XmlElement(ElementName = "popularność")]

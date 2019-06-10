@@ -1,6 +1,4 @@
-﻿using System.Xml.Serialization;
-using System.Collections.Generic;
-using System.Windows;
+﻿using System.Windows;
 
 using Logic;
 
