@@ -1,4 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Xml.Serialization;
 
 namespace Logic
@@ -19,6 +22,12 @@ namespace Logic
             TextWriter writer = new StreamWriter(filename);
             serializer.Serialize(writer, root);
             writer.Close();
+        }
+
+        public static void SerializeToTxt(Kolekcja_gier_rpg root)
+        {
+            string projectPath = @"..\..\..\";
+            System.IO.File.WriteAllText(projectPath + "AAA.html", root.Nasza_kolekcja.Sys.ToString());
         }
     }
 }

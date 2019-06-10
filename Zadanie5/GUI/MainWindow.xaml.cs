@@ -97,6 +97,7 @@ namespace GUI
         {
             string projectPath = @"..\..\..\";
             Serialization.Serialize(projectPath + @"Nasza_nowa_kolekcja.xml", kgr);
+            Serialization.SerializeToTxt(kgr);
         }
 
         public string LoadPath(bool loadMode)
