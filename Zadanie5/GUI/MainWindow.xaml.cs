@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,9 +34,48 @@ namespace GUI
 
         private void Load(object sender, RoutedEventArgs e)
         {
-            NewHandbook window = new NewHandbook();
-            window.Show();
+            LoadPath(true);
         }
 
+        private void Save(object sender, RoutedEventArgs e)
+        {
+            LoadPath(false);
+        }
+
+        public string LoadPath(bool loadMode)
+        {
+            if(loadMode)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog
+                {
+                    RestoreDirectory = true
+                };
+
+                openFileDialog.ShowDialog();
+
+                if (openFileDialog.FileName.Length == 0)
+                {
+                    MessageBox.Show("No files selected");
+                    return null;
+                }
+
+                return openFileDialog.FileName;
+            }
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog()
+            {
+                RestoreDirectory = true
+            };
+
+            saveFileDialog.ShowDialog();
+
+            if (saveFileDialog.FileName.Length == 0)
+            {
+                MessageBox.Show("No files selected");
+                return null;
+            }
+
+            return saveFileDialog.FileName;
+        }
     }
 }
