@@ -1,18 +1,5 @@
 ﻿using Microsoft.Win32;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 using Logic;
 
@@ -43,15 +30,15 @@ namespace GUI
 
             text += "Wydawcy: \n";
             foreach (var ph in kgr.Wydawcy.Wydawca)
-                text += '\t' + ph.Text + "(" + ph.Wydawca_id + ")\n";
+                text += '\t' + ph.Text + " (" + ph.Wydawca_id + ")\n";
 
             text += "Gatunki: \n";
             foreach (var genree in kgr.Gatunki.Gatunek)
-                text += '\t' + genree.Text + "(" + genree.Gatunek_id + ")\n";
+                text += '\t' + genree.Text + " (" + genree.Gatunek_id + ")\n";
 
             text += "Typy: \n";
             foreach (var type in kgr.Typy.Typ)
-                text += '\t' + type.Text + "(" + type.Typ_id + ")\n";
+                text += '\t' + type.Text + " (" + type.Typ_id + ")\n";
 
             text += "Systemy: \n";
             foreach (var sys in kgr.Nasza_kolekcja.Sys)
@@ -59,16 +46,17 @@ namespace GUI
                 text += "\tNazwa: " + sys.Nazwa + '\n';
                 text += "\tWydawca: " + sys.Wydawca_id + '\n';
                 text += "\tGatunek: " + sys.Gatunek_id + '\n';
-                text += "\tWydawca: " + sys.Popularnosc + '\n';
-                text += "\tGatunek: " + sys.Popularnosc + '\n';
                 text += "\tPopularnosc: " + sys.Popularnosc + '\n';
-                text += "\tFormat: " + sys.Popularnosc + '\n';
+                text += "\tFormat: " + sys.Format + '\n';
 
                 text += "\tPodreczniki:\n";
                 foreach (var hb in sys.Podreczniki.Podrecznik)
                 {
                     text += "\t\tTytuł: " + hb.Tytul + '\n';
-                    text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
+
+                    if (hb.Tytul_oryginalny != null)
+                        text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
+
                     text += "\t\t\tTyp: " + hb.Typ_id + '\n';
                     text += "\t\t\tData wydania: " + hb.Data_wydania + '\n';
                     text += "\t\t\tLiczba stron: " + hb.Liczba_stron + '\n';
@@ -84,7 +72,6 @@ namespace GUI
         {
             NewHandbook window = new NewHandbook();
             window.Show();
-
         }
 
         private void Load(object sender, RoutedEventArgs e)

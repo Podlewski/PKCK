@@ -39,12 +39,12 @@
 
         <ComboBox Grid.Row="1" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" ItemsSource="{Binding CmbContent}" />
         <ComboBox Grid.Row="2" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" ItemsSource="{Binding CmbContent}" />
-        <TextBox Grid.Row="3" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
-        <TextBox Grid.Row="4" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
-        <TextBox Grid.Row="5" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
-        <TextBox Grid.Row="6" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
-        <TextBox Grid.Row="7" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
-        <TextBox Grid.Row="8" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Text="{Binding A_Amplitude}"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Title"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="TitleOrg"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Date"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Pages"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Rate"/>
+        <TextBox Grid.Row="8" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Price"/>
 
         <Button Grid.Row="9" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right" Height="25px" Width="100px" Content="Zapisz" FontSize="10px"/>
         
