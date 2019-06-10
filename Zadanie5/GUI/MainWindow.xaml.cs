@@ -90,8 +90,7 @@ namespace GUI
 
         private void Save(object sender, RoutedEventArgs e)
         {
-            string projectPath = @"..\..\..\";
-            Serialization.Serialize(projectPath + @"Nasza_nowa_kolekcja.xml", kgr);
+            Serialization.Serialize(LoadPath(false), kgr);
         }
 
         public string LoadPath(bool loadMode)
