@@ -2,7 +2,7 @@
 using System.Xml.Serialization;
 using System.Collections.Generic;
 
-namespace Xml2CSharp
+namespace Logic
 {
     [XmlRoot(ElementName = "nagłówek")]
     public class Nagłówek
@@ -105,8 +105,8 @@ namespace Xml2CSharp
         public List<Podręcznik> Podręcznik { get; set; }
     }
 
-    [XmlRoot(ElementName = "system")]
-    public class System
+    [XmlRoot(ElementName = "sys")]
+    public class Sys
     {
         [XmlElement(ElementName = "nazwa")]
         public string Nazwa { get; set; }
@@ -128,7 +128,7 @@ namespace Xml2CSharp
     public class Nasza_kolekcja
     {
         [XmlElement(ElementName = "system")]
-        public List<System> System { get; set; }
+        public List<Sys> Sys { get; set; }
     }
 
     [XmlRoot(ElementName = "kolekcja_gier_rpg")]

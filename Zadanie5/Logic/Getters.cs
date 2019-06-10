@@ -4,26 +4,20 @@ namespace Logic
 {
     public static class Getters
     {
-        public static 
-
-        public static Artist GetArtis(Background root, Album album)
+        public static Wydawca GetWydawca(Kolekcja_gier_rpg root, Sys system)
         {
-            return root.Document.Library.Artists.Artist.Where(x => x.Aid == album.Aid).FirstOrDefault();
+            return root.Wydawcy.Wydawca.Where(x => x.Wydawca_id == system.Wydawca_id).FirstOrDefault();
         }
 
-        public static Medium GetMedium(Background root, Album album)
+        public static Gatunek GetGatunek(Kolekcja_gier_rpg root, Sys system)
         {
-            return root.Document.Library.Mediums.Medium.Where(x => x.Mid == album.Mid).FirstOrDefault();
+            return root.Gatunki.Gatunek.Where(x => x.Gatunek_id == system.Gatunek_id).FirstOrDefault();
         }
 
-        public static Currency GetCurrency(Background root, Album album)
+        public static Typ GetTyp(Kolekcja_gier_rpg root, Podręcznik podręcznik)
         {
-            return root.Document.Library.Currencies.Currency.Where(x => x.Cid == album.Price.Cid).FirstOrDefault();
+            return root.Typy.Typ.Where(x => x.Typ_id == podręcznik.Typ_id).FirstOrDefault();
         }
-
-        public static Genre GetGenre(Background root, Album album)
-        {
-            return root.Document.Library.Genres.Genre.Where(x => x.Gid == album.Gid).FirstOrDefault();
-        }
+    
     }
 }
