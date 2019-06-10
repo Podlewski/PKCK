@@ -23,18 +23,14 @@ namespace GUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        private Kolekcja_gier_rpg kgr;
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void Load(object sender, RoutedEventArgs e)
-        {
-            NewHandbook window = new NewHandbook();
-            window.Show();
-        }
-
-        private void Write(Kolekcja_gier_rpg kgr)
+        private void Write()
         {
             string text = "";
 
@@ -72,19 +68,29 @@ namespace GUI
                 foreach (var hb in sys.Podreczniki.Podrecznik)
                 {
                     text += "\t\tTytuł: " + hb.Tytul + '\n';
-                    text += "\t\tTytul org: " + hb.Tytul_oryginalny + '\n';
-                    text += "\t\tTyp: " + hb.Typ_id + '\n';
-                    text += "\t\tData wydania: " + hb.Data_wydania + '\n';
-                    text += "\t\tLiczba stron: " + hb.Liczba_stron + '\n';
-                    text += "\t\tOcena podrecznika: " + hb.Ocena_podrecznika+ '\n';
-                    text += "\t\tCena podrecznika: " + hb.Cena_podrecznika + '\n';
+                    text += "\t\t\tTytul orginalny: " + hb.Tytul_oryginalny + '\n';
+                    text += "\t\t\tTyp: " + hb.Typ_id + '\n';
+                    text += "\t\t\tData wydania: " + hb.Data_wydania + '\n';
+                    text += "\t\t\tLiczba stron: " + hb.Liczba_stron + '\n';
+                    text += "\t\t\tOcena podrecznika: " + hb.Ocena_podrecznika+ '\n';
+                    text += "\t\t\tCena podrecznika: " + hb.Cena_podrecznika + '\n';
                 }
             }
+
+            Box.Text = text;
         }
 
         private void AddHandbook(object sender, RoutedEventArgs e)
         {
-            LoadPath(true);
+            NewHandbook window = new NewHandbook();
+            window.Show();
+
+        }
+
+        private void Load(object sender, RoutedEventArgs e)
+        {
+            kgr = Serialization.Deserialize(LoadPath(true));
+            Write();
         }
 
         private void Save(object sender, RoutedEventArgs e)

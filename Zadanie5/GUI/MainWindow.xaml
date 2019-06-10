@@ -18,7 +18,7 @@
             </MenuItem>
             <MenuItem Header="Dodaj podręcznik" Foreground="Black" Click="AddHandbook"/>
         </Menu>
-        <TextBox TextWrapping="Wrap" Margin="10 35 10 10" Text="" />
+        <TextBox TextWrapping="Wrap" Margin="10 35 10 10" Name="Box" />
 
     </Grid>
 </Window>
