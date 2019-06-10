@@ -14,9 +14,9 @@ namespace Logic
             return root.Gatunki.Gatunek.Where(x => x.Gatunek_id == system.Gatunek_id).FirstOrDefault();
         }
 
-        public static Typ GetTyp(Kolekcja_gier_rpg root, Podręcznik podręcznik)
+        public static Typ GetTyp(Kolekcja_gier_rpg root, Podrecznik podrecznik)
         {
-            return root.Typy.Typ.Where(x => x.Typ_id == podręcznik.Typ_id).FirstOrDefault();
+            return root.Typy.Typ.Where(x => x.Typ_id == podrecznik.Typ_id).FirstOrDefault();
         }
     
     }

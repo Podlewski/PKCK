@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Logic
 {
     [XmlRoot(ElementName = "nagłówek")]
-    public class Nagłówek
+    public class Naglowek
     {
         [XmlElement(ElementName = "przedmiot")]
         public string Przedmiot { get; set; }
@@ -64,45 +64,45 @@ namespace Logic
     }
 
     [XmlRoot(ElementName = "kość")]
-    public class Kość
+    public class Kosc
     {
         [XmlAttribute(AttributeName = "liczba_kości")]
-        public string Liczba_kości { get; set; }
+        public string Liczba_kosci { get; set; }
         [XmlText]
         public string Text { get; set; }
     }
 
     [XmlRoot(ElementName = "kości")]
-    public class Kości
+    public class Kosci
     {
         [XmlElement(ElementName = "kość")]
-        public List<Kość> Kość { get; set; }
+        public List<Kosc> Kosc { get; set; }
     }
 
     [XmlRoot(ElementName = "podręcznik")]
-    public class Podręcznik
+    public class Podrecznik
     {
         [XmlElement(ElementName = "tytuł")]
-        public string Tytuł { get; set; }
+        public string Tytul { get; set; }
         [XmlElement(ElementName = "tytuł_oryginalny")]
-        public string Tytuł_oryginalny { get; set; }
+        public string Tytul_oryginalny { get; set; }
         [XmlElement(ElementName = "data_wydania")]
         public string Data_wydania { get; set; }
         [XmlElement(ElementName = "liczba_stron")]
         public string Liczba_stron { get; set; }
         [XmlElement(ElementName = "ocena_podręcznika")]
-        public string Ocena_podręcznika { get; set; }
+        public string Ocena_podrecznika { get; set; }
         [XmlElement(ElementName = "cena_podręcznika")]
-        public string Cena_podręcznika { get; set; }
+        public string Cena_podrecznika { get; set; }
         [XmlAttribute(AttributeName = "typ_id")]
         public string Typ_id { get; set; }
     }
 
     [XmlRoot(ElementName = "podręczniki")]
-    public class Podręczniki
+    public class Podreczniki
     {
         [XmlElement(ElementName = "podręcznik")]
-        public List<Podręcznik> Podręcznik { get; set; }
+        public List<Podrecznik> Podrecznik { get; set; }
     }
 
     [XmlRoot(ElementName = "sys")]
@@ -111,11 +111,11 @@ namespace Logic
         [XmlElement(ElementName = "nazwa")]
         public string Nazwa { get; set; }
         [XmlElement(ElementName = "kości")]
-        public Kości Kości { get; set; }
+        public Kosci Kosci { get; set; }
         [XmlElement(ElementName = "podręczniki")]
-        public Podręczniki Podręczniki { get; set; }
+        public Podreczniki Podreczniki { get; set; }
         [XmlElement(ElementName = "popularność")]
-        public string Popularność { get; set; }
+        public string Popularnosc { get; set; }
         [XmlElement(ElementName = "format")]
         public string Format { get; set; }
         [XmlAttribute(AttributeName = "gatunek_id")]
@@ -135,7 +135,7 @@ namespace Logic
     public class Kolekcja_gier_rpg
     {
         [XmlElement(ElementName = "nagłówek")]
-        public Nagłówek Nagłówek { get; set; }
+        public Naglowek Naglowek { get; set; }
         [XmlElement(ElementName = "wydawcy")]
         public Wydawcy Wydawcy { get; set; }
         [XmlElement(ElementName = "gatunki")]
