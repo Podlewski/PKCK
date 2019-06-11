@@ -158,6 +158,7 @@ namespace GUI
             {
                 OpenFileDialog openFileDialog = new OpenFileDialog
                 {
+                    Filter = "XML file(.xml) | *.xml",
                     RestoreDirectory = true
                 };
 
