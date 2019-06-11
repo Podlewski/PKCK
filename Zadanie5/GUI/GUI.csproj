@@ -71,6 +71,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="NewType.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewGenre.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewPH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NewSystem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -79,6 +91,15 @@
   <ItemGroup>
     <Compile Include="NewHandbook.xaml.cs">
       <DependentUpon>NewHandbook.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewType.xaml.cs">
+      <DependentUpon>NewType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewGenre.xaml.cs">
+      <DependentUpon>NewGenre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewPH.xaml.cs">
+      <DependentUpon>NewPH.xaml</DependentUpon>
     </Compile>
     <Compile Include="NewSystem.xaml.cs">
       <DependentUpon>NewSystem.xaml</DependentUpon>

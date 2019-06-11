@@ -59,5 +59,12 @@ namespace GUI
             this.Close();
             window.Show();
         }
+
+        private void Cancel(object sender, RoutedEventArgs e)
+        {
+            MainWindow window = new MainWindow(kgr);
+            this.Close();
+            window.Show();
+        }
     }
 }

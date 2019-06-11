@@ -1,0 +1,38 @@
+﻿<Window x:Class="GUI.NewPH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI"
+        mc:Ignorable="d"
+        Title="Nowe Wydawnictwo" ResizeMode="NoResize" Height="140" Width="475">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="0.2*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.1*" />
+            <ColumnDefinition Width="1.4*" />
+            <ColumnDefinition Width="2.4*" />
+            <ColumnDefinition Width="0.1*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="1" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="ID:"/>
+        <Label Grid.Row="2" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Nazwa:"/>
+
+        <TextBox Grid.Row="1" Grid.Column="2" Height="21px" Width="275px" Background="Gray" Name="ID" IsReadOnly="True"/>
+        <TextBox Grid.Row="2" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Name"/>
+
+        <Button Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right"
+                Height="25px" Width="100px" Content="Zapisz" FontSize="10px" Click="Save"/>
+
+        <Button Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right"
+                Height="25px" Width="100px" Content="Anuluj" FontSize="10px" Click="Cancel" Margin="0 0 110 0"/>
+
+    </Grid>
+</Window>

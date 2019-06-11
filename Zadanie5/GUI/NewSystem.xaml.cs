@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 
 using Logic;
 
@@ -28,9 +23,9 @@ namespace GUI
             PH.SelectedIndex = 0;
 
             foreach (var gen in kgr.Gatunki.Gatunek)
-                Genrees.Items.Add(gen.Text);
+                Genres.Items.Add(gen.Text);
 
-            Genrees.SelectedIndex = 0;
+            Genres.SelectedIndex = 0;
         }
 
         private void Save(object sender, RoutedEventArgs e)
@@ -46,7 +41,7 @@ namespace GUI
 
             foreach (var gen in kgr.Gatunki.Gatunek)
             {
-                if (gen.Text == Genrees.SelectedValue.ToString())
+                if (gen.Text == Genres.SelectedValue.ToString())
                     genId = gen.Gatunek_id;
             }
 
@@ -61,6 +56,13 @@ namespace GUI
 
             kgr.Nasza_kolekcja.Sys.Add(sys);
 
+            MainWindow window = new MainWindow(kgr);
+            this.Close();
+            window.Show();
+        }
+
+        private void Cancel(object sender, RoutedEventArgs e)
+        {
             MainWindow window = new MainWindow(kgr);
             this.Close();
             window.Show();

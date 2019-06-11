@@ -81,18 +81,64 @@ namespace GUI
             Box.Text = text;
         }
 
+        private void AddPH(object sender, RoutedEventArgs e)
+        {
+            if (kgr != null)
+            {
+                NewPH window = new NewPH(kgr);
+                this.Close();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Brak wczytanego XMLa", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private void AddGenre(object sender, RoutedEventArgs e)
+        {
+            if (kgr != null)
+            {
+                NewGenre window = new NewGenre(kgr);
+                this.Close();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Brak wczytanego XMLa", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
+        private void AddType(object sender, RoutedEventArgs e)
+        {
+            if (kgr != null)
+            {
+                NewType window = new NewType(kgr);
+                this.Close();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Brak wczytanego XMLa", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+
         private void AddSystem(object sender, RoutedEventArgs e)
         {
-            NewSystem window = new NewSystem(kgr);
-            this.Close();
-            window.Show();
+            if (kgr != null)
+            {
+                NewSystem window = new NewSystem(kgr);
+                this.Close();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Brak wczytanego XMLa", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void AddHandbook(object sender, RoutedEventArgs e)
         {
-            NewHandbook window = new NewHandbook(kgr);
-            this.Close();
-            window.Show();
+            if (kgr != null)
+            {
+                NewHandbook window = new NewHandbook(kgr);
+                this.Close();
+                window.Show();
+            }
+            else
+                MessageBox.Show("Brak wczytanego XMLa", "Błąd", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void Load(object sender, RoutedEventArgs e)
@@ -104,7 +150,6 @@ namespace GUI
         private void Save(object sender, RoutedEventArgs e)
         {
             Serialization.Serialize(LoadPath(false), kgr);
-            Serialization.SerializeToTxt(kgr);
         }
 
         public string LoadPath(bool loadMode)

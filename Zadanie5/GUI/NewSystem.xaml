@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Nowy System" Height="250" Width="475">
+        Title="Nowy System" ResizeMode="NoResize" Height="250" Width="475">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -32,7 +32,7 @@
         <Label Grid.Row="5" Grid.Column="1" FontSize="11px" VerticalAlignment="Center" Content="Format:"/>
 
         <ComboBox Grid.Row="1" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="PH" />
-        <ComboBox Grid.Row="2" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Genrees" />
+        <ComboBox Grid.Row="2" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Genres" />
         <TextBox Grid.Row="3" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Name"/>
         <TextBox Grid.Row="4" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Pop"/>
         <TextBox Grid.Row="5" Grid.Column="2" Height="21px" Width="275px" Background="LightGray" Name="Format"/>
@@ -40,6 +40,8 @@
         <Button Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right"
                 Height="25px" Width="100px" Content="Zapisz" FontSize="10px" Click="Save"/>
 
+        <Button Grid.Row="6" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Right"
+                Height="25px" Width="100px" Content="Anuluj" FontSize="10px" Click="Cancel" Margin="0 0 110 0"/>
 
     </Grid>
 </Window>
